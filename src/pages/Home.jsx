@@ -70,7 +70,7 @@ useEffect(() => {
       icon: (
         <IconPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "#contact",
     },
 
     {
@@ -90,18 +90,18 @@ useEffect(() => {
   ];
 
   return (
-  <div id="Home" className="bg-stone-200 min-h-screen flex flex-col justify-between">
+  <div id="Home" className="bg-stone-200  min-h-screen flex flex-col justify-between">
     {/* Navbar */}
     <div className="p-4 flex justify-between  border-b">
       {/* <p className="text-xl font-bold tracking-wide">Gemstone Boutique</p> */}
-        <div className="text-2xl font-bold">
+        <div className="text-2xl ml-4 font-bold">
           <ColourfulText text="Gemstone Boutique" />
         </div>
     <div className=" flex  justify-around  gap-8 w-1/2 font-mono tracking-wide font-medium">
       <a href="#Home" className="hover:text-orange-900"> Home</a>
       <a href="#About" className="hover:text-orange-900"> About</a>
       <a href="#gallery" className="hover:text-orange-900"> Gallery</a>
-      <a href="asda" className="hover:text-orange-900"> Contact us</a>
+      <a href="#contact" className="hover:text-orange-900"> Contact us</a>
     </div>
     </div>
     {/* Landing page */}
