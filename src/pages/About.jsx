@@ -1,6 +1,8 @@
 export const About = () => {
+  
+
   return (
-    <div id="about" className="overflow-hidden">
+    <div id="About" className="overflow-hidden mb-10">
       <div className="grid grid-cols-[60%_40%]  gap-8 items-start">
         <div>
           <p className="text-5xl font-semibold   mb-6 m-20">
@@ -19,9 +21,15 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="bg-red-400 h-64 w-full">
+        <div className="bg-red-400 w-full mt-20">
           {/* You can replace this with an image or content */}
-          adadas
+          <img src="./image1.png" alt="" className="absolute h-42 right-[3%]" />
+          <img src="./image2.png" alt="" className="absolute h-42 left-[60%] "/>
+          <img src="./image3.png" alt="" className="absolute h-42 top-[140%]"/>
+          <img src="./image4.png" alt="" className="absolute h-42 top-[140%] right-[3%] "/>
+          <img src="./image5.png" alt="" className="absolute h-42 left-[70%]"/>
+          <img src="./image6.png" alt="" className="absolute  h-42 left-[72%] top-[140%]"/>
+          
         </div>
       </div>
     </div>
