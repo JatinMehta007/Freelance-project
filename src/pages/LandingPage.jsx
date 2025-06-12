@@ -12,7 +12,7 @@ export const Landing = () => {
     },
     {
       title: "Blackonyx",
-      image: "./public/blackonyx.jpg",
+      image: "./blackonyxs.jpg",
       className: "absolute top-90 left-[0%] rotate-[-20deg]",
     },
     {
