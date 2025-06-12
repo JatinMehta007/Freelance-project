@@ -9,6 +9,8 @@ import {
 import { FloatingDock } from "../ui/floating";
 import { Landing } from "./LandingPage";
 import { About } from "./About";
+import { ColourfulText } from "../ui/colorful";
+import { Gallery } from "./Gallery";
 
 export const Home = () => {
   const links = [
@@ -62,7 +64,10 @@ export const Home = () => {
   <div id="Home" className="bg-stone-200 min-h-screen flex flex-col justify-between">
     {/* Navbar */}
     <div className="p-4 flex justify-between  border-b">
-      <p className="text-xl font-bold tracking-wide">Gemstone Boutique</p>
+      {/* <p className="text-xl font-bold tracking-wide">Gemstone Boutique</p> */}
+        <div className="text-2xl font-bold">
+          <ColourfulText text="Gemstone Boutique" />
+        </div>
     <div className=" flex  justify-around  gap-8 w-1/2 font-mono tracking-wide font-medium">
       <a href="#Home" className="hover:text-orange-900"> Home</a>
       <a href="#About" className="hover:text-orange-900"> About</a>
@@ -74,6 +79,8 @@ export const Home = () => {
     <Landing></Landing>
     {/* About section */}
     <About ></About>
+    {/* //Gallery */}
+    <Gallery></Gallery>
 <div className="fixed bottom-0 p-4 flex justify-center w-screen  shadow-md z-50">
   <FloatingDock mobileClassName="translate-y-0" items={links} />
 </div>
