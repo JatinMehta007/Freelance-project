@@ -3,6 +3,7 @@ export const About = () => {
 
   return (
     <div id="About" className="overflow-hidden mb-10">
+      <p className=" text-center text-7xl tracking-wide font-black pt-10">About</p>
       <div className="grid grid-cols-[60%_40%]  gap-8 items-start">
         <div>
           <p className="text-5xl font-semibold   mb-6 m-20">
