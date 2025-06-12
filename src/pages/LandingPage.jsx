@@ -5,26 +5,26 @@ export const Landing=()=>{
 
 const items = [
     {
-      title: "Tyler Durden",
+      title: "tigers",
       image:
-        "https://images.unsplash.com/photo-1732310216648-603c0255c000?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "./tigers.jpg",
       className: "absolute top-1 left-[0%] rotate-[-5deg]",
     },
     {
-      title: "The Narrator",
+      title: "Blackonyx",
       image:
-        "https://images.unsplash.com/photo-1697909623564-3dae17f6c20b?q=80&w=2667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "./blackonyx.jpg",
       className: "absolute top-90 left-[0%] rotate-[-20deg]",
     },
     {
-      title: "Iceland",
+      title: "Lapis",
       image:
-        "https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "./lapis.jpg",
       className: "absolute top-5 right-[0%] rotate-[8deg]",
     },{
-      title: "Japan",
+      title: "Oyster",
       image:
-        "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=3648&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "./oyster.jpeg",
       className: "absolute top-90 right-[0%] rotate-[30deg]",
     },
   ]
@@ -36,7 +36,7 @@ const items = [
     <p>Welcome to</p>
     <ColourfulText text="Gemstone Boutique" />
     <p className="text-2xl mx-auto w-[50%] mt-5">Handcrafted gemstones tailored to perfection in all shapes, sizes, and astrological preferences.Whether you're looking for custom-cut gemstones or stones based on astrological needs, we bring your vision to life with unmatched craftsmanship.</p>
-  <a href="" className="text-black text-xl border p-2 rounded-2xl hover:bg-zinc-300">
+  <a href="" className="text-black text-2xl border p-2 rounded-2xl hover:bg-zinc-300">
     Contact for custom order
   </a>
   </div>
@@ -51,7 +51,7 @@ const items = [
           alt={item.title}
           className="pointer-events-none relative z-10 h-80 w-80 object-cover"
         />
-        <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">
+        <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700">
           {item.title}
         </h3>
       </DraggableCardBody>
