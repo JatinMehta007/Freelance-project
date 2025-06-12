@@ -78,7 +78,10 @@ export const Home = () => {
     {/* Landing page */}
     <Landing></Landing>
     {/* About section */}
+
+    <div className="border-b border-neutral-400"></div>
     <About ></About>
+    <div className="border-b border-neutral-400"></div>
     {/* //Gallery */}
     <Gallery></Gallery>
 <div className="fixed bottom-0 p-4 flex justify-center w-screen  shadow-md z-50">
