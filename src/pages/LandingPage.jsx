@@ -43,7 +43,7 @@ export const Landing = () => {
           <div className="flex justify-center items-center pt-10">
             <MovingButton className="">
               <HoverBorderGradient className="text-center flex justify-center items-center">
-                <a href="" className="text-black   text-2xl  ">
+                <a href="#contact" className="text-black   text-2xl  ">
                   Contact for custom order
                 </a>
               </HoverBorderGradient>
