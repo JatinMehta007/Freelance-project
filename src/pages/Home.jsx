@@ -14,6 +14,7 @@ import { Gallery } from "./Gallery";
 import { Contact } from "./Contact";
 import { Footer } from "./Footer";
 import { useEffect, useRef, useState } from "react";
+import { cn } from "../lib/utils";
 
 export const Home = () => {
 
@@ -46,7 +47,7 @@ useEffect(() => {
     {
       title: "Home",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconHome className="h-full w-full text-white " />
       ),
       href: "#Home",
     },
@@ -54,21 +55,21 @@ useEffect(() => {
     {
       title: "About",
       icon: (
-        <IconInfoCircle className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconInfoCircle className="h-full w-full text-white " />
       ),
       href: "#About",
     },
     {
       title: "Gallery",
       icon: (
-        <IconPhoto className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconPhoto className="h-full w-full text-white " />
       ),
       href: "#gallery",
     },
     {
       title: "Contact us",
       icon: (
-        <IconPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconPhone className="h-full w-full text-white " />
       ),
       href: "#contact",
     },
@@ -76,28 +77,36 @@ useEffect(() => {
     {
       title: "Twitter",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandX className="h-full w-full text-white " />
       ),
       href: "#",
     },
     {
       title: "Instagram",
       icon: (
-        <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandInstagram className="h-full w-full text-white " />
       ),
       href: "#",
     },
   ];
 
   return (
-  <div id="Home" className="bg-stone-200  min-h-screen flex flex-col justify-between">
+  <div id="Home"  className="bg-gradient-to-r  from-zinc-900 via-zinc-950 to-zinc-900 min-h-screen text-white flex flex-col justify-between">
+    <div
+            className={cn(
+              "absolute inset-0",
+              "[background-size:40px_40px]",
+              "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
+              "[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
+            )}
+          />
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] "></div>
     {/* Navbar */}
     <div className="p-4 flex justify-between  border-b">
-      {/* <p className="text-xl font-bold tracking-wide">Gemstone Boutique</p> */}
-        <div className="text-2xl ml-4 font-bold">
-          <ColourfulText text="Gemstone Boutique" />
+        <div className="relative text-2xl ml-4 font-bold">
+          <p>Gemstone Boutique</p>
         </div>
-    <div className=" flex  justify-around  gap-8 w-1/2 font-mono tracking-wide font-medium">
+    <div className="relative flex  justify-around  gap-8 w-1/2 font-mono tracking-wide font-medium">
       <a href="#Home" className="hover:text-orange-900"> Home</a>
       <a href="#About" className="hover:text-orange-900"> About</a>
       <a href="#gallery" className="hover:text-orange-900"> Gallery</a>
