@@ -21,7 +21,7 @@ export const Landing = () => {
           
         {/* Overlayed Text */}
         <div className=" relative text-center w-[100%] mt-[8%] text-6xl md:text-8xl">
-          <p className=" bg-gradient-to-b from-neutral-400 to-neutral-600 bg-clip-text  text-transparent">Welcome to</p>
+          <p className=" bg-gradient-to-b from-neutral-50 to-neutral-500 bg-clip-text  text-transparent">Welcome to</p>
           {/* <ColourfulText text="Gemstone Boutique" /> */}
            <p className=" bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text  text-transparent">Gemstone Boutique</p>
           <p className="text-2xl mx-auto w-[50%] mt-5">
