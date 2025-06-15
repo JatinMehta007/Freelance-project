@@ -1,39 +1,29 @@
-import { ColourfulText } from "../ui/colorful";
-import { DraggableCardBody } from "../ui/dragable";
+
+import { cn } from "../lib/utils";
 import { HoverBorderGradient } from "../ui/hover_border";
 import { MovingButton } from "../ui/moving_border";
 
 export const Landing = () => {
-  const items = [
-    {
-      title: "tigers",
-      image: "./tigers.jpg",
-      className: "absolute top-1 left-[0%] rotate-[-5deg]",
-    },
-    {
-      title: "Blackonyx",
-      image: "./blackonyxs.jpg",
-      className: "absolute top-90 left-[0%] rotate-[-20deg]",
-    },
-    {
-      title: "Lapis",
-      image: "./lapis.jpg",
-      className: "absolute top-5 right-[0%] rotate-[8deg]",
-    },
-    {
-      title: "Oyster",
-      image: "./oyster.jpeg",
-      className: "absolute top-90 right-[0%] rotate-[30deg]",
-    },
-  ];
+
 
   return (
     <>
-      <div className="relative  font-black">
+      <div className="relative h-screen font-black">
+                  <div
+            className={cn(
+              "absolute inset-0",
+              "[background-size:40px_40px]",
+              "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
+              "[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
+            )}
+          />
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] "></div>
+          
         {/* Overlayed Text */}
-        <div className="absolute  text-center w-[100%] top-[20%] left-1/2 z-30 -translate-x-1/2 text-6xl md:text-8xl">
-          <p>Welcome to</p>
-          <ColourfulText text="Gemstone Boutique" />
+        <div className=" relative text-center w-[100%] mt-[8%] text-6xl md:text-8xl">
+          <p className=" bg-gradient-to-b from-neutral-400 to-neutral-600 bg-clip-text  text-transparent">Welcome to</p>
+          {/* <ColourfulText text="Gemstone Boutique" /> */}
+           <p className=" bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text  text-transparent">Gemstone Boutique</p>
           <p className="text-2xl mx-auto w-[50%] mt-5">
             Handcrafted gemstones tailored to perfection in all shapes, sizes,
             and astrological preferences.Whether you're looking for custom-cut
@@ -41,31 +31,17 @@ export const Landing = () => {
             vision to life with unmatched craftsmanship.
           </p>
           <div className="flex justify-center items-center pt-10">
-            <MovingButton className="">
-              <HoverBorderGradient className="text-center flex justify-center items-center">
-                <a href="#contact" className="text-black   text-2xl  ">
+            <MovingButton className="p-2">
+              {/* <HoverBorderGradient className="text-center flex justify-center items-center"> */}
+                <a href="#contact" className="text-white p-2 text-2xl  ">
                   Contact for custom order
                 </a>
-              </HoverBorderGradient>
+              {/* </HoverBorderGradient> */}
             </MovingButton>
           </div>
         </div>
 
-        {/* Draggable Images */}
-        <div className="relative flex min-h-screen w-full items-center justify-center overflow-clip z-10">
-          {items.map((item) => (
-            <DraggableCardBody key={item.title} className={item.className}>
-              <img
-                src={item.image}
-                alt={item.title}
-                className="pointer-events-none relative z-10 h-80 w-80 object-cover"
-              />
-              <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700">
-                {item.title}
-              </h3>
-            </DraggableCardBody>
-          ))}
-        </div>
+  
       </div>
     </>
   );
