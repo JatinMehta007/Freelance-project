@@ -1,47 +1,50 @@
 
-import { cn } from "../lib/utils";
 import { HoverBorderGradient } from "../ui/hover_border";
 import { MovingButton } from "../ui/moving_border";
 
 export const Landing = () => {
 
-
   return (
     <>
-      <div className="relative h-screen font-black">
-                  <div
-            className={cn(
-              "absolute inset-0",
-              "[background-size:40px_40px]",
-              "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-              "[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
-            )}
-          />
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] "></div>
-          
+      <div className="relative  font-black ">
         {/* Overlayed Text */}
-        <div className=" relative text-center w-[100%] mt-[8%] text-6xl md:text-8xl">
-          <p className=" bg-gradient-to-b from-neutral-50 to-neutral-500 bg-clip-text  text-transparent">Welcome to</p>
+        <div className="grid grid-cols-[70%_30%] ">
+          <div className="">
+        <div className=" relative  font-gentium  w-[100%]  left-15 z-30 top-24 text-6xl md:text-9xl">
+          <p className="font-playfair text-[#8D4F5B]">Welcome to</p>
           {/* <ColourfulText text="Gemstone Boutique" /> */}
-           <p className=" bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text  text-transparent">Gemstone Boutique</p>
-          <p className="text-2xl mx-auto w-[50%] mt-5">
+          <p className="font-playfair text-[#C5A253] bottom-1">Gemstone Boutique</p>
+          <p className="text-2xl  w-[80%] mt-5 text-[#8D4F5B]">
             Handcrafted gemstones tailored to perfection in all shapes, sizes,
             and astrological preferences.Whether you're looking for custom-cut
             gemstones or stones based on astrological needs, we bring your
             vision to life with unmatched craftsmanship.
           </p>
-          <div className="flex justify-center items-center pt-10">
-            <MovingButton className="p-2">
-              {/* <HoverBorderGradient className="text-center flex justify-center items-center"> */}
-                <a href="#contact" className="text-white p-2 text-2xl  ">
+          <div className="flex  pt-10">
+            <MovingButton className="">
+              <HoverBorderGradient className="text-center flex ">
+                <a href="#contact" className="text-[#8D4F5B]  text-2xl  ">
                   Contact for custom order
                 </a>
-              {/* </HoverBorderGradient> */}
+              </HoverBorderGradient>
             </MovingButton>
           </div>
         </div>
+          </div>
+        <div className="bg-[#FAF5EF]">
+          <div>
+            <img src="./" alt="" />
+          </div>
+          <div className="relative  left-[50%]">
+          <img src="./back.jpeg" alt="" className="rounded-full rounded-t-4xl" />
+        </div>
+        <div className="relative  left-[50%]">
+          <img src="./back.jpeg" alt="" className="rounded-full rounded-b-4xl" />
+        </div>
+        </div>
+        </div>
 
-  
+      
       </div>
     </>
   );
