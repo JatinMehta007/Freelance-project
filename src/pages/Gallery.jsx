@@ -25,16 +25,16 @@ export const Gallery = () => {
 
   return (
     <div className="w-full px-4 py-10 max-w-7xl mx-auto text-center" id="gallery">
-      <h2 className="text-3xl md:text-7xl font-black mb-2 uppercase tracking-wide">Gallery</h2>
-      <p className="text-base md:text-lg mb-6 text-gray-700">Explore our exclusive collection of semi-precious stones.</p>
+      <h2 className="text-3xl md:text-7xl font-black mb-2 tracking-wide">Gallery</h2>
+      <p className="text-base md:text-lg mb-6 ">Explore our exclusive collection of semi-precious stones.</p>
 
       {/* Filter Dropdown */}
       <div className="flex flex-wrap justify-center items-center gap-3 mb-8">
-        <label htmlFor="stone-filter" className="font-semibold text-gray-800 text-lg">View by Color :</label>
+        <label htmlFor="stone-filter" className="font-semibold  text-lg">View by Color :</label>
         <select
           id="stone-filter"
           onChange={(e) => setSelectedColor(e.target.value)}
-          className="px-4 py-2 rounded-md border border-gray-300 text-base cursor-pointer bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          className="px-4 py-2 rounded-md border border-gray-300 text-base cursor-pointer bg-white shadow-sm text-black focus:outline-none focus:ring-2 focus:ring-indigo-400"
         >
           <option value="All">All</option>
           <option value="Black">Black</option>
