@@ -3,14 +3,14 @@ export const About = () => {
 
   return (
     <div id="About" className="overflow-hidden mb-10">
-      <p className=" text-center text-7xl tracking-wide font-black pt-10">About</p>
+      <p className=" text-center text-7xl tracking-wide text-[#3A3A3A] font-black pt-10 font-playfair">About</p>
       <div className="grid grid-cols-[60%_40%]  gap-8 items-start">
         <div>
-          <p className="text-5xl font-semibold   mb-6 mt-10 m-20">
+          <p className="text-5xl font-semibold font-playfair mb-6 mt-10 m-20">
             Manufacturers of Semi-Precious Gemstones and Fashion Jewelry
           </p>
-          <div className="mx-20 text-wrap  w-[80%] ">
-          <p className="mb-4">
+          <div className="mx-20 text-[#8D4F5B] text-wrap  w-[80%] font-gentium ">
+          <p className="mb-4  ">
             Our gemstone manufacturing business has been delivering unparalleled quality and craftsmanship. Based in India, we take pride in offering premium semi-precious stones that cater to diverse client needs across the country.
           </p>
           <p className="mb-4">
@@ -26,10 +26,10 @@ export const About = () => {
           {/* You can replace this with an image or content */}
           <img src="./image1.png" alt="" className="absolute h-42 right-[3%]" />
           <img src="./image2.png" alt="" className="absolute h-42 left-[60%] "/>
-          <img src="./image3.png" alt="" className="absolute h-42 top-[153%]  "/>
-          <img src="./image4.png" alt="" className="absolute h-42 top-[153%] right-[2%] "/>
+          <img src="./image3.png" alt="" className="absolute h-42 top-[165%]  "/>
+          <img src="./image4.png" alt="" className="absolute h-42 top-[165%] right-[2%] "/>
           <img src="./image5.png" alt="" className="absolute h-42 left-[70%]"/>
-          <img src="./image6.png" alt="" className="absolute  h-42 left-[72%] top-[153%]"/>
+          <img src="./image6.png" alt="" className="absolute  h-42 left-[72%] top-[165%]"/>
           
         </div>
       </div>
