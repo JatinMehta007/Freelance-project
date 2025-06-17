@@ -14,7 +14,6 @@ import { Gallery } from "./Gallery";
 import { Contact } from "./Contact";
 import { Footer } from "./Footer";
 import { useEffect, useRef, useState } from "react";
-import { cn } from "../lib/utils";
 
 export const Home = () => {
 
@@ -47,7 +46,7 @@ useEffect(() => {
     {
       title: "Home",
       icon: (
-        <IconHome className="h-full w-full text-white " />
+        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#Home",
     },
@@ -55,21 +54,21 @@ useEffect(() => {
     {
       title: "About",
       icon: (
-        <IconInfoCircle className="h-full w-full text-white " />
+        <IconInfoCircle className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#About",
     },
     {
       title: "Gallery",
       icon: (
-        <IconPhoto className="h-full w-full text-white " />
+        <IconPhoto className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#gallery",
     },
     {
       title: "Contact us",
       icon: (
-        <IconPhone className="h-full w-full text-white " />
+        <IconPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#contact",
     },
@@ -77,41 +76,43 @@ useEffect(() => {
     {
       title: "Twitter",
       icon: (
-        <IconBrandX className="h-full w-full text-white " />
+        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
       title: "Instagram",
       icon: (
-        <IconBrandInstagram className="h-full w-full text-white " />
+        <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
   ];
 
   return (
-  <div id="Home"  className="bg-gradient-to-r  from-zinc-900 via-zinc-950 to-zinc-900 min-h-screen text-white flex flex-col justify-between">
-    <div
-            className={cn(
-              "absolute inset-0",
-              "[background-size:40px_40px]",
-              "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-              "[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
-            )}
-          />
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] "></div>
+  <div id="Home" className="bg-[#F8F9FA]   min-h-screen flex flex-col justify-between">
     {/* Navbar */}
-    <div className="p-4 flex justify-between  border-b">
-        <div className="relative text-2xl ml-4 font-bold">
-          <p>Gemstone Boutique</p>
-        </div>
-    <div className="relative flex  justify-around  gap-8 w-1/2 font-mono tracking-wide font-medium">
-      <a href="#Home" className="hover:text-orange-900"> Home</a>
-      <a href="#About" className="hover:text-orange-900"> About</a>
-      <a href="#gallery" className="hover:text-orange-900"> Gallery</a>
-      <a href="#contact" className="hover:text-orange-900"> Contact us</a>
-    </div>
+    <div className="p-4 flex   border-b">
+      {/* <p className="text-xl font-bold tracking-wide">Gemstone Boutique</p> */}
+        
+   <div className="flex justify-around items-center w-full font-playfair text-lg font-mono tracking-wide font-medium px-8">
+  {/* Left */}
+  <div className="flex gap-36">
+    <a href="#Home" className="hover:text-orange-900">Home</a>
+    <a href="#About" className="hover:text-orange-900">About</a>
+  </div>
+
+  {/* Center */}
+  <div className="text-3xl font-bold text-[#C5A253] text-center">
+    Gemstone Boutique
+  </div>
+
+  {/* Right */}
+  <div className="flex gap-36">
+    <a href="#gallery" className="hover:text-orange-900">Gallery</a>
+    <a href="#contact" className="hover:text-orange-900">Contact us</a>
+  </div>
+</div>
     </div>
     {/* Landing page */}
     <Landing></Landing>
