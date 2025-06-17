@@ -50,9 +50,9 @@ export const Contact = () => {
 
   return (
         <div className="p-10" id="contact">
-        <p className="text-6xl font-black text-center ">Contact us</p>
+        <p className="text-6xl font-black text-center font-playfair">Contact us</p>
             
-        <p className="text-center text-lg text-zinc-600 p-4">Reach out to us over email or fill up this contact form. We will get back to you ASAP - We promise.</p>
+        <p className="text-center text-lg text-zinc-600 p-4 font-gentium">Reach out to us over email or fill up this contact form. We will get back to you ASAP - We promise.</p>
     <div className="flex justify-center items-center " >
       {/* Toaster for notifications */}
       <Toaster />
