@@ -1,11 +1,11 @@
+import './index.css';
 import {
   BrowserRouter,
   Routes,
   Route
 } from "react-router-dom"
 import { Home } from "./pages/Home";
-import './index.css';
-// import "./"
+
 function App() {
 
   return (
