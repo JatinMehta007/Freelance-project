@@ -97,7 +97,7 @@ useEffect(() => {
         
    <div className="flex justify-around items-center w-full font-playfair text-lg font-mono tracking-wide font-medium px-8">
   {/* Left */}
-  <div className="flex gap-36">
+  <div className="flex gap-36 text-2xl">
     <a href="#Home" className="hover:text-orange-900">Home</a>
     <a href="#About" className="hover:text-orange-900">About</a>
   </div>
@@ -108,7 +108,7 @@ useEffect(() => {
   </div>
 
   {/* Right */}
-  <div className="flex gap-36">
+  <div className="flex gap-36 text-2xl">
     <a href="#gallery" className="hover:text-orange-900">Gallery</a>
     <a href="#contact" className="hover:text-orange-900">Contact us</a>
   </div>
