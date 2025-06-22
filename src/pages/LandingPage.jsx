@@ -11,9 +11,9 @@ export const Landing = () => {
         <div className="grid grid-cols-[70%_30%] ">
           <div className="">
         <div className=" relative  font-gentium  w-[100%]  left-15 z-30 top-24 text-6xl md:text-9xl">
-          <p className="font-playfair text-[#8D4F5B]">Welcome to</p>
+          <p className="font-playfair text-black">Welcome to</p>
           {/* <ColourfulText text="Gemstone Boutique" /> */}
-          <p className="font-playfair text-[#C5A253] bottom-1">Gemstone Boutique</p>
+          <p className="font-playfair text-black bottom-1">Gemstone Boutique</p>
           <p className="text-2xl  w-[80%] mt-5 text-[#8D4F5B]">
             Handcrafted gemstones tailored to perfection in all shapes, sizes,
             and astrological preferences.Whether you're looking for custom-cut
@@ -31,15 +31,15 @@ export const Landing = () => {
           </div>
         </div>
           </div>
-        <div className="bg-[#FAF5EF]">
+        <div className="bg-black">
           <div>
             <img src="./" alt="" />
           </div>
           <div className="relative  left-[50%]">
           <img src="./back.jpeg" alt="" className="rounded-full rounded-t-4xl" />
         </div>
-        <div className="relative  left-[50%]">
-          <img src="./back.jpeg" alt="" className="rounded-full rounded-b-4xl" />
+        <div className="relative  left-[50%] rotate-180">
+          <img src="./back.jpeg" alt="" className="rounded-full rounded-t-4xl" />
         </div>
         </div>
         </div>
