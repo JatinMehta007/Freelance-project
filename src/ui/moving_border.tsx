@@ -30,7 +30,7 @@ export function MovingButton({
   return (
     <Component
       className={cn(
-        "relative  overflow-hidden rounded-full bg-transparent p-[1px] text-xl",
+        "relative  overflow-hidden rounded-full bg-transparent p-[3px] text-xl",
         containerClassName,
       )}
       style={{
