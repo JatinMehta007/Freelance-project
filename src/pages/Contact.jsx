@@ -49,10 +49,10 @@ export const Contact = () => {
 //   };
 
   return (
-        <div className="p-10" id="contact">
-        <p className="text-6xl font-black text-center font-playfair">Contact us</p>
+        <div className="p-10 text-white bg-black" id="contact">
+        <p className="text-6xl font-black text-center  font-playfair">Contact us</p>
             
-        <p className="text-center text-lg text-zinc-600 p-4 font-gentium">Reach out to us over email or fill up this contact form. We will get back to you ASAP - We promise.</p>
+        <p className="text-center text-lg  p-4 font-gentium">Reach out to us over email or fill up this contact form. We will get back to you ASAP - We promise.</p>
     <div className="flex justify-center items-center " >
       {/* Toaster for notifications */}
       <Toaster />
@@ -62,7 +62,7 @@ export const Contact = () => {
           <input
             type="text"
             placeholder="Your Name"
-            className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
+            className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm  text-neutral-700 w-full"
             // value={formData.name.value}
             onChange={(e) => {
                 setFormData({
