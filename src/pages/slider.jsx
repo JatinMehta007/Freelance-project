@@ -10,9 +10,13 @@ export const Button = () => {
     "/back2.jpg",
     "/back1.png",
     "/back.jpeg",
+    "/blackonyxs.jpg",
+    "../src/assets/amethyst.jpg",
+    "../src/assets/citrine.jpg",
+    "/slide.jpeg"
   ];
 
-  const groupSize = 2; // show 2 images per indicator group (4 indicators total)
+  const groupSize = 4; // show 2 images per indicator group (4 indicators total)
   const visibleCount = 4; // number of images shown at once
   const totalGroups = Math.ceil(slides.length / groupSize); // 8 / 2 = 4
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,7 +45,7 @@ export const Button = () => {
   const activeGroup = Math.floor(currentIndex / groupSize);
 
   return (
-    <div className="hidden md:block bg-neutral-300">
+    <div className="hidden md:block bg-neutral-700">
       {/* Image Grid */}
       <div className="grid grid-cols-4 m-11 gap-10">
         {visibleSlides.map((img, index) => (
