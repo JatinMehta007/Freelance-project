@@ -5,6 +5,8 @@ import { About } from "./About";
 import { Contact } from "./Contact";
 import { Footer } from "./Footer";
 import { Button } from "./slider";
+import { TestimonialSlider } from "./testimonials";
+// import { Testimonial } from "./testimonials";
 
 export const Home = () => {
   const footerRef = useRef(null);
@@ -68,9 +70,15 @@ export const Home = () => {
       </div>
 
       {/* Sections */}
+      {/* Landing page */}
       <Landing />
+      {/* Slider */}
       <Button />
+      {/* About */}
       <About />
+      {/* Testimonial */}
+      <TestimonialSlider></TestimonialSlider>
+      {/* Contact */}
       <Contact />
       <Footer ref={footerRef} />
 
