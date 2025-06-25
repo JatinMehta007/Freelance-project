@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export const Button = () => {
   const slides = [
-    "/lapis.jpg",
+   "/lapis.jpg",
     "/oyster.jpeg",
     "/tigers.jpg",
     "/rhodonite.jpg",
@@ -28,7 +28,7 @@ export const Button = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 10000);
     return () => clearInterval(interval);
   }, [currentIndex]);
 
@@ -64,7 +64,7 @@ export const Button = () => {
           <div
             key={i}
             className={`h-[4px] w-10 rounded-full transition-all duration-300 ${
-              i === activeIndicator ? "bg-yellow-600" : "bg-black"
+              i === activeIndicator ? "bg-yellow-400" : "bg-white/30"
             }`}
           ></div>
         ))}
