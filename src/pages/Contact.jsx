@@ -49,7 +49,7 @@ export const Contact = () => {
 //   };
 
   return (
-        <div className="p-10 text-white bg-black" id="contact">
+        <div className="p-10 text-white bg-gradient-to-r from-neutral-800 via-neutral-800 to-neutral-800" id="contact">
         <p className="text-6xl font-black text-center  font-playfair">Contact us</p>
             
         <p className="text-center text-lg  p-4 font-gentium">Reach out to us over email or fill up this contact form. We will get back to you ASAP - We promise.</p>
