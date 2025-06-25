@@ -13,22 +13,21 @@ export const Button = () => {
     "/blackonyxs.jpg",
     "../src/assets/amethyst.jpg",
     "../src/assets/citrine.jpg",
-    "/slide.jpeg"
+    "/slide.jpeg",
   ];
-  
-  const groupSize = 1; // one image per slide
-  const visibleCount = 4; // still showing 4 images at once
-  const totalGroups = 4; // always 4 indicator lines
+
+  const visibleCount = 4; // number of images shown at once
+  const totalIndicators = 4; // always 4 indicators
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlideGroup = () => {
-    const nextIndex = (currentIndex + groupSize) % slides.length;
+  const nextSlide = () => {
+    const nextIndex = (currentIndex + 1) % slides.length;
     setCurrentIndex(nextIndex);
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlideGroup();
+      nextSlide();
     }, 5000);
     return () => clearInterval(interval);
   }, [currentIndex]);
@@ -42,34 +41,34 @@ export const Button = () => {
   };
 
   const visibleSlides = getVisibleSlides();
-  const activeGroup = Math.floor(currentIndex / groupSize);
+  const activeIndicator = currentIndex % totalIndicators;
 
   return (
-  <div className="hidden md:block bg-neutral-700">
-    {/* Image Grid */}
-    <div className="grid grid-cols-4 m-11 gap-10">
-      {visibleSlides.map((img, index) => (
-        <div
-          key={index}
-          className="w-full h-[270px] rounded-xl bg-center bg-cover duration-500"
-          style={{
-            backgroundImage: `url(${img})`,
-          }}
-        />
-      ))}
-    </div>
+    <div className="hidden md:block bg-neutral-700">
+      {/* Image Grid */}
+      <div className="grid grid-cols-4 m-11 gap-10">
+        {visibleSlides.map((img, index) => (
+          <div
+            key={index}
+            className="w-full h-[270px] rounded-xl bg-center bg-cover duration-500"
+            style={{
+              backgroundImage: `url(${img})`,
+            }}
+          />
+        ))}
+      </div>
 
-    {/* Slide Indicators directly below images */}
-    <div className="flex justify-center items-center space-x-4 mb-10">
-      {[...Array(totalGroups)].map((_, i) => (
-        <div
-          key={i}
-          className={`h-[4px] w-10 rounded-full transition-all duration-300 ${
-            i === activeGroup ? "bg-yellow-600" : "bg-black"
-          }`}
-        ></div>
-      ))}
+      {/* Circular Slide Indicators */}
+      <div className="flex justify-center items-center space-x-4 mb-10">
+        {[...Array(totalIndicators)].map((_, i) => (
+          <div
+            key={i}
+            className={`h-[4px] w-10 rounded-full transition-all duration-300 ${
+              i === activeIndicator ? "bg-yellow-600" : "bg-black"
+            }`}
+          ></div>
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
 };
