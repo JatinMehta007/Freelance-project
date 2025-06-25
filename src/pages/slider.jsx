@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 
 export const Button = () => {
   const slides = [
-    "/lapis.jpg",
+   "/lapis.jpg",
     "/oyster.jpeg",
     "/tigers.jpg",
     "/rhodonite.jpg",
     "/swissbt.jpg",
-    "/back2.jpg",
+    "../src/assets/peridot1.jpg",
     "/back1.png",
     "/back.jpeg",
     "/blackonyxs.jpg",
@@ -16,11 +16,10 @@ export const Button = () => {
     "/slide.jpeg",
   ];
 
-  const visibleCount = 4; // number of images shown at once
-  const totalIndicators = 4; // always 4 indicators
+  const visibleCount = 4;
+  const totalIndicators = 4;
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Move 1 image forward every time
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };
@@ -32,7 +31,6 @@ export const Button = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Always pick 4 images starting from currentIndex using modulo
   const getVisibleSlides = () => {
     return Array.from({ length: visibleCount }, (_, i) => {
       return slides[(currentIndex + i) % slides.length];
@@ -48,9 +46,11 @@ export const Button = () => {
       <div className="grid grid-cols-4 m-11 gap-10">
         {visibleSlides.map((img, index) => (
           <div
-            key={index}
-            className="w-full h-[270px] rounded-xl bg-center bg-cover duration-500"
-            style={{ backgroundImage: `url(${img})` }}
+            key={`${currentIndex}-${index}`}
+            className="w-full h-[270px] rounded-xl bg-center bg-cover transition-opacity duration-700 ease-in-out opacity-100"
+            style={{
+              backgroundImage: `url(${img})`,
+            }}
           />
         ))}
       </div>
