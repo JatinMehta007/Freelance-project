@@ -10,9 +10,9 @@ export const Button = () => {
     "/back1.png",
     "/back.jpeg",
     "/blackonyxs.jpg",
-    "../src/assets/peridot1.jpg",
-    "../src/assets/amethyst.jpg",
-    "../src/assets/citrine.jpg",
+    "/peridot1.jpg",
+    "/amethyst.jpg",
+    "/citrine.jpg",
     "/slide.jpeg",
   ];
 
