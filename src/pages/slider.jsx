@@ -28,7 +28,7 @@ export const Button = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 10000);
+    }, 2000);
     return () => clearInterval(interval);
   }, [currentIndex]);
 
