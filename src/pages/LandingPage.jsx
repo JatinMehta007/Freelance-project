@@ -63,7 +63,7 @@ export const Landing = () => {
               />
             </div>
             <div className="w-[800px] mt-[20%] overflow-hidden">
-              <img src="./backs.jpeg" alt="" className="rounded-full w-full" />
+              <img src="./backs2.jpg" alt="" className="rounded-full w-full" />
             </div>
           </div>
         </div>
