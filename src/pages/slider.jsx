@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export const Button = () => {
   const slides = [
-   "/lapis.jpg",
+    "/lapis.jpg",
     "/oyster.jpeg",
     "/tigers.jpg",
     "/rhodonite.jpg",
@@ -20,9 +20,9 @@ export const Button = () => {
   const totalIndicators = 4; // always 4 indicators
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Move 1 image forward every time
   const nextSlide = () => {
-    const nextIndex = (currentIndex + 1) % slides.length;
-    setCurrentIndex(nextIndex);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };
 
   useEffect(() => {
@@ -30,14 +30,13 @@ export const Button = () => {
       nextSlide();
     }, 2000);
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, []);
 
+  // Always pick 4 images starting from currentIndex using modulo
   const getVisibleSlides = () => {
-    const visibleSlides = [];
-    for (let i = 0; i < visibleCount; i++) {
-      visibleSlides.push(slides[(currentIndex + i) % slides.length]);
-    }
-    return visibleSlides;
+    return Array.from({ length: visibleCount }, (_, i) => {
+      return slides[(currentIndex + i) % slides.length];
+    });
   };
 
   const visibleSlides = getVisibleSlides();
@@ -51,9 +50,7 @@ export const Button = () => {
           <div
             key={index}
             className="w-full h-[270px] rounded-xl bg-center bg-cover duration-500"
-            style={{
-              backgroundImage: `url(${img})`,
-            }}
+            style={{ backgroundImage: `url(${img})` }}
           />
         ))}
       </div>
