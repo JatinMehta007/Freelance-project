@@ -37,6 +37,7 @@ export const TestimonialSlider = () => {
       className="relative w-full h-screen flex items-center justify-center bg-cover bg-center"
       style={{ backgroundImage: "url('/testimonial.jpeg')" }}
     >
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent pointer-events-none"></div> */}
       {/* Left Arrow */}
       <button
         onClick={prev}
