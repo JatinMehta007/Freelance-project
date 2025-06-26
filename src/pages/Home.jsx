@@ -6,6 +6,7 @@ import { Contact } from "./Contact";
 import { Footer } from "./Footer";
 import { Button } from "./slider";
 import { TestimonialSlider } from "./testimonials";
+import { Navbar } from "./Navbar";
 // import { Testimonial } from "./testimonials";
 
 export const Home = () => {
@@ -53,21 +54,9 @@ export const Home = () => {
   ];
 
   return (
-    <div id="Home" className="min-h-screen flex flex-col justify-between">
+    <div id="Home" className="min-h-screen flex flex-col justify-between overflow-hidden">
       {/* Navbar */}
-      <div className="p-4 flex  bg-gradient-to-r from-neutral-800 via-neutral-800 to-neutral-800 text-white">
-        <div className="flex justify-between items-center w-full text-lg font-mono tracking-wide font-medium px-8">
-          <div className="text-3xl font-playfair font-bold text-center">
-            Gemstone Boutique
-          </div>
-          <div className="flex gap-20 text-xl  ">
-            <a href="#Home" className="hover:text-orange-900">Home</a>
-            <a href="#About" className="hover:text-orange-900">About</a>
-            <a href="#gallery" className="hover:text-orange-900">Gallery</a>
-            <a href="#contact" className="hover:text-orange-900">Contact us</a>
-          </div>
-        </div>
-      </div>
+      <Navbar></Navbar>
 
       {/* Sections */}
       {/* Landing page */}
