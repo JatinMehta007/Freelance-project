@@ -7,7 +7,6 @@ import { Footer } from "./Footer";
 import { Button } from "./slider";
 import { TestimonialSlider } from "./testimonials";
 import { Navbar } from "./Navbar";
-// import { Testimonial } from "./testimonials";
 
 export const Home = () => {
   const footerRef = useRef(null);
