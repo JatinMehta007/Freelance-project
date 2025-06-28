@@ -6,7 +6,7 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const sectionIds = ["Home", "About", "gallery", "contact"];
+    const sectionIds = ["Home", "About", "Gallery", "contact"];
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -42,7 +42,7 @@ export const Navbar = () => {
     const el = document.getElementById(section);
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
-      setIsMenuOpen(false); 
+      setIsMenuOpen(false);
     }
   };
 
@@ -53,18 +53,27 @@ export const Navbar = () => {
         : "border-b-2 border-transparent"
     }`;
 
-  return (
-    <div className="fixed top-0 left-0 right-0 text-blu z-50 bg-neutral-800 text-white px-6 md:px-10 h-16 flex items-center justify-between font-mono tracking-wide font-medium">
-      <div className="text-2xl font-playfair font-bold">Gemstone Boutique</div>
+  const navItems = [
+    { id: "Home", label: "Home" },
+    { id: "About", label: "About Us" },
+    { id: "Gallery", label: "Gallery" },
+    { id: "contact", label: "Contact Us" },
+  ];
 
-      <div className="hidden md:flex gap-10 text-lg">
-        {["Home", "About", "gallery", "contact"].map((section) => (
+  return (
+    <div className="fixed top-0 left-0 right-0 text-blu z-50 bg-neutral-800 text-[#EAEFF3] px-6 md:px-10 h-16 flex items-center justify-between font-mono tracking-wide font-medium">
+      <div className="text-2xl font-playfair font-bold mx-7">
+        Gemstone Boutique
+      </div>
+
+      <div className="hidden md:flex gap-16 mr-20 text-lg">
+        {navItems.map(({ id, label }) => (
           <span
-            key={section}
-            onClick={() => handleNavClick(section)}
-            className={linkClass(section)}
+            key={id}
+            onClick={() => handleNavClick(id)}
+            className={linkClass(id)}
           >
-            {section === "contact" ? "Contact us" : section}
+            {label}
           </span>
         ))}
       </div>
@@ -77,13 +86,13 @@ export const Navbar = () => {
 
       {isMenuOpen && (
         <div className="absolute top-16 left-0 w-full bg-neutral-900 text-white flex flex-col gap-6 px-6 py-6 md:hidden">
-          {["Home", "About", "gallery", "contact"].map((section) => (
+          {navItems.map(({ id, label }) => (
             <span
-              key={section}
-              onClick={() => handleNavClick(section)}
-              className={`text-lg ${linkClass(section)}`}
+              key={id}
+              onClick={() => handleNavClick(id)}
+              className={`text-lg ${linkClass(id)}`}
             >
-              {section === "contact" ? "Contact us" : section}
+              {label}
             </span>
           ))}
         </div>
