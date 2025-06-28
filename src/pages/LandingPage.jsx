@@ -34,7 +34,7 @@ export const Landing = () => {
                 </button>
                 </MovingButton>
               </div>
-              <div className="w-[700px] p-2  grid-cols-2  grid mt-1 bg-white rounded-xl">
+              <div className="w-[700px] p-2  grid-cols-2  grid mt-12 bg-white rounded-xl">
                 <div className="flex  justify-center items-center">
                 <img src="./diploma.png" alt="" className="w-14 h-14 "/>
                 <div className="text-xs  m-5 font-normal">
