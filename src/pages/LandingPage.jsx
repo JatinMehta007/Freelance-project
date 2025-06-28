@@ -10,13 +10,13 @@ export const Landing = () => {
           <div className="">
             {/* <img src="./background.jpeg" alt="" className="rotate-90 h-[1180px]  relative bottom-[150px] opacity-90" />
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_90%,black)]"></div> */}
-            <div className=" relative  w-[100%]  left-15 z-30 top-24 text-6xl md:text-8xl">
+            <div className=" relative  w-[100%]  left-15 z-30 top-32 text-6xl md:text-7xl">
               <p className=" font-light  text-indigo-100  ">
                 Find The Perfect{" "}
               </p>
               {/* <ColourfulText text="Gemstone Boutique" /> */}
               <p className="  bottom-1 font-light text-indigo-100">Gemstone </p>
-              <p className="text-xl  w-[50%] mt-5  text-white font-light">
+              <p className="text-xl  w-[55%] mt-5  text-white font-light">
                 With 25 years of expertise in the gemstone industry, we can help
                 you find the perfect stone tailored to your needs. Trust our
                 legacy to guide your choice with precision and care. 100%
@@ -34,7 +34,7 @@ export const Landing = () => {
                 </button>
                 </MovingButton>
               </div>
-              <div className="w-[800px] p-2  grid-cols-2  grid mt-6 bg-white rounded-xl">
+              <div className="w-[700px] p-2  grid-cols-2  grid mt-1 bg-white rounded-xl">
                 <div className="flex  justify-center items-center">
                 <img src="./diploma.png" alt="" className="w-14 h-14 "/>
                 <div className="text-xs  m-5 font-normal">
@@ -59,10 +59,10 @@ export const Landing = () => {
               <img
                 src="./back1.png"
                 alt=""
-                className="rounded-full absolute w-72 top-[20%] right-[23%]"
+                className="rounded-full absolute w-72 top-[20%] right-[25%]"
               />
             </div>
-            <div className="w-[800px] mt-[20%] overflow-hidden">
+            <div className="w-[800px] mt-[25%] overflow-hidden">
               <img src="./backs2.jpg" alt="" className="rounded-full w-full" />
             </div>
           </div>
