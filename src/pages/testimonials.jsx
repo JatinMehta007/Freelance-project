@@ -1,19 +1,27 @@
-import React, { useState } from "react";
-import { FaStar } from "react-icons/fa";
+import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { FaStar } from "react-icons/fa";
 
 const testimonials = [
   {
-    text: `In love with the accuracy and quality! Thanks for the amazing support throughout the manufacturing process and on-time delivery, specifically with changing requirements.`,
+    text: "In love with the accuracy and quality! Thanks for the amazing support.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores delectus maiores ullam eveniet maxime doloribus explicabo reprehenderit non harum.",
     author: "CK (Exporter)",
   },
   {
-    text: `Truly impressed by the commitment to quality and service. Reliable and precise.`,
+    text: "Truly impressed by the commitment to quality and service.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores delectus maiores ullam eveniet maxime doloribus explicabo reprehenderit non harum.",
     author: "AK (Retailer)",
   },
   {
-    text: `Exceptional experience working with your team. Transparent communication and timely delivery!`,
+    text: "Exceptional experience working with your team!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores delectus maiores ullam eveniet maxime doloribus explicabo reprehenderit non harum.",
     author: "PK (Buyer)",
+  },
+  {
+    text: "Product quality is top-notch. We'll definitely order again.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores delectus maiores ullam eveniet maxime doloribus explicabo reprehenderit non harum.",
+    author: "MK (Retail Buyer)",
+  },
+  {
+    text: "Loved the transparency and timely updates.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores delectus maiores ullam eveniet maxime doloribus explicabo reprehenderit non harum.",
+    author: "TK (Wholesaler)",
   },
 ];
 
@@ -21,57 +29,83 @@ export const TestimonialSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prev = () => {
-    setCurrentIndex(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1);
+    setCurrentIndex((prev) =>
+      prev === 0 ? testimonials.length - 1 : prev - 1
+    );
   };
 
   const next = () => {
-    setCurrentIndex(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1);
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
   };
 
-  const getTestimonial = (offset) => {
-    return testimonials[(currentIndex + offset + testimonials.length) % testimonials.length];
-  };
+  const getIndex = (offset) =>
+    (currentIndex + offset + testimonials.length) % testimonials.length;
 
   return (
     <div
-      className="relative w-full h-screen flex items-center justify-center bg-cover bg-center"
+      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center px-4"
       style={{ backgroundImage: "url('/testimonial.jpeg')" }}
     >
-          {/* <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent pointer-events-none"></div> */}
       {/* Left Arrow */}
       <button
         onClick={prev}
-        className="absolute left-8 bg-white text-black rounded-full p-3 shadow-lg hover:bg-black hover:text-white transition"
+        className="absolute left-4 md:left-8 bg-white text-black rounded-full p-3 shadow-md hover:bg-black hover:text-white transition z-10"
       >
         <ChevronLeft size={24} />
       </button>
 
-      {/* Testimonials Grid */}
-      <div className="grid grid-cols-3 gap-20 px-10 w-full max-w-[1200px]">
-        {[getTestimonial(-1), getTestimonial(0), getTestimonial(1)].map((item, i) => (
-          <div
-            key={i}
-            className={`rounded-md p-10 bg-black/60 text-white text-center shadow-md backdrop-blur-md border border-white/10 ${
-              i === 1 ? "scale-125 bg-black" : ""
-            } transition-transform duration-300`}
-          >
-            <div className="flex justify-center gap-1 mb-4 text-yellow-400">
+      <div className="flex relative w-full max-w-7xl h-80 justify-center items-center overflow-hidden">
+      
+        <div className="hidden lg:flex w-full justify-center items-center relative h-full">
+          {[getIndex(1), getIndex(0), getIndex(-1)].map((i, idx) => {
+            const item = testimonials[i];
+            const positionClass =
+              idx === 0
+                ? "translate-x-[-120%] scale-90 opacity-50 z-0"
+                : idx === 1
+                ? "translate-x-0 scale-110 opacity-100 z-10"
+                : "translate-x-[120%] scale-90 opacity-50 z-0";
+
+            return (
+              <div
+                key={i}
+                className={`absolute transition-all duration-700 ease-in-out w-[90%] sm:w-[40%] lg:w-[30%] h-72 p-6 rounded-xl backdrop-blur-md border border-white/10 text-white bg-black/60 ${positionClass}`}
+              >
+                <div className="flex justify-center gap-1 text-yellow-400 mb-3">
+                  {Array(5)
+                    .fill()
+                    .map((_, i) => (
+                      <FaStar key={i} />
+                    ))}
+                </div>
+                <p className="text-sm md:text-base mb-3 leading-relaxed">{item.text}</p>
+                <p className="text-sm font-semibold">- {item.author}</p>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="lg:hidden w-full flex justify-center items-center">
+          <div className="w-full sm:w-[80%] md:w-[60%] h-72 p-6 rounded-xl backdrop-blur-md border border-white/10 text-white bg-black/60 transition-all duration-500 ease-in-out">
+            <div className="flex justify-center gap-1 text-yellow-400 mb-3">
               {Array(5)
                 .fill()
                 .map((_, i) => (
                   <FaStar key={i} />
                 ))}
             </div>
-            <p className="text-sm md:text-base leading-relaxed mb-4">{item.text}</p>
-            <p className="text-xs md:text-sm font-semibold">- {item.author}</p>
+            <p className="text-sm md:text-base mb-3 leading-relaxed">
+              {testimonials[currentIndex].text}
+            </p>
+            <p className="text-sm font-semibold">- {testimonials[currentIndex].author}</p>
           </div>
-        ))}
+        </div>
       </div>
 
       {/* Right Arrow */}
       <button
         onClick={next}
-        className="absolute right-8 bg-white text-black rounded-full p-3 shadow-lg hover:bg-black hover:text-white transition"
+        className="absolute right-4 md:right-8 bg-white text-black rounded-full p-3 shadow-md hover:bg-black hover:text-white transition z-10"
       >
         <ChevronRight size={24} />
       </button>
