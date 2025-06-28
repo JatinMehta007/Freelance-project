@@ -61,10 +61,10 @@ export const TestimonialSlider = () => {
             const item = testimonials[i];
             const positionClass =
               idx === 0
-                ? "translate-x-[-120%] scale-90 opacity-50 z-0"
+                ? "translate-x-[-120%] scale-90 opacity-80 blur-xs z-0"
                 : idx === 1
                 ? "translate-x-0 scale-110 opacity-100 z-10"
-                : "translate-x-[120%] scale-90 opacity-50 z-0";
+                : "translate-x-[120%] scale-90 opacity-80 blur-xs z-0";
 
             return (
               <div
@@ -78,7 +78,7 @@ export const TestimonialSlider = () => {
                       <FaStar key={i} />
                     ))}
                 </div>
-                <p className="text-sm md:text-base mb-3 leading-relaxed">{item.text}</p>
+                <p className="text-sm md:text-base mb-3 leading-relaxed ">{item.text}</p>
                 <p className="text-sm font-semibold">- {item.author}</p>
               </div>
             );
