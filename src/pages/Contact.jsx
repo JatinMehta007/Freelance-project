@@ -49,29 +49,31 @@ export const Contact = () => {
 //   };
 
   return (
-        <div className="p-10 text-white bg-gradient-to-r from-neutral-800 via-neutral-800 to-neutral-800" id="contact">
+        <div className="p-10 grid grid-cols-2 gap-10 text-white bg-gradient-to-r from-neutral-800 via-neutral-800 to-neutral-800" id="contact">
+          <div>
+
         <p className="text-6xl font-black text-center  font-playfair">Contact us</p>
             
         <p className="text-center text-lg  p-4 font-gentium">Reach out to us over email or fill up this contact form. We will get back to you ASAP - We promise.</p>
     <div className="flex justify-center items-center " >
       {/* Toaster for notifications */}
       <Toaster />
-      <form className="form" >
+      <form className="form w-[100%]" >
 
-        <div className="flex  flex-col md:flex-row w-[900px] justify-between gap-5">
+        <div className="flex  flex-col md:flex-row  justify-between gap-5">
           <input
             type="text"
             placeholder="Your Name"
             className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm  text-neutral-700 w-full"
             // value={formData.name.value}
             onChange={(e) => {
-                setFormData({
-                    ...formData,
-                    name: {
-                        value: e.target.value,
-                        error: "",
-                    },
-                });
+              setFormData({
+                ...formData,
+                name: {
+                  value: e.target.value,
+                  error: "",
+                },
+              });
             }}
             />
           <input
@@ -80,13 +82,13 @@ export const Contact = () => {
             className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
             // value={formData.email.value}
             onChange={(e) => {
-                setFormData({
-                    ...formData,
-                    email: {
-                        value: e.target.value,
-                        error: "",
-                    },
-                });
+              setFormData({
+                ...formData,
+                email: {
+                  value: e.target.value,
+                  error: "",
+                },
+              });
             }}
             />
         </div>
@@ -97,13 +99,13 @@ export const Contact = () => {
             className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 mt-4 py-2 rounded-md text-sm text-neutral-700 w-full"
             // value={formData.message.value}
             onChange={(e) => {
-                setFormData({
-                    ...formData,
-                    message: {
-                        value: e.target.value,
-                        error: "",
-                    },
-                });
+              setFormData({
+                ...formData,
+                message: {
+                  value: e.target.value,
+                  error: "",
+                },
+              });
             }}
             />
         </div>
@@ -115,6 +117,21 @@ export const Contact = () => {
         </button>
       </form>
             </div>
+            </div>
+                      <div>
+            <iframe
+              className=" w-[100%] h-[100%] "
+              // width="100%"
+              // height="300"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Graf123%20Education%20Lane,%20Cityville,%20State,%20ZIP%20Codeton%20Street,%20Dublin,%20Ireland+(Springdale%20Public%20School)&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            >
+              <a href="https://www.gps.ie/">gps trackers</a>
+            </iframe>
+          </div>
     </div>
   );
 };
