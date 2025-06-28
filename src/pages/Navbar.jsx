@@ -61,9 +61,9 @@ export const Navbar = () => {
   ];
  
   return (
-    <div className="fixed top-0 left-0 right-0 text-blu z-50 bg-neutral-800 text-[#EAEFF3] px-6 md:px-10 h-16 flex items-center justify-between font-mono tracking-wide font-medium">
-      <div style={{ fontFamily: '"Times New Roman", Times, serif' }}  className="text-2xl font-bold mx-7">
-        Gemstone Boutique
+    <div style={{ fontFamily: '"Times New Roman", Times, serif' }}   className="fixed top-0 left-0 right-0 text-blu z-50 bg-neutral-800 text-[#EAEFF3] px-6 md:px-10 h-16 flex items-center justify-between font-mono tracking-wide font-medium">
+      <div className="text-2xl tracking-wider font-bold mx-10">
+        Gemstones Boutique
       </div>
 
       <div className="hidden md:flex gap-16 mr-20 text-lg">
