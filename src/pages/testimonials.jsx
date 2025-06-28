@@ -4,23 +4,23 @@ import { FaStar } from "react-icons/fa";
 
 const testimonials = [
   {
-    text: "In love with the accuracy and quality! Thanks for the amazing support.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores delectus maiores ullam eveniet maxime doloribus explicabo reprehenderit non harum.",
+    text: "In love with the accuracy and quality! Thanks for the amazing support.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores ",
     author: "CK (Exporter)",
   },
   {
-    text: "Truly impressed by the commitment to quality and service.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores delectus maiores ullam eveniet maxime doloribus explicabo reprehenderit non harum.",
+    text: "Truly impressed by the commitment to quality and service.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores ",
     author: "AK (Retailer)",
   },
   {
-    text: "Exceptional experience working with your team!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores delectus maiores ullam eveniet maxime doloribus explicabo reprehenderit non harum.",
+    text: "Exceptional experience working with your team!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores ",
     author: "PK (Buyer)",
   },
   {
-    text: "Product quality is top-notch. We'll definitely order again.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores delectus maiores ullam eveniet maxime doloribus explicabo reprehenderit non harum.",
+    text: "Product quality is top-notch. We'll definitely order again.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores ",
     author: "MK (Retail Buyer)",
   },
   {
-    text: "Loved the transparency and timely updates.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores delectus maiores ullam eveniet maxime doloribus explicabo reprehenderit non harum.",
+    text: "Loved the transparency and timely updates.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum autem fuga itaque molestias sint, nulla nisi, dolor dolore dolores delectus maiores ul",
     author: "TK (Wholesaler)",
   },
 ];
@@ -54,52 +54,42 @@ export const TestimonialSlider = () => {
         <ChevronLeft size={24} />
       </button>
 
-      <div className="flex relative w-full max-w-7xl h-80 justify-center items-center overflow-hidden">
+      <div className="flex relative w-full max-w-7xl h-[500px] justify-center items-center overflow-hidden">
       
         <div className="hidden lg:flex w-full justify-center items-center relative h-full">
           {[getIndex(1), getIndex(0), getIndex(-1)].map((i, idx) => {
             const item = testimonials[i];
             const positionClass =
               idx === 0
-                ? "translate-x-[-120%] scale-90 opacity-80 blur-sm z-0"
+                ? "translate-x-[-120%] scale-90 opacity-60  z-0"
                 : idx === 1
                 ? "translate-x-0 scale-110 opacity-100 z-10"
-                : "translate-x-[120%] scale-90 opacity-80 blur-sm z-0";
+                : "translate-x-[120%] scale-90 opacity-60  z-0";
 
             return (
               <div
                 key={i}
-                className={`absolute transition-all duration-700 ease-in-out w-[90%] sm:w-[40%] lg:w-[30%] h-72 p-6 rounded-xl backdrop-blur-md border border-white/10 text-white bg-black/60 ${positionClass}`}
+                className={`absolute transition-all duration-700 ease-in-out w-[90%] sm:w-[40%] lg:w-[27%] h-[450px]  backdrop-blur-md border  border-white/10 text-white bg-black ${positionClass}`}
               >
-                <div className="flex justify-center gap-1 text-yellow-400 mb-3">
+                <div className=" bg-[#DCD3CB] h-14   flex justify-center items-center">
+                <div className="flex justify-center text-2xl  gap-1 text-[#AF9D81]">
                   {Array(5)
                     .fill()
                     .map((_, i) => (
                       <FaStar key={i} />
                     ))}
                 </div>
-                <p className="text-sm md:text-base mb-3 leading-relaxed ">{item.text}</p>
-                <p className="text-sm font-semibold">- {item.author}</p>
+                    </div>
+                    <div className="p-6">
+                <p className="text-sm md:text-lg text-center mb-3  font-playfair">{item.text}</p>
+                <p className="text-2xl font-semibold text-center font-playfair">- {item.author}</p>
+                    </div>
               </div>
             );
           })}
         </div>
 
-        <div className="lg:hidden w-full flex justify-center items-center">
-          <div className="w-full sm:w-[80%] md:w-[60%] h-72 p-6 rounded-xl backdrop-blur-md border border-white/10 text-white bg-black/60 transition-all duration-500 ease-in-out">
-            <div className="flex justify-center gap-1 text-yellow-400 mb-3">
-              {Array(5)
-                .fill()
-                .map((_, i) => (
-                  <FaStar key={i} />
-                ))}
-            </div>
-            <p className="text-sm md:text-base mb-3 leading-relaxed">
-              {testimonials[currentIndex].text}
-            </p>
-            <p className="text-sm font-semibold">- {testimonials[currentIndex].author}</p>
-          </div>
-        </div>
+       
       </div>
 
       {/* Right Arrow */}
