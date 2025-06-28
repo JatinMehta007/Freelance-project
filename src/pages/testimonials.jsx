@@ -61,7 +61,7 @@ export const TestimonialSlider = () => {
             const item = testimonials[i];
             const positionClass =
               idx === 0
-                ? "translate-x-[-120%] scale-90 opacity-80 blur-xs z-0"
+                ? "translate-x-[-120%] scale-90 opacity-80 blur-sm z-0"
                 : idx === 1
                 ? "translate-x-0 scale-110 opacity-100 z-10"
                 : "translate-x-[120%] scale-90 opacity-80 blur-xs z-0";
