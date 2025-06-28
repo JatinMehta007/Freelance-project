@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export const Button = () => {
   const slides = [
-   "/lapis.jpg",
+    "/lapis.jpg",
     "/oyster.jpeg",
     "/tigers.jpg",
     "/rhodonite.jpg",
@@ -17,53 +17,86 @@ export const Button = () => {
   ];
 
   const visibleCount = 4;
-  const totalIndicators = 4;
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const groupCount = Math.ceil(slides.length / visibleCount);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+  const slideGroups = Array.from({ length: groupCount }, (_, i) =>
+    slides.slice(i * visibleCount, i * visibleCount + visibleCount)
+  );
+
+  const extendedGroups = [
+    slideGroups[slideGroups.length - 1],
+    ...slideGroups,
+    slideGroups[0],
+  ];
+
+  const [currentGroup, setCurrentGroup] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const sliderRef = useRef(null);
+
+  const goToGroup = (index) => {
+    setIsTransitioning(true);
+    setCurrentGroup(index);
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide();
-    }, 2000);
+      goToGroup(currentGroup + 1);
+    }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [currentGroup]);
 
-  const getVisibleSlides = () => {
-    return Array.from({ length: visibleCount }, (_, i) => {
-      return slides[(currentIndex + i) % slides.length];
-    });
-  };
-
-  const visibleSlides = getVisibleSlides();
-  const activeIndicator = currentIndex % totalIndicators;
+  useEffect(() => {
+    if (currentGroup === extendedGroups.length - 1) {
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentGroup(1);
+      }, 700);
+    } else if (currentGroup === 0) {
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentGroup(extendedGroups.length - 2);
+      }, 700);
+    }
+  }, [currentGroup]);
 
   return (
-    <div className="hidden md:block bg-neutral-700">
-      {/* Image Grid */}
-      <div className="grid grid-cols-4 m-11 gap-10">
-        {visibleSlides.map((img, index) => (
-          <div
-            key={`${currentIndex}-${index}`}
-            className="w-full h-[270px] rounded-xl bg-center bg-cover transition-opacity duration-700 ease-in-out opacity-100"
-            style={{
-              backgroundImage: `url(${img})`,
-            }}
-          />
-        ))}
+    <div className="hidden md:block p-10 bg-neutral-700 overflow-hidden">
+      {/* Slider */}
+      <div className="w-full overflow-hidden flex justify-center">
+        <div
+          ref={sliderRef}
+          className={`flex ${isTransitioning ? "transition-transform duration-700 ease-in-out" : ""}`}
+          style={{
+            transform: `translateX(-${currentGroup * 100}%)`,
+            width: `${extendedGroups.length * 100}%`,
+          }}
+        >
+          {extendedGroups.map((group, groupIndex) => (
+            <div
+              key={groupIndex}
+              className="flex gap-10 justify-center w-full shrink-0"
+            >
+              {group.map((img, index) => (
+                <div
+                  key={index}
+                  className="w-[22%] h-[270px] rounded-xl bg-center bg-cover"
+                  style={{ backgroundImage: `url(${img})` }}
+                />
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
 
-      {/* Circular Slide Indicators */}
-      <div className="flex justify-center items-center space-x-4 mb-10">
-        {[...Array(totalIndicators)].map((_, i) => (
+      {/* Indicators */}
+      <div className="flex justify-center items-center space-x-4 my-10">
+        {Array.from({ length: groupCount }).map((_, i) => (
           <div
             key={i}
             className={`h-[4px] w-10 rounded-full transition-all duration-300 ${
-              i === activeIndicator ? "bg-yellow-400" : "bg-white/30"
+              i + 1 === currentGroup ? "bg-yellow-400" : "bg-white/30"
             }`}
-          ></div>
+          />
         ))}
       </div>
     </div>
