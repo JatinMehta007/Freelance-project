@@ -71,7 +71,7 @@ export const TestimonialSlider = () => {
                 key={i}
                 className={`absolute transition-all duration-700 ease-in-out w-[90%] sm:w-[40%] lg:w-[27%] h-[450px]  backdrop-blur-md border  border-white/10 text-white bg-black ${positionClass}`}
               >
-                <div className=" bg-[#DCD3CB] h-14   flex justify-center items-center">
+                <div className=" bg-[#DCD3CB] h-18   flex justify-center items-center">
                 <div className="flex justify-center text-2xl  gap-1 text-[#AF9D81]">
                   {Array(5)
                     .fill()
@@ -81,8 +81,8 @@ export const TestimonialSlider = () => {
                 </div>
                     </div>
                     <div className="p-6">
-                <p className="text-sm md:text-lg text-center mb-3  font-playfair">{item.text}</p>
-                <p className="text-2xl font-semibold text-center font-playfair">- {item.author}</p>
+                <p style={{ fontFamily: '"Times New Roman", Times, serif' }}  className="text-sm md:text-lg text-center mb-3  ">{item.text}</p>
+                <p style={{ fontFamily: '"Times New Roman", Times, serif' }}  className="text-2xl font-semibold text-center font-playfair">- {item.author}</p>
                     </div>
               </div>
             );
