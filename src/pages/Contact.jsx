@@ -49,7 +49,7 @@ export const Contact = () => {
 
   return (
     <div
-      className="p-10 grid grid-cols-2 gap-10 text-white bg-gradient-to-r from-neutral-800 via-neutral-800 to-neutral-800"
+      className="p-10 grid grid-cols-[40%_60%] gap-10 text-white bg-gradient-to-r from-neutral-800 via-neutral-800 to-neutral-800"
       id="contact"
     >
       <div>
