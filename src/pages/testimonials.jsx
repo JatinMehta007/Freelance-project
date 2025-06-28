@@ -69,7 +69,7 @@ export const TestimonialSlider = () => {
             return (
               <div
                 key={i}
-                className={`absolute transition-all duration-700 ease-in-out w-[90%] sm:w-[40%] lg:w-[27%] h-[450px]  backdrop-blur-md border  border-white/10 text-white bg-black ${positionClass}`}
+                className={`absolute transition-all duration-700 ease-in-out w-[90%] sm:w-[40%] lg:w-[27%] h-[450px]  backdrop-blur-md  text-white bg-black ${positionClass}`}
               >
                 <div className=" bg-[#DCD3CB] h-18   flex justify-center items-center">
                 <div className="flex justify-center text-2xl  gap-1 text-[#AF9D81]">
