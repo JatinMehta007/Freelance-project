@@ -60,7 +60,7 @@ export const Button = () => {
   }, [currentGroup]);
 
   return (
-    <div className="hidden md:block p-10 bg-neutral-700 overflow-hidden">
+    <div className="hidden md:block pt-14 bg-neutral-700 overflow-hidden">
       {/* Slider */}
       <div className="w-full overflow-hidden flex justify-center">
         <div
@@ -89,7 +89,7 @@ export const Button = () => {
       </div>
 
       {/* Indicators */}
-      <div className="flex justify-center items-center space-x-4 my-10">
+      <div className="flex justify-center items-center space-x-4 py-7">
         {Array.from({ length: groupCount }).map((_, i) => (
           <div
             key={i}
