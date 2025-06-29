@@ -9,19 +9,19 @@ export const About = () => {
         <img
           src="/about2.png"
           alt=""
-          className="w-[200px] absolute mt-[630px]  h-[200px]"
+          className="w-[200px] absolute mt-[570px]  h-[200px]"
         />
         <div className="pt-20 ">
-          <div className="max-w-[90%] md:w-[86%] mx-auto">
+          <div className="max-w-[100%] mx-auto">
             {/* Heading */}
-            <h2 className="text-[#CBBBB9] text-6xl font-medium mb-10">
+            <h2 className="text-[#CBBBB9] ml-24 text-6xl font-medium  mb-10">
               Know More About Us
             </h2>
 
             {/* Responsive Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 items-start">
+            <div className="grid grid-cols-1  md:grid-cols-2 items-start">
               {/* Left Column: Text */}
-              <div className="text-[#B8B7C1] font-normal  text-xl space-y-6 w-[105%]  tracking-wider z-10">
+              <div className="text-[#B8B7C1]  font-normal  text-xl space-y-6 w-[90%] ml-24  tracking-wider z-10">
                 <p className="">
                   Welcome to the heart of Gemstones Boutique. We have been
                   dedicated to the art and science of bringing the earth's most
@@ -42,21 +42,16 @@ export const About = () => {
                   we’re with you at every step offering expert guidance,
                   transparent processes, and unmatched quality.
                 </p>
-                <p>
-                  From the moment you consider a purchase to the final delivery,
-                  we’re with you at every step offering expert guidance,
-                  transparent processes, and unmatched quality.
-                </p>
               </div>
-
-              {/* Right Column: Image */}
-              <div className="w-full flex justify-center items-start  z-0">
+              <div className="w-full flex justify-center items-end z-0">
                 <img
                   src="/about1.png"
                   alt="Gemstones"
-                  className="w-full shadow-lg object-cover relative right-10"
+                  className="w-[80%] ml-[25%] shadow-lg object-cover relative bottom-10"
                 />
               </div>
+
+              {/* Right Column: Image */}
             </div>
           </div>
         </div>
@@ -69,7 +64,7 @@ export const About = () => {
           <p className="text-8xl  mb-4">Why it all</p>
           <p className="text-8xl ml-[24%] italic mt-10">Began</p>
           <img src="/arrow.png" alt="" className="text-white absolute" />
-          <p className="text-xl w-[80%] mt-24 ml-[24%] ">
+          <p className="text-xl text-[#B8B7C1]   font-normal w-[80%] mt-24 ml-[24%] ">
             Hi, I am Inder. For me it all began when I joined the industry at
             the age of 16. With this venture I wish to create precise gemstones
             and deliver customer vision. Let’s manufature gemstones together!
@@ -80,9 +75,8 @@ export const About = () => {
           <img
             src="/about6.png"
             alt="Vision Visual"
-            className="  object-cover w-[65%] right-0"
+            className="  object-cover w-[65%] relative bottom-1"
           />
-          
         </div>
       </div>
 
@@ -101,7 +95,12 @@ export const About = () => {
             next 5-10 years and raise the bar for gemstone manufacturing by
             redefining standards in precision and reliability.
           </p>
-          <button className="rounded-full flex justify-center items-center bg-white mt-10 text-black text-xl px-14 py-2">Reach us now <span className="text-2xl absolute ml-44 rounded-full ">→</span></button>
+          <button className="rounded-full flex justify-center items-center bg-white mt-10 text-black text-xl px-14 py-2">
+            Reach us now
+            <span className="text-xl w-10 h-10 flex items-center justify-center absolute ml-44 rounded-full bg-[radial-gradient(circle_at_50%_50%,_#fae4db,_#cfbaba,_#fffafa)]">
+              →
+            </span>
+          </button>
         </div>
         <img src="/vision.jpeg" alt="" className="  w-screen h-screen" />
       </div>
