@@ -8,7 +8,7 @@ export const Landing = () => {
         {/* Overlayed Text */}
         <div className="grid grid-cols-[40%_60%] ">
           <div className="">
-            <div className=" relative  w-[100%]  left-20 z-30 top-32 text-6xl md:text-7xl">
+            <div className=" relative  w-[100%]  left-24 z-30 top-32 text-6xl md:text-7xl">
               <p  className=" font-normal font-s text-[#CBBBB9]  ">
                 Find The Perfect{" "}
               </p>
