@@ -65,22 +65,22 @@ export const About = () => {
         style={{ fontFamily: '"Times New Roman", Times, serif' }}
         className="grid grid-cols-1 md:grid-cols-[50%_50%] gap-10 bg-neutral-800"
       >
-        <div className="text-left text-[#FFF7EF] m-20 mt-20">
+        <div className="text-left text-[#FFF7EF] m-24 mt-20">
           <p className="text-8xl  mb-4">Why it all</p>
-          <p className="text-8xl ml-[20%] italic mt-10">Began</p>
+          <p className="text-8xl ml-[24%] italic mt-10">Began</p>
           <img src="/arrow.png" alt="" className="text-white absolute" />
-          <p className="text-xl w-[80%] mt-24 ml-[20%] ">
+          <p className="text-xl w-[80%] mt-24 ml-[24%] ">
             Hi, I am Inder. For me it all began when I joined the industry at
             the age of 16. With this venture I wish to create precise gemstones
             and deliver customer vision. Let’s manufature gemstones together!
           </p>
         </div>
 
-        <div className="relative top-16">
+        <div className="flex justify-center items-center">
           <img
             src="/about6.png"
             alt="Vision Visual"
-            className="  object-cover w-[65%] right-0"
+            className="  object-cover w-[60%] right-0"
           />
           
         </div>
