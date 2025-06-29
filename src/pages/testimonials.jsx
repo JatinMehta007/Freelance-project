@@ -80,8 +80,8 @@ export const TestimonialSlider = () => {
                     ))}
                 </div>
                     </div>
-                    <div className="p-6">
-                <p style={{ fontFamily: '"Times New Roman", Times, serif' }}  className="text-sm md:text-lg text-center mb-3  ">{item.text}</p>
+                    <div className="p-6 top-1/12 relative">
+                <p style={{ fontFamily: '"Times New Roman", Times, serif' }}  className="text-sm md:text-lg text-center mb-6  ">{item.text}</p>
                 <p style={{ fontFamily: '"Times New Roman", Times, serif' }}  className="text-2xl font-semibold text-center font-playfair">- {item.author}</p>
                     </div>
               </div>
