@@ -80,7 +80,7 @@ export const About = () => {
           <img
             src="/about6.png"
             alt="Vision Visual"
-            className="  object-cover w-[60%] right-0"
+            className="  object-cover w-[65%] right-0"
           />
           
         </div>
