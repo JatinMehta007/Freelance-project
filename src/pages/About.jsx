@@ -11,8 +11,8 @@ export const About = () => {
           alt=""
           className="w-[200px] absolute mt-[630px]  h-[200px]"
         />
-        <div className="pt-20 px-4">
-          <div className="max-w-[90%] md:w-[85%] mx-auto">
+        <div className="pt-20 ">
+          <div className="max-w-[90%] md:w-[86%] mx-auto">
             {/* Heading */}
             <h2 className="text-[#CBBBB9] text-6xl font-medium mb-10">
               Know More About Us
@@ -21,7 +21,7 @@ export const About = () => {
             {/* Responsive Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 items-start">
               {/* Left Column: Text */}
-              <div className="text-[#B8B7C1] font-normal  text-xl space-y-6 w-[110%]  tracking-wider z-10">
+              <div className="text-[#B8B7C1] font-normal  text-xl space-y-6 w-[105%]  tracking-wider z-10">
                 <p className="">
                   Welcome to the heart of Gemstones Boutique. We have been
                   dedicated to the art and science of bringing the earth's most
@@ -50,11 +50,11 @@ export const About = () => {
               </div>
 
               {/* Right Column: Image */}
-              <div className="w-full flex justify-center items-start z-0">
+              <div className="w-full flex justify-center items-start  z-0">
                 <img
                   src="/about1.png"
                   alt="Gemstones"
-                  className="w-full shadow-lg object-cover"
+                  className="w-full shadow-lg object-cover relative right-10"
                 />
               </div>
             </div>
@@ -76,18 +76,18 @@ export const About = () => {
           </p>
         </div>
 
-        <div className="relative top-12">
+        <div className="relative top-16">
           <img
             src="/about6.png"
             alt="Vision Visual"
-            className="  object-cover right-0"
+            className="  object-cover w-[65%] right-0"
           />
           
         </div>
       </div>
 
       <div>
-        <div className="text-left text-white m-20 mt-[20%] absolute ">
+        <div className="text-left text-white m-24 mt-[20%] absolute ">
           <p className="text-3xl  mb-4 uppercase tracking-wider">Our Vision</p>
           <p className="text-6xl uppercase mt-5 font-bold tracking-wider">
             To redefine
