@@ -2,82 +2,108 @@ export const About = () => {
   return (
     <>
       <div
+        style={{ fontFamily: '"Times New Roman", Times, serif' }}
         id="About"
-        className="relative overflow-hidden bg-black text-center min-h-screen"
+        className="overflow-hidden bg-black min-h-screen"
       >
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/shiny.jpg"
-            alt="Background"
-            className="w-full h-full object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
-        </div>
+        <img
+          src="/about2.png"
+          alt=""
+          className="w-[200px] absolute mt-[630px]  h-[200px]"
+        />
+        <div className="pt-20 px-4">
+          <div className="max-w-[90%] md:w-[85%] mx-auto">
+            {/* Heading */}
+            <h2 className="text-[#CBBBB9] text-6xl font-medium mb-10">
+              Know More About Us
+            </h2>
 
-        <div className="relative z-10 px-6 md:px-10">
-          <div className="max-w-6xl mx-auto py-20">
-            <p className="text-indigo-100 text-6xl uppercase font-medium mb-6">
-              Know more About US
-            </p>
-            <p className="text-indigo-100 text-2xl mb-10">
-              About Our Brand & Journey
-            </p>
+            {/* Responsive Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 items-start">
+              {/* Left Column: Text */}
+              <div className="text-[#B8B7C1] font-normal  text-xl space-y-6 w-[110%]  tracking-wider z-10">
+                <p className="">
+                  Welcome to the heart of Gemstones Boutique. We have been
+                  dedicated to the art and science of bringing the earth's most
+                  precious treasures to life.
+                </p>
+                <p>
+                  With over 25 years of industry experience, our founder
+                  recognized a growing gap in customer satisfaction and set out
+                  to transform the gemstone buying experience.
+                </p>
+                <p>
+                  What began as a vision a few years ago has now evolved into a
+                  trusted name in authentic gemstone sourcing and personalized
+                  service.
+                </p>
+                <p>
+                  From the moment you consider a purchase to the final delivery,
+                  we’re with you at every step offering expert guidance,
+                  transparent processes, and unmatched quality.
+                </p>
+                <p>
+                  From the moment you consider a purchase to the final delivery,
+                  we’re with you at every step offering expert guidance,
+                  transparent processes, and unmatched quality.
+                </p>
+              </div>
 
-            <div className="text-neutral-200 text-lg text-left mx-auto w-full md:w-[80%]">
-              <p className="mb-4">
-                Welcome to the heart of Gemstones Boutique. We have been
-                dedicated to the art and science of bringing the earth's most
-                precious treasures to life. With over 25 years of industry
-                experience, our founder recognized a growing gap in customer
-                satisfaction and set out to transform the gemstone buying
-                experience.
-              </p>
-              <p className="mb-4">
-                Our gemstone manufacturing business has been delivering
-                unparalleled quality and craftsmanship. Based in India, we take
-                pride in offering premium semi-precious stones that cater to
-                diverse client needs across the country.
-              </p>
-              <p className="mb-4">
-                What began as a vision a few years ago has now evolved into a
-                trusted name in authentic gemstone sourcing and personalized
-                service. With a foundation rooted in 30 years of industry
-                expertise, we specialize in the art of gemstone manufacturing.
-                For the past 6 years, our commitment to excellence has earned us
-                a reputation as a trusted partner for clients across India.
-              </p>
-              <p className="mb-4">
-                From the moment you consider a purchase to the final delivery,
-                we’re with you at every step—offering expert guidance,
-                transparent processes, and unmatched quality.
-              </p>
+              {/* Right Column: Image */}
+              <div className="w-full flex justify-center items-start z-0">
+                <img
+                  src="/about1.png"
+                  alt="Gemstones"
+                  className="w-full shadow-lg object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-10 bg-black">
-        <div className="text-left text-white m-20 mt-10">
-          <p className="text-5xl text-indigo-100 mb-4">Our Vision</p>
-          <p className="text-lg w-[80%]">
-            To be the premier global network for chefs where culinary talent is
-            recognized and rewarded, leading to a community that elevates the
-            culinary arts and inspires chefs to achieve their full potential,
-            both creatively and financially. Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Alias exercitationem iste atque
-            repellat dicta minima ad ea non id nihil et dolorem odit
-            reprehenderit, laborum enim quasi quam laboriosam optio?
+      <div
+        style={{ fontFamily: '"Times New Roman", Times, serif' }}
+        className="grid grid-cols-1 md:grid-cols-[50%_50%] gap-10 bg-neutral-800"
+      >
+        <div className="text-left text-[#FFF7EF] m-20 mt-20">
+          <p className="text-8xl  mb-4">Why it all</p>
+          <p className="text-8xl ml-[20%] italic mt-10">Began</p>
+          <img src="/arrow.png" alt="" className="text-white absolute" />
+          <p className="text-xl w-[80%] mt-24 ml-[20%] ">
+            Hi, I am Inder. For me it all began when I joined the industry at
+            the age of 16. With this venture I wish to create precise gemstones
+            and deliver customer vision. Let’s manufature gemstones together!
           </p>
         </div>
 
-        <div className="relative">
+        <div className="relative top-12">
           <img
-            src="/back.jpeg"
+            src="/about6.png"
             alt="Vision Visual"
-            className="h-96 w-full object-cover opacity-60"
+            className="  object-cover right-0"
           />
-          <div className="absolute bottom-0 left-0 w-48 h-full bg-gradient-to-r from-black to-transparent pointer-events-none"></div>
+          
         </div>
+      </div>
+
+      <div>
+        <div className="text-left text-white m-20 mt-[20%] absolute ">
+          <p className="text-3xl  mb-4 uppercase tracking-wider">Our Vision</p>
+          <p className="text-6xl uppercase mt-5 font-bold tracking-wider">
+            To redefine
+          </p>
+          {/* <img src="/arrow.png" alt="" className="text-white absolute" /> */}
+          <p className="text-6xl uppercase font-bold tracking-wider">
+            precision & trust
+          </p>
+          <p className="text-lg w-[35%] mt-10 ">
+            We aspire to become the most trusted gemstone partner globally in
+            next 5-10 years and raise the bar for gemstone manufacturing by
+            redefining standards in precision and reliability.
+          </p>
+          <button className="rounded-full flex justify-center items-center bg-white mt-10 text-black text-xl px-14 py-2">Reach us now <span className="text-2xl absolute ml-44 rounded-full ">→</span></button>
+        </div>
+        <img src="/vision.jpeg" alt="" className="  w-screen h-screen" />
       </div>
     </>
   );
