@@ -68,13 +68,13 @@ export const Gallery = () => {
 
               {/* Centered Text Block */}
               <div className="h-[150px] w-full mt-2.5 flex flex-col justify-center items-center text-center px-4 text-black text-sm">
-                <h3 className="text-lg font-bold mb-2">{item.name}</h3>
+                <h3 className="text-lg font-bold mb-1">{item.name}</h3>
                 {i === 0 && (
                   <>
-                    <p className="text-sm">
+                    <p className="text-lg">
                       <span className="font-semibold">Origin:</span> {item.origin}
                     </p>
-                    <p className="text-sm mt-2">
+                    <p className="text-lg mt-1">
                       <span className="font-semibold">Stock Info:</span> {item.Stock_Information}
                     </p>
                   </>
@@ -84,7 +84,7 @@ export const Gallery = () => {
                     <p className="text-sm text-left">
                       <span className="font-semibold">Popular Use:</span> {item.Popular_Uses}
                     </p>
-                    <p className="text-sm mt-2 text-left">
+                    <p className="text-sm mt-1 text-left">
                       <span className="font-semibold">Interesting Fact:</span> {item.Interesting_Facts}
                     </p>
                   </>
@@ -109,11 +109,11 @@ export const Gallery = () => {
         </button>
 
         {/* Dot Indicators */}
-        <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2">
+        <div className="absolute bottom-2 justify-center items-center left-1/2 transform -translate-x-1/2 flex gap-2">
           {slides.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+              className={`w-2 h-2 rounded-full transition-colors duration-300 ${
                 index === currentIndex ? "bg-gray-800" : "bg-gray-300"
               }`}
             />
