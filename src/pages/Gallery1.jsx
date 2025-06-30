@@ -35,7 +35,7 @@ export const Gallery = () => {
   };
 
   return (
-    <div
+    <div 
       style={{ fontFamily: '"Times New Roman", Times, serif' }}
       className="bg-black min-h-screen w-screen flex flex-col items-center justify-center text-[#B8B7C1]"
     >
@@ -97,13 +97,13 @@ export const Gallery = () => {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute top-1/2 left-2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 transition duration-300 z-10"
+          className="absolute top-1/2 left-2 cursor-pointer transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 transition duration-300 z-10"
         >
           {"<"}
         </button>
         <button
           onClick={nextSlide}
-          className="absolute top-1/2 right-2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 transition duration-300 z-10"
+          className="absolute top-1/2 right-2 cursor-pointer transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 transition duration-300 z-10"
         >
           {">"}
         </button>
