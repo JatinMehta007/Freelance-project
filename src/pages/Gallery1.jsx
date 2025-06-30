@@ -79,6 +79,7 @@ export const Gallery = () => {
               )}
               {i === 1 && (
                 <>
+                <div className="text-left">
                   <p className="text-sm mb-4">
                     <span className="font-semibold">Popular Use:</span> {item.Popular_Uses}
                   </p>
@@ -86,6 +87,7 @@ export const Gallery = () => {
                     <span className="font-semibold">Interesting Fact:</span>{" "}
                     {item.Interesting_Facts}
                   </p>
+                </div>
                 </>
               )}
               </div>
