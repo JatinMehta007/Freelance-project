@@ -35,7 +35,7 @@ export const Gallery = () => {
   };
 
   return (
-    <div 
+    <div
       style={{ fontFamily: '"Times New Roman", Times, serif' }}
       className="bg-black min-h-screen w-screen flex flex-col items-center justify-center text-[#B8B7C1]"
     >
@@ -47,48 +47,47 @@ export const Gallery = () => {
       </p>
 
       {/* Slide Container */}
-      <div className="relative w-[300px] h-[350px] overflow-hidden bg-white shadow-xl">
+      <div className="relative w-[320px] h-[400px] overflow-hidden bg-white shadow-neutral-200 shadow-2xl rounded-md">
         <div
           className="flex transition-transform duration-700 ease-in-out"
           style={{
-            transform: `translateX(-${currentIndex * 300}px)`,
-            width: `${slides.length * 300}px`,
+            transform: `translateX(-${currentIndex * 320}px)`,
+            width: `${slides.length * 320}px`,
           }}
         >
           {slides.map((item, i) => (
             <div
               key={i}
-              className="w-[300px] h-[350px] shrink-0 flex flex-col items-center"
+              className="w-[320px] h-[400px] shrink-0 flex flex-col items-center justify-center px-4 text-center text-black"
             >
               <img
                 src={item.src}
                 alt={item.name}
-                className="w-[85%] h-[180px] object-contain pt-4"
+                className="w-[85%] h-[160px] object-contain mb-4"
               />
-
-              {/* Centered Text Block */}
-              <div className="h-[150px] w-full mt-2.5 flex flex-col justify-center items-center text-center px-4 text-black text-sm">
-                <h3 className="text-lg font-bold mb-1">{item.name}</h3>
-                {i === 0 && (
-                  <>
-                    <p className="text-lg">
-                      <span className="font-semibold">Origin:</span> {item.origin}
-                    </p>
-                    <p className="text-lg mt-1">
-                      <span className="font-semibold">Stock Info:</span> {item.Stock_Information}
-                    </p>
-                  </>
-                )}
-                {i === 1 && (
-                  <>
-                    <p className="text-sm text-left">
-                      <span className="font-semibold">Popular Use:</span> {item.Popular_Uses}
-                    </p>
-                    <p className="text-sm mt-1 text-left">
-                      <span className="font-semibold">Interesting Fact:</span> {item.Interesting_Facts}
-                    </p>
-                  </>
-                )}
+              <h3 className="text-xl font-bold mb-4">{item.name}</h3>
+              <div className="w-[90%]">
+              {i === 0 && (
+                <>
+                  <p className="text-sm mb-4 text-center">
+                    <span className="font-semibold">Origin:</span> {item.origin}
+                  </p>
+                  <p className="text-sm text-center">
+                    <span className="font-semibold">Stock Info:</span> {item.Stock_Information}
+                  </p>
+                </>
+              )}
+              {i === 1 && (
+                <>
+                  <p className="text-sm mb-4">
+                    <span className="font-semibold">Popular Use:</span> {item.Popular_Uses}
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-semibold">Interesting Fact:</span>{" "}
+                    {item.Interesting_Facts}
+                  </p>
+                </>
+              )}
               </div>
             </div>
           ))}
@@ -97,23 +96,23 @@ export const Gallery = () => {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute top-1/2 left-2 cursor-pointer transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 transition duration-300 z-10"
+          className="absolute top-1/2 left-2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 hover:text-black z-10"
         >
           {"<"}
         </button>
         <button
           onClick={nextSlide}
-          className="absolute top-1/2 right-2 cursor-pointer transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 transition duration-300 z-10"
+          className="absolute top-1/2 right-2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 hover:text-black z-10"
         >
           {">"}
         </button>
 
         {/* Dot Indicators */}
-        <div className="absolute bottom-2 justify-center items-center left-1/2 transform -translate-x-1/2 flex gap-2">
+        <div className="absolute bottom-3 w-full flex justify-center gap-2">
           {slides.map((_, index) => (
             <div
               key={index}
-              className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+              className={`w-[8px] h-[8px] rounded-full transition-colors duration-300 ${
                 index === currentIndex ? "bg-gray-800" : "bg-gray-300"
               }`}
             />
