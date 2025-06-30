@@ -53,11 +53,11 @@ export const Contact = () => {
       id="contact"
     >
       <div>
-        <p className="text-6xl font-black text-center  font-playfair">
+        <p className="text-6xl font-semibold text-center  font-playfair">
           Contact us
         </p>
 
-        <p className="text-center text-lg  p-4 font-gentium">
+        <p className="text-center text-xl text-[#B8B7C1] font-normal  p-4 font-gentium">
           Reach out to us over email or fill up this contact form. We will get
           back to you ASAP - We promise.
         </p>
