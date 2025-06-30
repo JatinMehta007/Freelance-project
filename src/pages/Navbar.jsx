@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Route, useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = useState("Home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const sectionIds = ["Home", "About", "Gallery", "contact"];
@@ -38,13 +40,18 @@ export const Navbar = () => {
     };
   }, []);
 
-  const handleNavClick = (section) => {
+  const handleNavClick = (section, route) => {
+  if (route) {
+    navigate(route);
+    setIsMenuOpen(false);
+  } else {
     const el = document.getElementById(section);
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
       setIsMenuOpen(false);
     }
-  };
+  }
+};
 
   const linkClass = (section) =>
     `cursor-pointer transition duration-300 hover:text-blue-300 ${
@@ -56,7 +63,7 @@ export const Navbar = () => {
   const navItems = [
     { id: "Home", label: "Home" },
     { id: "About", label: "About Us" },
-    { id: "Gallery", label: "Gallery" },
+    { id: "Gallery", label: "Gallery", route:"/gallery" },
     { id: "contact", label: "Contact Us" },
   ];
  
@@ -67,10 +74,10 @@ export const Navbar = () => {
       </div>
 
       <div className="hidden md:flex gap-16 mr-20 text-lg">
-        {navItems.map(({ id, label }) => (
+        {navItems.map(({ id, label,route }) => (
           <span
             key={id}
-            onClick={() => handleNavClick(id)}
+            onClick={() => handleNavClick(id,route)}
             className={linkClass(id)}
           >
             {label}
