@@ -95,14 +95,14 @@ export const About = () => {
             next 5-10 years and raise the bar for gemstone manufacturing by
             redefining standards in precision and reliability.
           </p>
-          <button className="rounded-full flex justify-center items-center bg-white mt-10 text-black text-xl px-14 py-2">
+          <button className="rounded-full flex justify-center items-center bg-white mt-10 text-black text-xl px-16 py-2">
             Reach us now
-            <span className="text-xl w-10 h-10 flex items-center justify-center absolute ml-44 rounded-full bg-[radial-gradient(circle_at_50%_50%,_#fae4db,_#cfbaba,_#fffafa)]">
+            <span className="text-xl w-10 h-10 flex items-center justify-center absolute ml-48 rounded-full bg-[radial-gradient(circle_at_50%_50%,_#fae4db,_#cfbaba,_#fffafa)]">
               →
             </span>
           </button>
         </div>
-        <img src="/vision.jpeg" alt="" className="  w-screen h-screen" />
+        <img src="/vision.jpg" alt="" className="  w-screen h-screen" />
       </div>
     </>
   );
