@@ -5,6 +5,7 @@ import {
   Route
 } from "react-router-dom"
 import { Home } from "./pages/Home";
+import { Gallery } from './pages/Gallery1';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home></Home>}></Route>
+      <Route path="/gallery" element={<Gallery></Gallery>}></Route>
     </Routes>
     </BrowserRouter>
     </>
