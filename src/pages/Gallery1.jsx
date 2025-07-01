@@ -47,85 +47,95 @@ export const Gallery = () => {
   };
 
   return (
-    <div
+     <div
       style={{ fontFamily: '"Times New Roman", Times, serif' }}
-      className="bg-black min-h-screen w-screen flex flex-col items-center text-[#B8B7C1] px-4"
+      className="bg-black min-h-screen w-screen flex flex-col items-center justify-center text-[#B8B7C1]"
     >
-      <p className="text-8xl text-center py-10">Gallery</p>
-      <div className="border border-[#B8B7C1] w-[70%] mb-10"></div>
+      <p className="text-8xl text-center p-10">Gallery</p>
+      <div className="border border-[#B8B7C1] w-[70%] mx-auto mb-10"></div>
+      <p className="font-normal pb-10 text-2xl text-center">
+        We design People Inspired Experiences that create <br />
+        <span>positive change in people's lives</span>
+      </p>
 
-      {/* Grid layout for 4 columns */}
+      {/* Grid of 80 cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
-        {allSlides.map((slides, i) => {
-          const current = indexes[i];
-          const item = slides[current];
-
-          return (
+        {allSlides.map((slides, i) => (
+          <div
+            key={i}
+            className="relative w-[320px] h-[400px] overflow-hidden bg-white  shadow-lg shadow-neutral-300 "
+          >
+            {/* Slide wrapper */}
             <div
-              key={i}
-              className="relative w-[320px] h-[400px] bg-white shadow-lg shadow-neutral-400 overflow-hidden text-black flex flex-col items-center justify-center text-center px-4"
+              className="flex transition-transform duration-700 ease-in-out"
+              style={{
+                transform: `translateX(-${indexes[i] * 320}px)`,
+                width: `${slides.length * 320}px`,
+              }}
             >
-              <img
-                src={item.src}
-                alt={item.name}
-                className="w-[85%] h-[160px] object-contain mb-4"
-              />
-              <h3 className="text-xl font-bold mb-4">{item.name}</h3>
+              {slides.map((item, j) => (
+                <div
+                  key={j}
+                  className="w-[320px] h-[400px] shrink-0 flex flex-col items-center justify-center px-4 text-center text-black"
+                >
+                  <img
+                    src={item.src}
+                    alt={item.name}
+                    className="w-[85%] h-[160px] object-contain mb-4"
+                  />
+                  <h3 className="text-xl font-bold mb-2">{item.name}</h3>
 
-              <div className="text-sm w-[90%]">
-                {current === 0 ? (
-                  <>
-                    <p className="mb-4 text-center text-sm">
-                      <span className="font-semibold">Origin:</span> {item.origin}
-                    </p>
-                    <p className="text-center text-sm">
-                      <span className="font-semibold">Stock Info:</span> {item.Stock_Information}
-                    </p>
-                  </>
-                ) : (
-                  <>
-                    <div className="text-left">
-                      <p className="mb-4 text-sm">
+                  {j === 0 ? (
+                    <>
+                      <p className="text-sm mb-2">
+                        <span className="font-semibold">Origin:</span> {item.origin}
+                      </p>
+                      <p className="text-sm">
+                        <span className="font-semibold">Stock Info:</span> {item.Stock_Information}
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p className="text-sm mb-2">
+                        <span className="font-semibold">Popular Use:</span> {item.Popular_Uses}
+                      </p>
+                      <p className="text-sm">
                         <span className="font-semibold">Interesting Fact:</span>{" "}
                         {item.Interesting_Facts}
                       </p>
-                      <p className="text-sm">
-                        <span className="font-semibold">Popular Use:</span>{" "}
-                        {item.Popular_Uses}
-                      </p>
-                    </div>
-                  </>
-                )}
-              </div>
-
-              {/* Arrows */}
-              <button
-                onClick={() => prevSlide(i)}
-                className="absolute top-1/2 left-2 transform -translate-y-1/2 text-gray-500 hover:text-black z-10"
-              >
-                {"<"}
-              </button>
-              <button
-                onClick={() => nextSlide(i)}
-                className="absolute top-1/2 right-2 transform -translate-y-1/2 text-gray-500 hover:text-black z-10"
-              >
-                {">"}
-              </button>
-
-              {/* Dots */}
-              <div className="absolute bottom-3 w-full flex justify-center gap-2">
-                {slides.map((_, dotIndex) => (
-                  <div
-                    key={dotIndex}
-                    className={`w-[6px] h-[6px] rounded-full transition-colors duration-300 ${
-                      dotIndex === current ? "bg-gray-800" : "bg-gray-300"
-                    }`}
-                  />
-                ))}
-              </div>
+                    </>
+                  )}
+                </div>
+              ))}
             </div>
-          );
-        })}
+
+            {/* Navigation Arrows */}
+            <button
+              onClick={() => prevSlide(i)}
+              className="absolute top-1/2 left-2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 hover:text-black z-10"
+            >
+              {"<"}
+            </button>
+            <button
+              onClick={() => nextSlide(i)}
+              className="absolute top-1/2 right-2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 hover:text-black z-10"
+            >
+              {">"}
+            </button>
+
+            {/* Dots */}
+            <div className="absolute bottom-3 w-full flex justify-center gap-2">
+              {slides.map((_, dotIndex) => (
+                <div
+                  key={dotIndex}
+                  className={`w-[8px] h-[8px] rounded-full transition-colors duration-300 ${
+                    dotIndex === indexes[i] ? "bg-gray-800" : "bg-gray-300"
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
