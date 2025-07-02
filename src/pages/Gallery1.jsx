@@ -5,20 +5,20 @@ const generateDummySlides = (count) => {
     {
       src: "/blackonyxs.jpg",
       name: "Onyx",
-        origin: "India",
-        Interesting_Facts:
-          "Believed to absorb negative energy and promote emotional strength.",
-        Popular_Uses: "Popular in men's jewelry and grounding spiritual items.",
-        Stock_Information: "Available in Black, Green, Red, Orange",
+      origin: "India",
+      Interesting_Facts:
+        "Believed to absorb negative energy and promote emotional strength.",
+      Popular_Uses: "Popular in men's jewelry and grounding spiritual items.",
+      Stock_Information: "Available in Black, Green, Red, Orange",
     },
     {
       src: "/image1.png",
       name: "Onyx",
-        origin: "India",
-        Interesting_Facts:
-          "Believed to absorb negative energy and promote emotional strength.",
-        Popular_Uses: "Popular in men's jewelry and grounding spiritual items.",
-        Stock_Information: "Available in Black, Green, Red, Orange",
+      origin: "India",
+      Interesting_Facts:
+        "Believed to absorb negative energy and promote emotional strength.",
+      Popular_Uses: "Popular in men's jewelry and grounding spiritual items.",
+      Stock_Information: "Available in Black, Green, Red, Orange",
     },
   ];
 
@@ -47,7 +47,7 @@ export const Gallery = () => {
   };
 
   return (
-     <div
+    <div
       style={{ fontFamily: '"Times New Roman", Times, serif' }}
       className="bg-black min-h-screen w-screen flex flex-col items-center justify-center text-[#B8B7C1]"
     >
@@ -64,12 +64,6 @@ export const Gallery = () => {
           <div
             key={i}
             className="relative w-[320px] h-[400px] overflow-hidden bg-white  "
-              style={{
-    boxShadow: "-8px 0 5px rgba(255, 255, 255, 0.40), 8px 0 5px rgba(255, 255, 255, 0.40)", // strong white 
-  }}
-  
-            
-             
           >
             {/* Slide wrapper */}
             <div
@@ -94,16 +88,19 @@ export const Gallery = () => {
                   {j === 0 ? (
                     <>
                       <p className="text-sm mb-2">
-                        <span className="font-semibold">Origin:</span> {item.origin}
+                        <span className="font-semibold">Origin:</span>{" "}
+                        {item.origin}
                       </p>
                       <p className="text-sm">
-                        <span className="font-semibold">Stock Info:</span> {item.Stock_Information}
+                        <span className="font-semibold">Stock Info:</span>{" "}
+                        {item.Stock_Information}
                       </p>
                     </>
                   ) : (
                     <>
                       <p className="text-sm mb-2">
-                        <span className="font-semibold">Popular Use:</span> {item.Popular_Uses}
+                        <span className="font-semibold">Popular Use:</span>{" "}
+                        {item.Popular_Uses}
                       </p>
                       <p className="text-sm">
                         <span className="font-semibold">Interesting Fact:</span>{" "}
