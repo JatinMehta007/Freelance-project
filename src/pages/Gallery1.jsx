@@ -63,7 +63,7 @@ export const Gallery = () => {
         {allSlides.map((slides, i) => (
           <div
             key={i}
-            className="relative w-[320px] h-[400px] overflow-hidden bg-white  shadow-lg shadow-neutral-300 "
+            className="relative w-[320px] h-[400px] overflow-hidden bg-white  shadow-lg shadow-gray-400 "
           >
             {/* Slide wrapper */}
             <div
