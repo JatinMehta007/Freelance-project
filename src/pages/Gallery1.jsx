@@ -1,34 +1,8 @@
 import { useState } from "react";
-
-const generateDummySlides = (count) => {
-  const templateSlides = [
-    {
-      src: "/blackonyxs.jpg",
-      name: "Onyx",
-      origin: "India",
-      Interesting_Facts:
-        "Believed to absorb negative energy and promote emotional strength.",
-      Popular_Uses: "Popular in men's jewelry and grounding spiritual items.",
-      Stock_Information: "Available in Black, Green, Red, Orange",
-    },
-    {
-      src: "/image1.png",
-      name: "Onyx",
-      origin: "India",
-      Interesting_Facts:
-        "Believed to absorb negative energy and promote emotional strength.",
-      Popular_Uses: "Popular in men's jewelry and grounding spiritual items.",
-      Stock_Information: "Available in Black, Green, Red, Orange",
-    },
-  ];
-
-  // Repeat the slide template N times
-  return Array.from({ length: count }, () => [...templateSlides]);
-};
+import { allSlides } from "../components/allSlides";  // Adjust the path as needed
 
 export const Gallery = () => {
-  const allSlides = generateDummySlides(80); // 80 containers, each with 2 slides
-  const [indexes, setIndexes] = useState(Array(80).fill(0)); // 80 individual indices
+  const [indexes, setIndexes] = useState(Array(allSlides.length).fill(0));
 
   const nextSlide = (i) => {
     setIndexes((prev) => {
@@ -58,12 +32,12 @@ export const Gallery = () => {
         <span>positive change in people's lives</span>
       </p>
 
-      {/* Grid of 80 cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+      {/* Grid of cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 pb-20">
         {allSlides.map((slides, i) => (
           <div
             key={i}
-            className="relative w-[320px] h-[400px] overflow-hidden bg-white  "
+            className="relative w-[320px] h-[400px] overflow-hidden bg-white rounded-lg"
           >
             {/* Slide wrapper */}
             <div
