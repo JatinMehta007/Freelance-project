@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { allSlides } from "../components/allSlides";  // Adjust the path as needed
+import { allSlides } from "../components/allSlides";
 
 export const Gallery = () => {
   const [indexes, setIndexes] = useState(Array(allSlides.length).fill(0));
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
   const nextSlide = (i) => {
     setIndexes((prev) => {
@@ -20,13 +21,36 @@ export const Gallery = () => {
     });
   };
 
+  // Filter slides by selected category
+  const filteredSlides = allSlides.filter(
+    (slides) =>
+      selectedCategory === "all" ||
+      slides.some((item) => item.type === selectedCategory)
+  );
+
   return (
     <div
       style={{ fontFamily: '"Times New Roman", Times, serif' }}
       className="bg-black min-h-screen w-screen flex flex-col items-center justify-center text-[#B8B7C1]"
     >
       <p className="text-8xl text-center p-10">Gallery</p>
+
+      {/* Dropdown */}
+      <div className="mb-8">
+        <label className="mr-4 text-xl font-semibold">Filter:</label>
+        <select
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+          className="p-2 text-white rounded border border-white"
+        >
+          <option value="all">All</option>
+          <option value="precious">Precious</option>
+          <option value="non-precious">Non-Precious</option>
+        </select>
+      </div>
+
       <div className="border border-[#B8B7C1] w-[70%] mx-auto mb-10"></div>
+
       <p className="font-normal pb-10 text-2xl text-center">
         We design People Inspired Experiences that create <br />
         <span>positive change in people's lives</span>
@@ -34,12 +58,11 @@ export const Gallery = () => {
 
       {/* Grid of cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 pb-20">
-        {allSlides.map((slides, i) => (
+        {filteredSlides.map((slides, i) => (
           <div
             key={i}
-            className="relative w-[320px] h-[400px] overflow-hidden bg-white rounded-lg"
+            className="relative w-[320px] h-[400px] overflow-hidden bg-white "
           >
-            {/* Slide wrapper */}
             <div
               className="flex transition-transform duration-700 ease-in-out"
               style={{
@@ -77,7 +100,9 @@ export const Gallery = () => {
                         {item.Popular_Uses}
                       </p>
                       <p className="text-sm">
-                        <span className="font-semibold">Interesting Fact:</span>{" "}
+                        <span className="font-semibold">
+                          Interesting Fact:
+                        </span>{" "}
                         {item.Interesting_Facts}
                       </p>
                     </>
@@ -86,7 +111,7 @@ export const Gallery = () => {
               ))}
             </div>
 
-            {/* Navigation Arrows */}
+            {/* Arrows */}
             <button
               onClick={() => prevSlide(i)}
               className="absolute top-1/2 left-2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 hover:text-black z-10"
