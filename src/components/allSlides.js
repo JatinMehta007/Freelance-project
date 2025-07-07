@@ -1,5 +1,4 @@
 export const allSlides = [
-  
   [
     {
       "src": "/blackonyxs.jpg",
@@ -144,7 +143,7 @@ export const allSlides = [
     {
       "src": "/image/ruby.png",
       "name": "Ruby Corundum",
-      "origin": "Lab grown",
+      "origin": "India",
       "Interesting_Facts": "",
       "Popular_Uses": "",
       "Stock_Information": "Available",
@@ -153,7 +152,7 @@ export const allSlides = [
     {
       "src": "/image/ruby1.png",
       "name": "Ruby Corundum",
-      "origin": "Lab grown",
+      "origin": "India",
       "Interesting_Facts": "",
       "Popular_Uses": "",
       "Stock_Information": "Available",
@@ -164,7 +163,7 @@ export const allSlides = [
     {
       "src": "/image/sapphire.png",
       "name": "Sapphire Corundum",
-      "origin": "Lab grown",
+      "origin": "india",
       "Interesting_Facts": "",
       "Popular_Uses": "",
       "Stock_Information": "Available",
@@ -173,7 +172,7 @@ export const allSlides = [
     {
       "src": "/image/saphire1.png",
       "name": "Sapphire Corundum",
-      "origin": "Lab grown",
+      "origin": "India",
       "Interesting_Facts": "",
       "Popular_Uses": "",
       "Stock_Information": "Available",
@@ -184,7 +183,7 @@ export const allSlides = [
     {
       "src": "/image/image copy 15.png",
       "name": "Emerald Hydro",
-      "origin": "Lab grown",
+      "origin": "India",
       "Interesting_Facts": "",
       "Popular_Uses": "",
       "Stock_Information": "Available",
@@ -193,7 +192,7 @@ export const allSlides = [
     {
       "src": "/image/image copy 16.png",
       "name": "Emerald Hydro",
-      "origin": "Lab grown",
+      "origin": "India",
       "Interesting_Facts": "",
       "Popular_Uses": "",
       "Stock_Information": "Available",
