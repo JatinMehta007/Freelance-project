@@ -41,11 +41,12 @@ export const Gallery = () => {
         <select
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value)}
-          className="p-2 text-white rounded border border-white"
+          className="p-2 text-white rounded bg-transparent border border-white"
         >
           <option value="all">All</option>
           <option value="precious">Precious</option>
-          <option value="non-precious">Non-Precious</option>
+          <option value="semi-precious">Semi-Precious</option>
+          <option value="lab-grown">Lab-grown</option>
         </select>
       </div>
 
