@@ -98,7 +98,7 @@ export const Gallery = () => {
 
                   {j === 0 ? (
                     <>
-                      <p className="text-sm  p-2">
+                      <p className="text-sm  px-4 py-2">
                         <span className="font-semibold">Origin:</span>{" "}
                         {item.origin}
                       </p>
