@@ -1,15 +1,21 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Route, useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = useState("Home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
-    const sectionIds = ["Home", "About", "Gallery", "contact"];
+    if (location.pathname === "/gallery") {
+      setActiveSection("Gallery");
+    } else if (location.pathname === "/") {
+      setActiveSection("Home");
+    }
 
+    const sectionIds = ["Home", "About", "Gallery", "contact"];
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -27,7 +33,7 @@ export const Navbar = () => {
     });
 
     const handleScroll = () => {
-      if (window.scrollY < 100) {
+      if (window.scrollY < 100 && location.pathname === "/") {
         setActiveSection("Home");
       }
     };
@@ -38,20 +44,30 @@ export const Navbar = () => {
       observer.disconnect();
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [location]);
 
   const handleNavClick = (section, route) => {
-  if (route) {
-    navigate(route);
-    setIsMenuOpen(false);
-  } else {
-    const el = document.getElementById(section);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (route) {
+      navigate(route);
       setIsMenuOpen(false);
+    } else {
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => {
+          const el = document.getElementById(section);
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }, 100);
+      } else {
+        const el = document.getElementById(section);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          setIsMenuOpen(false);
+        }
+      }
     }
-  }
-};
+  };
 
   const linkClass = (section) =>
     `cursor-pointer transition duration-300 hover:text-blue-300 ${
@@ -61,23 +77,26 @@ export const Navbar = () => {
     }`;
 
   const navItems = [
-    { id: "Home", label: "Home" },
+    { id: "Home", label: "Home", route: "/" },
     { id: "About", label: "About Us" },
-    { id: "Gallery", label: "Gallery", route:"/gallery" },
+    { id: "Gallery", label: "Gallery", route: "/gallery" },
     { id: "contact", label: "Contact Us" },
   ];
- 
+
   return (
-    <div style={{ fontFamily: '"Times New Roman", Times, serif' }}   className="fixed top-0 left-0 right-0 text-blu z-50 bg-neutral-800 text-[#EAEFF3] px-6 md:px-10 h-16 flex items-center justify-between font-mono tracking-wide font-medium">
+    <div
+      style={{ fontFamily: '"Times New Roman", Times, serif' }}
+      className="fixed top-0 left-0 right-0 z-50 bg-neutral-800 text-[#EAEFF3] px-6 md:px-10 h-16 flex items-center justify-between font-mono tracking-wide font-medium"
+    >
       <div className="text-2xl tracking-wider font-bold mx-14">
         Gemstones Boutique
       </div>
 
       <div className="hidden md:flex gap-16 mr-20 text-lg">
-        {navItems.map(({ id, label,route }) => (
+        {navItems.map(({ id, label, route }) => (
           <span
             key={id}
-            onClick={() => handleNavClick(id,route)}
+            onClick={() => handleNavClick(id, route)}
             className={linkClass(id)}
           >
             {label}
@@ -93,10 +112,10 @@ export const Navbar = () => {
 
       {isMenuOpen && (
         <div className="absolute top-16 left-0 w-full bg-neutral-900 text-white flex flex-col gap-6 px-6 py-6 md:hidden">
-          {navItems.map(({ id, label }) => (
+          {navItems.map(({ id, label, route }) => (
             <span
               key={id}
-              onClick={() => handleNavClick(id)}
+              onClick={() => handleNavClick(id, route)}
               className={`text-lg ${linkClass(id)}`}
             >
               {label}
