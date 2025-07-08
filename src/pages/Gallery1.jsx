@@ -98,11 +98,11 @@ export const Gallery = () => {
 
                   {j === 0 ? (
                     <>
-                      <p className="text-sm mb-2 p-2">
+                      <p className="text-sm  p-2">
                         <span className="font-semibold">Origin:</span>{" "}
                         {item.origin}
                       </p>
-                      <p className="text-sm p-2">
+                      <p className="text-sm px-4">
                         <span className="font-semibold">Stock Info:</span>{" "}
                         {item.Stock_Information}
                       </p>
