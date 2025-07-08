@@ -1,101 +1,23 @@
 export const allSlides = [
   
+  
   [
-    {
-      "src": "/image/image copy 12.png",
-      "name": "Ruby",
-      "origin": "Myanmar, Mozambique, India",
-      "Interesting_Facts": "Symbol of passion and love; one of the most precious stones.",
-      "Popular_Uses": "Luxury rings, statement pendants, and bridal sets.",
-      "Stock_Information": "Available",
-      "type": "precious"
-    },
-    {
-      "src": "/image/image copy 13.png",
-      "name": "Ruby",
-      "origin": "Myanmar, Mozambique, India",
-      "Interesting_Facts": "Symbol of passion and love; one of the most precious stones.",
-      "Popular_Uses": "Luxury rings, statement pendants, and bridal sets.",
-      "Stock_Information": "Available",
-      "type": "precious"
-    }
-  ],
-  [
-    {
-      "src": "/image/image copy 14.png",
-      "name": "Sapphire",
-      "origin": "Sri Lanka, Madagascar",
-      "Interesting_Facts": "Comes in many colors; blue is most iconic; associated with wisdom and royalty.",
-      "Popular_Uses": "Popular in premium rings and royal-inspired collections.",
-      "Stock_Information": "Available",
-      "type": "precious"
-    },
-    {
-      "src": "/image/image copy 15.png",
-      "name": "Sapphire",
-      "origin": "Sri Lanka, Madagascar",
-      "Interesting_Facts": "Comes in many colors; blue is most iconic; associated with wisdom and royalty.",
-      "Popular_Uses": "Popular in premium rings and royal-inspired collections.",
-      "Stock_Information": "Available",
-      "type": "precious"
-    }
-  ],
-  [
-    {
-      "src": "/image/image copy 62.png",
-      "name": "Emerald",
-      "origin": "Colombia, Zambia",
-      "Interesting_Facts": "Associated with renewal and growth; favored by royalty throughout history.",
-      "Popular_Uses": "Loved in traditional Indian and antique-style jewelry.",
-      "Stock_Information": "Available",
-      "type": "precious"
-    },
-    {
-      "src": "/image/image copy 63.png",
-      "name": "Emerald",
-      "origin": "Colombia, Zambia",
-      "Interesting_Facts": "Associated with renewal and growth; favored by royalty throughout history.",
-      "Popular_Uses": "Loved in traditional Indian and antique-style jewelry.",
-      "Stock_Information": "Available",
-      "type": "precious"
-    }
-  ],
-  [
-    {
-      "src": "/image/image copy 64.png",
-      "name": "Cat Eye",
-      "origin": "India, Sri Lanka",
-      "Interesting_Facts": "Reflects light in a “cat’s eye” line; usually found in chrysoberyl form.",
-      "Popular_Uses": "Mystical appeal; used in rings and amulets for protection.",
-      "Stock_Information": "Available",
-      "type": "precious"
-    },
-    {
-      "src": "/image/image copy 65.png",
-      "name": "Cat Eye",
-      "origin": "India, Sri Lanka",
-      "Interesting_Facts": "Reflects light in a “cat’s eye” line; usually found in chrysoberyl form.",
-      "Popular_Uses": "Mystical appeal; used in rings and amulets for protection.",
-      "Stock_Information": "Available",
-      "type": "precious"
-    }
-  ],[
     {
       "src": "/blackonyxs.jpg",
       "name": "Onyx",
       "origin": "India",
-      "Interesting_Facts": "Believed to absorb negative energy and promote emotional strength.",
-      "Popular_Uses": "Popular in men's jewelry and grounding spiritual items.",
-      "Stock_Information": "Available in Black,Green, Red, Orange",
+      "Interesting_Facts": "Believed To Absorb Negative Energy And Promote Emotional Strength.",
+      "Popular_Uses": "Popular In Men's Jewelry And Grounding Spiritual Items.",
+      "Stock_Information": "Available In Black,Green, Red, Orange",
       "type": "semi-precious"
     },
     {
       "src": "/image1.png",
       "name": "Onyx",
       "origin": "India",
-      "Interesting_Facts": "Believed to absorb negative energy and promote emotional strength.",
-      "Popular_Uses": "Popular in men's jewelry and grounding spiritual items.",
-      "Stock_Information": "Available in Black,Green, Red, Orange",
+      "Interesting_Facts": "Believed To Absorb Negative Energy And Promote Emotional Strength.",
+      "Popular_Uses": "Popular In Men's Jewelry And Grounding Spiritual Items.",
+      "Stock_Information": "Available In Black,Green, Red, Orange",
       "type": "semi-precious"
     }
   ],
@@ -104,8 +26,8 @@ export const allSlides = [
       "src": "/image/image copy 3.png",
       "name": "Lapis Lazuli",
       "origin": "Afghanistan, Chile",
-      "Interesting_Facts": "Ancient Egyptians used it in jewelry and burial masks.",
-      "Popular_Uses": "Bold, royal blue attracts boho-luxe fashion lovers.",
+      "Interesting_Facts": "Ancient Egyptians Used It In Jewelry And Burial Masks.",
+      "Popular_Uses": "Bold, Royal Blue Attracts Boho-Luxe Fashion Lovers.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -113,8 +35,8 @@ export const allSlides = [
       "src": "/image/Lapis.png",
       "name": "Lapis Lazuli",
       "origin": "Afghanistan, Chile",
-      "Interesting_Facts": "Ancient Egyptians used it in jewelry and burial masks.",
-      "Popular_Uses": "Bold, royal blue attracts boho-luxe fashion lovers.",
+      "Interesting_Facts": "Ancient Egyptians Used It In Jewelry And Burial Masks.",
+      "Popular_Uses": "Bold, Royal Blue Attracts Boho-Luxe Fashion Lovers.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -124,8 +46,8 @@ export const allSlides = [
       "src": "/image/tiger.png",
       "name": "Tiger Eye",
       "origin": "South Africa",
-      "Interesting_Facts": "Known for its golden shimmer and protection qualities.",
-      "Popular_Uses": "Popular in bracelets and talismans for good luck.",
+      "Interesting_Facts": "Known For Its Golden Shimmer And Protection Qualities.",
+      "Popular_Uses": "Popular In Bracelets And Talismans For Good Luck.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -133,8 +55,8 @@ export const allSlides = [
       "src": "/image/Tiger1.png",
       "name": "Tiger Eye",
       "origin": "South Africa",
-      "Interesting_Facts": "Known for its golden shimmer and protection qualities.",
-      "Popular_Uses": "Popular in bracelets and talismans for good luck.",
+      "Interesting_Facts": "Known For Its Golden Shimmer And Protection Qualities.",
+      "Popular_Uses": "Popular In Bracelets And Talismans For Good Luck.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -163,7 +85,7 @@ export const allSlides = [
     {
       "src": "/image/sapphire.png",
       "name": "Sapphire Corundum",
-      "origin": "india",
+      "origin": "India",
       "Interesting_Facts": "",
       "Popular_Uses": "",
       "Stock_Information": "Available",
@@ -204,8 +126,8 @@ export const allSlides = [
       "src": "/image/image_copy_17.png",
       "name": "Citrine",
       "origin": "Brazil",
-      "Interesting_Facts": "Known as the “merchant’s stone”; believed to attract wealth and joy.",
-      "Popular_Uses": "Great for gifting; used in success bracelets and rings.",
+      "Interesting_Facts": "Known As The “Merchant’s Stone”; Believed To Attract Wealth And Joy.",
+      "Popular_Uses": "Great For Gifting; Used In Success Bracelets And Rings.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -213,8 +135,8 @@ export const allSlides = [
       "src": "/image/image copy 18.png",
       "name": "Citrine",
       "origin": "Brazil",
-      "Interesting_Facts": "Known as the “merchant’s stone”; believed to attract wealth and joy.",
-      "Popular_Uses": "Great for gifting; used in success bracelets and rings.",
+      "Interesting_Facts": "Known As The “Merchant’s Stone”; Believed To Attract Wealth And Joy.",
+      "Popular_Uses": "Great For Gifting; Used In Success Bracelets And Rings.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -224,8 +146,8 @@ export const allSlides = [
       "src": "/image/image copy 19.png",
       "name": "Amethyst",
       "origin": "Brazil, Uruguay",
-      "Interesting_Facts": "February birthstone; promotes calm and clarity.",
-      "Popular_Uses": "Popular in crystal healing and zodiac-themed pieces.",
+      "Interesting_Facts": "February Birthstone; Promotes Calm And Clarity.",
+      "Popular_Uses": "Popular In Crystal Healing And Zodiac-Themed Pieces.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -233,8 +155,8 @@ export const allSlides = [
       "src": "/image/image copy 20.png",
       "name": "Amethyst",
       "origin": "Brazil, Uruguay",
-      "Interesting_Facts": "February birthstone; promotes calm and clarity.",
-      "Popular_Uses": "Popular in crystal healing and zodiac-themed pieces.",
+      "Interesting_Facts": "February Birthstone; Promotes Calm And Clarity.",
+      "Popular_Uses": "Popular In Crystal Healing And Zodiac-Themed Pieces.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -244,8 +166,8 @@ export const allSlides = [
       "src": "/image/image copy 21.png",
       "name": "Carnelian",
       "origin": "India",
-      "Interesting_Facts": "A stone of motivation and endurance; warm reddish-orange tones.",
-      "Popular_Uses": "Used in bold statement pieces and spiritual malas.",
+      "Interesting_Facts": "A Stone Of Motivation And Endurance; Warm Reddish-Orange Tones.",
+      "Popular_Uses": "Used In Bold Statement Pieces And Spiritual Malas.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -253,8 +175,8 @@ export const allSlides = [
       "src": "/image/image copy 22.png",
       "name": "Carnelian",
       "origin": "India",
-      "Interesting_Facts": "A stone of motivation and endurance; warm reddish-orange tones.",
-      "Popular_Uses": "Used in bold statement pieces and spiritual malas.",
+      "Interesting_Facts": "A Stone Of Motivation And Endurance; Warm Reddish-Orange Tones.",
+      "Popular_Uses": "Used In Bold Statement Pieces And Spiritual Malas.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -264,8 +186,8 @@ export const allSlides = [
       "src": "/image/image copy .png",
       "name": "Green Aventurine",
       "origin": "India, Brazil",
-      "Interesting_Facts": "Brings luck and optimism; known as the \"Stone of Opportunity.\"",
-      "Popular_Uses": "Popular in wellness jewelry and calming accessories.",
+      "Interesting_Facts": "Brings Luck And Optimism; Known As The \"Stone Of Opportunity.\"",
+      "Popular_Uses": "Popular In Wellness Jewelry And Calming Accessories.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -273,8 +195,8 @@ export const allSlides = [
       "src": "/image/image copy .png",
       "name": "Green Aventurine",
       "origin": "India, Brazil",
-      "Interesting_Facts": "Brings luck and optimism; known as the \"Stone of Opportunity.\"",
-      "Popular_Uses": "Popular in wellness jewelry and calming accessories.",
+      "Interesting_Facts": "Brings Luck And Optimism; Known As The \"Stone Of Opportunity.\"",
+      "Popular_Uses": "Popular In Wellness Jewelry And Calming Accessories.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -284,8 +206,8 @@ export const allSlides = [
       "src": "/image/image_copy_9.png",
       "name": "Rose Quartz",
       "origin": "Brazil, South Africa, India",
-      "Interesting_Facts": "Stone of unconditional love and self-care.",
-      "Popular_Uses": "Sought after in heart-themed and couple jewelry.",
+      "Interesting_Facts": "Stone Of Unconditional Love And Self-Care.",
+      "Popular_Uses": "Sought After In Heart-Themed And Couple Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -293,8 +215,8 @@ export const allSlides = [
       "src": "/image/image copy 10.png",
       "name": "Rose Quartz",
       "origin": "Brazil, South Africa, India",
-      "Interesting_Facts": "Stone of unconditional love and self-care.",
-      "Popular_Uses": "Sought after in heart-themed and couple jewelry.",
+      "Interesting_Facts": "Stone Of Unconditional Love And Self-Care.",
+      "Popular_Uses": "Sought After In Heart-Themed And Couple Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -304,8 +226,8 @@ export const allSlides = [
       "src": "/image/image copy 25.png",
       "name": "Labradorite",
       "origin": "Madagascar",
-      "Interesting_Facts": "Known for its striking iridescent flash; promotes intuition.",
-      "Popular_Uses": "Eye-catching in spiritual and cosmic-themed designs.",
+      "Interesting_Facts": "Known For Its Striking Iridescent Flash; Promotes Intuition.",
+      "Popular_Uses": "Eye-Catching In Spiritual And Cosmic-Themed Designs.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -313,29 +235,48 @@ export const allSlides = [
       "src": "/image/image copy 26.png",
       "name": "Labradorite",
       "origin": "Madagascar",
-      "Interesting_Facts": "Known for its striking iridescent flash; promotes intuition.",
-      "Popular_Uses": "Eye-catching in spiritual and cosmic-themed designs.",
+      "Interesting_Facts": "Known For Its Striking Iridescent Flash; Promotes Intuition.",
+      "Popular_Uses": "Eye-Catching In Spiritual And Cosmic-Themed Designs.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
-  
-],[
+  ],[
+    {
+      "src": "/image/image copy 64.png",
+      "name": "Cat Eye",
+      "origin": "India, Sri Lanka",
+      "Interesting_Facts": "Reflects Light In A “Cat’S Eye” Line; Usually Found In Chrysoberyl Form.",
+      "Popular_Uses": "Mystical Appeal; Used In Rings And Amulets For Protection.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    },
+    {
+      "src": "/image/image copy 65.png",
+      "name": "Cat Eye",
+      "origin": "India, Sri Lanka",
+      "Interesting_Facts": "Reflects Light In A “Cat’S Eye” Line; Usually Found In Chrysoberyl Form.",
+      "Popular_Uses": "Mystical Appeal; Used In Rings And Amulets For Protection.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    }
+  ],
+  [
     {
       "src": "/image/image copy 27.png",
       "name": "Turquoise",
       "origin": "USA",
-      "Interesting_Facts": "Ancient protective stone; admired for its unique blue-green hue.",
-      "Popular_Uses": "Trending in boho, Southwestern, and tribal jewelry.",
-      "Stock_Information": "Available in Pink",
+      "Interesting_Facts": "Ancient Protective Stone; Admired For Its Unique Blue-Green Hue.",
+      "Popular_Uses": "Trending In Boho, Southwestern, And Tribal Jewelry.",
+      "Stock_Information": "Available In Pink",
       "type": "semi-precious"
     },
     {
       "src": "/image/image copy 28.png",
       "name": "Turquoise",
       "origin": "USA",
-      "Interesting_Facts": "Ancient protective stone; admired for its unique blue-green hue.",
-      "Popular_Uses": "Trending in boho, Southwestern, and tribal jewelry.",
-      "Stock_Information": "Available in Pink",
+      "Interesting_Facts": "Ancient Protective Stone; Admired For Its Unique Blue-Green Hue.",
+      "Popular_Uses": "Trending In Boho, Southwestern, And Tribal Jewelry.",
+      "Stock_Information": "Available In Pink",
       "type": "semi-precious"
     }
   ],
@@ -344,8 +285,8 @@ export const allSlides = [
       "src": "/image/image copy 29.png",
       "name": "Malachite",
       "origin": "Congo, Russia",
-      "Interesting_Facts": "Deep green with concentric patterns; absorbs negativity.",
-      "Popular_Uses": "Visually bold; used in contemporary and statement pieces.",
+      "Interesting_Facts": "Deep Green With Concentric Patterns; Absorbs Negativity.",
+      "Popular_Uses": "Visually Bold; Used In Contemporary And Statement Pieces.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -353,8 +294,8 @@ export const allSlides = [
       "src": "/image/image copy 30.png",
       "name": "Malachite",
       "origin": "Congo, Russia",
-      "Interesting_Facts": "Deep green with concentric patterns; absorbs negativity.",
-      "Popular_Uses": "Visually bold; used in contemporary and statement pieces.",
+      "Interesting_Facts": "Deep Green With Concentric Patterns; Absorbs Negativity.",
+      "Popular_Uses": "Visually Bold; Used In Contemporary And Statement Pieces.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -362,19 +303,19 @@ export const allSlides = [
   [
     {
       "src": "/image/image copy 11.png",
-      "name": "Pink Oyster turquoise",
+      "name": "Pink Oyster Turquoise",
       "origin": "USA, China",
-      "Interesting_Facts": "Derived from pink oyster shells; soft pearlescent tones.",
-      "Popular_Uses": "Elegant in pastel bridal jewelry and luxury buttons.",
+      "Interesting_Facts": "Derived From Pink Oyster Shells; Soft Pearlescent Tones.",
+      "Popular_Uses": "Elegant In Pastel Bridal Jewelry And Luxury Buttons.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
     {
       "src": "/image/image copy 11.png",
-      "name": "Pink Oyster turquoise",
+      "name": "Pink Oyster Turquoise",
       "origin": "USA, China",
-      "Interesting_Facts": "Derived from pink oyster shells; soft pearlescent tones.",
-      "Popular_Uses": "Elegant in pastel bridal jewelry and luxury buttons.",
+      "Interesting_Facts": "Derived From Pink Oyster Shells; Soft Pearlescent Tones.",
+      "Popular_Uses": "Elegant In Pastel Bridal Jewelry And Luxury Buttons.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -384,18 +325,18 @@ export const allSlides = [
       "src": "/image/image copy 31.png",
       "name": "Whiskey Quartz",
       "origin": "Brazil",
-      "Interesting_Facts": "Warm smoky-golden tone; grounding energy.",
-      "Popular_Uses": "Great for autumnal jewelry, loved in men's accessories.",
-      "Stock_Information": "Honey,Beer quartz",
+      "Interesting_Facts": "Warm Smoky-Golden Tone; Grounding Energy.",
+      "Popular_Uses": "Great For Autumnal Jewelry, Loved In Men's Accessories.",
+      "Stock_Information": "Honey,Beer Quartz",
       "type": "semi-precious"
     },
     {
       "src": "/image/image copy 32.png",
       "name": "Whiskey Quartz",
       "origin": "Brazil",
-      "Interesting_Facts": "Warm smoky-golden tone; grounding energy.",
-      "Popular_Uses": "Great for autumnal jewelry, loved in men's accessories.",
-      "Stock_Information": "Honey,Beer quartz",
+      "Interesting_Facts": "Warm Smoky-Golden Tone; Grounding Energy.",
+      "Popular_Uses": "Great For Autumnal Jewelry, Loved In Men's Accessories.",
+      "Stock_Information": "Honey,Beer Quartz",
       "type": "semi-precious"
     }
   ],
@@ -404,18 +345,18 @@ export const allSlides = [
       "src": "/image/image copy 33.png",
       "name": "Swiss BT",
       "origin": "South Africa, India, Madagascar",
-      "Interesting_Facts": "A vibrant light blue topaz; represents clarity and calmness.",
-      "Popular_Uses": "Trendy in modern silver jewelry and daily-wear rings.",
-      "Stock_Information": "Available in Sky and Londion Blue",
+      "Interesting_Facts": "A Vibrant Light Blue Topaz; Represents Clarity And Calmness.",
+      "Popular_Uses": "Trendy In Modern Silver Jewelry And Daily-Wear Rings.",
+      "Stock_Information": "Available In Sky And Londion Blue",
       "type": "semi-precious"
     },
     {
       "src": "/image/image copy 34.png",
       "name": "Swiss BT",
       "origin": "South Africa, India, Madagascar",
-      "Interesting_Facts": "A vibrant light blue topaz; represents clarity and calmness.",
-      "Popular_Uses": "Trendy in modern silver jewelry and daily-wear rings.",
-      "Stock_Information": "Available in Sky and Londion Blue",
+      "Interesting_Facts": "A Vibrant Light Blue Topaz; Represents Clarity And Calmness.",
+      "Popular_Uses": "Trendy In Modern Silver Jewelry And Daily-Wear Rings.",
+      "Stock_Information": "Available In Sky And Londion Blue",
       "type": "semi-precious"
     }
   ],
@@ -424,8 +365,8 @@ export const allSlides = [
       "src": "/image/image copy 3.png",
       "name": "K2 Jasper",
       "origin": "Pakistan (Karakoram Range)",
-      "Interesting_Facts": "Unique granite with bright blue azurite orbs; only found near K2 mountain.",
-      "Popular_Uses": "Rare and striking; popular in conversation-starter jewelry.",
+      "Interesting_Facts": "Unique Granite With Bright Blue Azurite Orbs; Only Found Near K2 Mountain.",
+      "Popular_Uses": "Rare And Striking; Popular In Conversation-Starter Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -433,8 +374,8 @@ export const allSlides = [
       "src": "/image/image copy 3.png",
       "name": "K2 Jasper",
       "origin": "Pakistan (Karakoram Range)",
-      "Interesting_Facts": "Unique granite with bright blue azurite orbs; only found near K2 mountain.",
-      "Popular_Uses": "Rare and striking; popular in conversation-starter jewelry.",
+      "Interesting_Facts": "Unique Granite With Bright Blue Azurite Orbs; Only Found Near K2 Mountain.",
+      "Popular_Uses": "Rare And Striking; Popular In Conversation-Starter Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -444,8 +385,8 @@ export const allSlides = [
       "src": "/image/image copy 35.png",
       "name": "Blue Sheelite",
       "origin": "Turkey, USA",
-      "Interesting_Facts": "Glows under UV light; calming blue and white patterns; often paired with calcite.",
-      "Popular_Uses": "Used in spiritual or statement pieces for a marbled look.",
+      "Interesting_Facts": "Glows Under UV Light; Calming Blue And White Patterns; Often Paired With Calcite.",
+      "Popular_Uses": "Used In Spiritual Or Statement Pieces For A Marbled Look.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -453,8 +394,8 @@ export const allSlides = [
       "src": "/image/image copy 34.png",
       "name": "Blue Sheelite",
       "origin": "Turkey, USA",
-      "Interesting_Facts": "Glows under UV light; calming blue and white patterns; often paired with calcite.",
-      "Popular_Uses": "Used in spiritual or statement pieces for a marbled look.",
+      "Interesting_Facts": "Glows Under UV Light; Calming Blue And White Patterns; Often Paired With Calcite.",
+      "Popular_Uses": "Used In Spiritual Or Statement Pieces For A Marbled Look.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -464,8 +405,8 @@ export const allSlides = [
       "src": "/image/image copy 37.png",
       "name": "Blood Stone",
       "origin": "India, Brazil",
-      "Interesting_Facts": "A dark green jasper with red spots (iron oxide); ancient healing and warrior stone.",
-      "Popular_Uses": "Masculine appeal; loved in power bracelets and talismans.",
+      "Interesting_Facts": "A Dark Green Jasper With Red Spots (Iron Oxide); Ancient Healing And Warrior Stone.",
+      "Popular_Uses": "Masculine Appeal; Loved In Power Bracelets And Talismans.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -473,8 +414,8 @@ export const allSlides = [
       "src": "/image/image copy 38.png",
       "name": "Blood Stone",
       "origin": "India, Brazil",
-      "Interesting_Facts": "A dark green jasper with red spots (iron oxide); ancient healing and warrior stone.",
-      "Popular_Uses": "Masculine appeal; loved in power bracelets and talismans.",
+      "Interesting_Facts": "A Dark Green Jasper With Red Spots (Iron Oxide); Ancient Healing And Warrior Stone.",
+      "Popular_Uses": "Masculine Appeal; Loved In Power Bracelets And Talismans.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -484,8 +425,8 @@ export const allSlides = [
       "src": "/image/image copy 39.png",
       "name": "Mookite",
       "origin": "Australia",
-      "Interesting_Facts": "A type of jasper with earthy red, mustard, and cream tones; supports decision-making.",
-      "Popular_Uses": "Great for grounding jewelry; appreciated in rustic designs.",
+      "Interesting_Facts": "A Type Of Jasper With Earthy Red, Mustard, And Cream Tones; Supports Decision-Making.",
+      "Popular_Uses": "Great For Grounding Jewelry; Appreciated In Rustic Designs.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -493,8 +434,8 @@ export const allSlides = [
       "src": "/image/image copy 40.png",
       "name": "Mookite",
       "origin": "Australia",
-      "Interesting_Facts": "A type of jasper with earthy red, mustard, and cream tones; supports decision-making.",
-      "Popular_Uses": "Great for grounding jewelry; appreciated in rustic designs.",
+      "Interesting_Facts": "A Type Of Jasper With Earthy Red, Mustard, And Cream Tones; Supports Decision-Making.",
+      "Popular_Uses": "Great For Grounding Jewelry; Appreciated In Rustic Designs.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -502,19 +443,19 @@ export const allSlides = [
   [
     {
       "src": "/image/image copy 41.png",
-      "name": "Dalmatian jasper",
+      "name": "Dalmatian Jasper",
       "origin": "Mexico",
-      "Interesting_Facts": "Light stone with black spots; made of feldspar and quartz.",
-      "Popular_Uses": "Whimsical look; popular with younger buyers and casual styles.",
+      "Interesting_Facts": "Light Stone With Black Spots; Made Of Feldspar And Quartz.",
+      "Popular_Uses": "Whimsical Look; Popular With Younger Buyers And Casual Styles.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
     {
       "src": "/image/image copy 42.png",
-      "name": "Dalmatian jasper",
+      "name": "Dalmatian Jasper",
       "origin": "Mexico",
-      "Interesting_Facts": "Light stone with black spots; made of feldspar and quartz.",
-      "Popular_Uses": "Whimsical look; popular with younger buyers and casual styles.",
+      "Interesting_Facts": "Light Stone With Black Spots; Made Of Feldspar And Quartz.",
+      "Popular_Uses": "Whimsical Look; Popular With Younger Buyers And Casual Styles.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -524,8 +465,8 @@ export const allSlides = [
       "src": "/image/image copy 43.png",
       "name": "Rhodonite",
       "origin": "Russia, Madagascar",
-      "Interesting_Facts": "Pink with black veining; promotes emotional healing and compassion.",
-      "Popular_Uses": "Feminine and nurturing; ideal for self-love jewelry.",
+      "Interesting_Facts": "Pink With Black Veining; Promotes Emotional Healing And Compassion.",
+      "Popular_Uses": "Feminine And Nurturing; Ideal For Self-Love Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -533,19 +474,19 @@ export const allSlides = [
       "src": "/image/image copy 44.png",
       "name": "Rhodonite",
       "origin": "Russia, Madagascar",
-      "Interesting_Facts": "Pink with black veining; promotes emotional healing and compassion.",
-      "Popular_Uses": "Feminine and nurturing; ideal for self-love jewelry.",
+      "Interesting_Facts": "Pink With Black Veining; Promotes Emotional Healing And Compassion.",
+      "Popular_Uses": "Feminine And Nurturing; Ideal For Self-Love Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
-],
+  ],
   [
     {
       "src": "/image/image copy 45.png",
       "name": "Peridot",
       "origin": "Pakistan, USA, Myanmar",
-      "Interesting_Facts": "Formed deep in the Earth’s mantle and found in meteorites; August birthstone.",
-      "Popular_Uses": "Loved for vibrant lime-green glow; used in summer collections.",
+      "Interesting_Facts": "Formed Deep In The Earth’s Mantle And Found In Meteorites; August Birthstone.",
+      "Popular_Uses": "Loved For Vibrant Lime-Green Glow; Used In Summer Collections.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -553,8 +494,8 @@ export const allSlides = [
       "src": "/image/image copy .png",
       "name": "Peridot",
       "origin": "Pakistan, USA, Myanmar",
-      "Interesting_Facts": "Formed deep in the Earth’s mantle and found in meteorites; August birthstone.",
-      "Popular_Uses": "Loved for vibrant lime-green glow; used in summer collections.",
+      "Interesting_Facts": "Formed Deep In The Earth’s Mantle And Found In Meteorites; August Birthstone.",
+      "Popular_Uses": "Loved For Vibrant Lime-Green Glow; Used In Summer Collections.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -564,8 +505,8 @@ export const allSlides = [
       "src": "/image/image copy 46.png",
       "name": "Garnet",
       "origin": "India, Africa",
-      "Interesting_Facts": "Symbolizes love and passion; comes in multiple shades (not just red).",
-      "Popular_Uses": "Deep red is popular in vintage and romantic jewelry.",
+      "Interesting_Facts": "Symbolizes Love And Passion; Comes In Multiple Shades (Not Just Red).",
+      "Popular_Uses": "Deep Red Is Popular In Vintage And Romantic Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -573,20 +514,19 @@ export const allSlides = [
       "src": "/image/image copy 47.png",
       "name": "Garnet",
       "origin": "India, Africa",
-      "Interesting_Facts": "Symbolizes love and passion; comes in multiple shades (not just red).",
-      "Popular_Uses": "Deep red is popular in vintage and romantic jewelry.",
+      "Interesting_Facts": "Symbolizes Love And Passion; Comes In Multiple Shades (Not Just Red).",
+      "Popular_Uses": "Deep Red Is Popular In Vintage And Romantic Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
   ],
-
   [
     {
       "src": "/image/image copy 50.png",
       "name": "Hematite",
       "origin": "Brazil, UK",
-      "Interesting_Facts": "Metallic gray-black; used for grounding and protection in ancient times.",
-      "Popular_Uses": "Modern, edgy appeal — great in men’s jewelry and cuffs.",
+      "Interesting_Facts": "Metallic Gray-Black; Used For Grounding And Protection In Ancient Times.",
+      "Popular_Uses": "Modern, Edgy Appeal — Great In Men’s Jewelry And Cuffs.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -594,19 +534,19 @@ export const allSlides = [
       "src": "/image/image copy 51.png",
       "name": "Hematite",
       "origin": "Brazil, UK",
-      "Interesting_Facts": "Metallic gray-black; used for grounding and protection in ancient times.",
-      "Popular_Uses": "Modern, edgy appeal — great in men’s jewelry and cuffs.",
+      "Interesting_Facts": "Metallic Gray-Black; Used For Grounding And Protection In Ancient Times.",
+      "Popular_Uses": "Modern, Edgy Appeal — Great In Men’s Jewelry And Cuffs.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
-  ],
-  [
+  ],[
+  
     {
       "src": "/image/image copy 52.png",
       "name": "Black Spinel",
       "origin": "Thailand, Sri Lanka",
-      "Interesting_Facts": "Rare natural black gemstone; often mistaken for black diamond.",
-      "Popular_Uses": "Sophisticated alternative to onyx; loved for luxury minimalism.",
+      "Interesting_Facts": "Rare Natural Black Gemstone; Often Mistaken For Black Diamond.",
+      "Popular_Uses": "Sophisticated Alternative To Onyx; Loved For Luxury Minimalism.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -614,8 +554,8 @@ export const allSlides = [
       "src": "/image/image copy 53.png",
       "name": "Black Spinel",
       "origin": "Thailand, Sri Lanka",
-      "Interesting_Facts": "Rare natural black gemstone; often mistaken for black diamond.",
-      "Popular_Uses": "Sophisticated alternative to onyx; loved for luxury minimalism.",
+      "Interesting_Facts": "Rare Natural Black Gemstone; Often Mistaken For Black Diamond.",
+      "Popular_Uses": "Sophisticated Alternative To Onyx; Loved For Luxury Minimalism.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -625,8 +565,8 @@ export const allSlides = [
       "src": "/image/image copy 54.png",
       "name": "Pyrite",
       "origin": "Peru, Spain",
-      "Interesting_Facts": "Called \"Fool’s Gold\" due to its golden metallic luster; attracts abundance.",
-      "Popular_Uses": "Sparkly, bold — used in raw or statement crystal jewelry.",
+      "Interesting_Facts": "Called \"Fool’s Gold\" Due To Its Golden Metallic Luster; Attracts Abundance.",
+      "Popular_Uses": "Sparkly, Bold — Used In Raw Or Statement Crystal Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -634,8 +574,8 @@ export const allSlides = [
       "src": "/image/image copy 55.png",
       "name": "Pyrite",
       "origin": "Peru, Spain",
-      "Interesting_Facts": "Called \"Fool’s Gold\" due to its golden metallic luster; attracts abundance.",
-      "Popular_Uses": "Sparkly, bold — used in raw or statement crystal jewelry.",
+      "Interesting_Facts": "Called \"Fool’s Gold\" Due To Its Golden Metallic Luster; Attracts Abundance.",
+      "Popular_Uses": "Sparkly, Bold — Used In Raw Or Statement Crystal Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -645,8 +585,8 @@ export const allSlides = [
       "src": "/image/image copy 56.png",
       "name": "Iolite",
       "origin": "India, Sri Lanka",
-      "Interesting_Facts": "Ancient Viking compass stone; shows different colors from different angles.",
-      "Popular_Uses": "Deep bluish-violet — popular in artistic, mystical designs.",
+      "Interesting_Facts": "Ancient Viking Compass Stone; Shows Different Colors From Different Angles.",
+      "Popular_Uses": "Deep Bluish-Violet — Popular In Artistic, Mystical Designs.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -654,10 +594,10 @@ export const allSlides = [
       "src": "/image/image copy 57.png",
       "name": "Iolite",
       "origin": "India, Sri Lanka",
-      "Interesting_Facts": "Ancient Viking compass stone; shows different colors from different angles.",
-      "Popular_Uses": "Deep bluish-violet — popular in artistic, mystical designs.",
+      "Interesting_Facts": "Ancient Viking Compass Stone; Shows Different Colors From Different Angles.",
+      "Popular_Uses": "Deep Bluish-Violet — Popular In Artistic, Mystical Designs.",
       "Stock_Information": "Available",
-    "type": "semi-precious"
+      "type": "semi-precious"
     }
   ],
   [
@@ -665,8 +605,8 @@ export const allSlides = [
       "src": "/image/image copy 58.png",
       "name": "Hessonite (Gomed)",
       "origin": "India, Sri Lanka",
-      "Interesting_Facts": "Orange to brown garnet; associated with clarity and confidence in Vedic astrology.",
-      "Popular_Uses": "Popular in spiritual and astrological jewelry.",
+      "Interesting_Facts": "Orange To Brown Garnet; Associated With Clarity And Confidence In Vedic Astrology.",
+      "Popular_Uses": "Popular In Spiritual And Astrological Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -674,8 +614,8 @@ export const allSlides = [
       "src": "/image/image copy 59.png",
       "name": "Hessonite (Gomed)",
       "origin": "India, Sri Lanka",
-      "Interesting_Facts": "Orange to brown garnet; associated with clarity and confidence in Vedic astrology.",
-      "Popular_Uses": "Popular in spiritual and astrological jewelry.",
+      "Interesting_Facts": "Orange To Brown Garnet; Associated With Clarity And Confidence In Vedic Astrology.",
+      "Popular_Uses": "Popular In Spiritual And Astrological Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -685,8 +625,8 @@ export const allSlides = [
       "src": "/image/image copy 60.png",
       "name": "Vasonite (Vesuvianite)",
       "origin": "Italy, Canada",
-      "Interesting_Facts": "Named after Mount Vesuvius; olive green to yellow-green colors.",
-      "Popular_Uses": "Earthy tone suits nature-inspired and organic collections.",
+      "Interesting_Facts": "Named After Mount Vesuvius; Olive Green To Yellow-Green Colors.",
+      "Popular_Uses": "Earthy Tone Suits Nature-Inspired And Organic Collections.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -694,8 +634,8 @@ export const allSlides = [
       "src": "/image/image copy.png",
       "name": "Vasonite (Vesuvianite)",
       "origin": "Italy, Canada",
-      "Interesting_Facts": "Named after Mount Vesuvius; olive green to yellow-green colors.",
-      "Popular_Uses": "Earthy tone suits nature-inspired and organic collections.",
+      "Interesting_Facts": "Named After Mount Vesuvius; Olive Green To Yellow-Green Colors.",
+      "Popular_Uses": "Earthy Tone Suits Nature-Inspired And Organic Collections.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -705,18 +645,18 @@ export const allSlides = [
       "src": "/image/image copy 4.png",
       "name": "Strawberry Quartz",
       "origin": "Mexico, Russia",
-      "Interesting_Facts": "Reddish inclusions give it a soft pink, speckled appearance.",
-      "Popular_Uses": "Feminine and dreamy — great for youthful or romantic pieces.",
-      "Stock_Information": "Available in Green,Pink,yellow,Blue",
+      "Interesting_Facts": "Reddish Inclusions Give It A Soft Pink, Speckled Appearance.",
+      "Popular_Uses": "Feminine And Dreamy — Great For Youthful Or Romantic Pieces.",
+      "Stock_Information": "Available In Green, Pink, Yellow, Blue",
       "type": "semi-precious"
     },
     {
       "src": "/image/image copy 5.png",
       "name": "Strawberry Quartz",
       "origin": "Mexico, Russia",
-      "Interesting_Facts": "Reddish inclusions give it a soft pink, speckled appearance.",
-      "Popular_Uses": "Feminine and dreamy — great for youthful or romantic pieces.",
-      "Stock_Information": "Available in Green,Pink,yellow,Blue",
+      "Interesting_Facts": "Reddish Inclusions Give It A Soft Pink, Speckled Appearance.",
+      "Popular_Uses": "Feminine And Dreamy — Great For Youthful Or Romantic Pieces.",
+      "Stock_Information": "Available In Green, Pink, Yellow, Blue",
       "type": "semi-precious"
     }
   ],
@@ -725,36 +665,37 @@ export const allSlides = [
       "src": "/image/image copy 6.png",
       "name": "Tourmaline",
       "origin": "Brazil, Afghanistan",
-      "Interesting_Facts": "Known for its wide color variety; protects against negative energy.",
-      "Popular_Uses": "Highly versatile — perfect for multicolor and custom designs.",
-      "Stock_Information": "Avaolble in Green, Pink, Yellow, Blue, Peach",
+      "Interesting_Facts": "Known For Its Wide Color Variety; Protects Against Negative Energy.",
+      "Popular_Uses": "Highly Versatile — Perfect For Multicolor And Custom Designs.",
+      "Stock_Information": "Available In Green, Pink, Yellow, Blue, Peach",
       "type": "semi-precious"
     },
     {
       "src": "/image/image copy 6.png",
       "name": "Tourmaline",
       "origin": "Brazil, Afghanistan",
-      "Interesting_Facts": "Known for its wide color variety; protects against negative energy.",
-      "Popular_Uses": "Highly versatile — perfect for multicolor and custom designs.",
-      "Stock_Information": "Avaolble in Green, Pink, Yellow, Blue, Peach",
+      "Interesting_Facts": "Known For Its Wide Color Variety; Protects Against Negative Energy.",
+      "Popular_Uses": "Highly Versatile — Perfect For Multicolor And Custom Designs.",
+      "Stock_Information": "Available In Green, Pink, Yellow, Blue, Peach",
       "type": "semi-precious"
     }
-  ],  [
+  ],
+  [
     {
       "src": "/image/image copy 7.png",
       "name": "Aquamarine",
       "origin": "Brazil, Nigeria",
-      "Interesting_Facts": "March birthstone; sea blue color evokes tranquility and clarity.",
-      "Popular_Uses": "Elegant and soothing — often used in fine and bridal jewelry.",
+      "Interesting_Facts": "March Birthstone; Sea Blue Color Evokes Tranquility And Clarity.",
+      "Popular_Uses": "Elegant And Soothing — Often Used In Fine And Bridal Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
     {
       "src": "/image/image copy 8.png",
       "name": "Tanzanite",
-      "origin": "Tanzania (only source)",
-      "Interesting_Facts": "Rare gem with vibrant violet-blue hues; discovered in 1967.",
-      "Popular_Uses": "Premium, one-location gem — used in luxury and statement sets.",
+      "origin": "Tanzania (Only Source)",
+      "Interesting_Facts": "Rare Gem With Vibrant Violet-Blue Hues; Discovered In 1967.",
+      "Popular_Uses": "Premium, One-Location Gem — Used In Luxury And Statement Sets.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -764,39 +705,40 @@ export const allSlides = [
       "src": "/gems/gem42.jpg",
       "name": "Morganite",
       "origin": "Brazil, Madagascar",
-      "Interesting_Facts": "Peach-pink member of the beryl family; symbol of divine love.",
-      "Popular_Uses": "Bridal favorite; soft romantic tone suits minimal aesthetics.",
-      "Stock_Information": "Available in peach, pink",
+      "Interesting_Facts": "Peach-Pink Member Of The Beryl Family; Symbol Of Divine Love.",
+      "Popular_Uses": "Bridal Favorite; Soft Romantic Tone Suits Minimal Aesthetics.",
+      "Stock_Information": "Available In Peach, Pink",
       "type": "semi-precious"
     },
     {
       "src": "/gems/gem42.jpg",
       "name": "Morganite",
       "origin": "Brazil, Madagascar",
-      "Interesting_Facts": "Peach-pink member of the beryl family; symbol of divine love.",
-      "Popular_Uses": "Bridal favorite; soft romantic tone suits minimal aesthetics.",
-      "Stock_Information": "Available in peach, pink",
+      "Interesting_Facts": "Peach-Pink Member Of The Beryl Family; Symbol Of Divine Love.",
+      "Popular_Uses": "Bridal Favorite; Soft Romantic Tone Suits Minimal Aesthetics.",
+      "Stock_Information": "Available In Peach, Pink",
       "type": "semi-precious"
     }
-  ],[
+  ],
+  [
     {
       "src": "/image/pearl.png",
-      "name": "Mother of Pearl (MOP)",
+      "name": "Mother Of Pearl (MOP)",
       "origin": "Philippines, Australia, China, New Zealand",
       "background": "black",
-      "Interesting_Facts": "Made from mollusk shells; known for its natural iridescence.",
-      "Popular_Uses": "Delicate look suits feminine jewelry and bridal collections.",
-      "Stock_Information": "Available in White, Black/grey, brown,Pink",
+      "Interesting_Facts": "Made From Mollusk Shells; Known For Its Natural Iridescence.",
+      "Popular_Uses": "Delicate Look Suits Feminine Jewelry And Bridal Collections.",
+      "Stock_Information": "Available In White, Black/Grey, Brown, Pink",
       "type": "semi-precious"
     },
     {
       "src": "/image/pearl1.png",
-      "name": "Mother of Pearl (MOP)",
-      "background": "black",
+      "name": "Mother Of Pearl (MOP)",
       "origin": "Philippines, Australia, China, New Zealand",
-      "Interesting_Facts": "Made from mollusk shells; known for its natural iridescence.",
-      "Popular_Uses": "Delicate look suits feminine jewelry and bridal collections.",
-      "Stock_Information": "Available in White, Black/grey, brown,Pink",
+      "background": "black",
+      "Interesting_Facts": "Made From Mollusk Shells; Known For Its Natural Iridescence.",
+      "Popular_Uses": "Delicate Look Suits Feminine Jewelry And Bridal Collections.",
+      "Stock_Information": "Available In White, Black/Grey, Brown, Pink",
       "type": "semi-precious"
     }
   ],
@@ -806,9 +748,9 @@ export const allSlides = [
       "name": "White Quartz",
       "origin": "Brazil, India",
       "background": "black",
-      "Interesting_Facts": "Known as the \"master healer\"; amplifies energy and intention.",
-      "Popular_Uses": "Great for minimal designs, often used in healing jewelry.",
-      "Stock_Information": "Available in Rose, white, olive, whiskey, beer, cognac, lemon",
+      "Interesting_Facts": "Known As The \"Master Healer\"; Amplifies Energy And Intention.",
+      "Popular_Uses": "Great For Minimal Designs, Often Used In Healing Jewelry.",
+      "Stock_Information": "Available In Rose, White, Olive, Whiskey, Beer, Cognac, Lemon",
       "type": "semi-precious"
     },
     {
@@ -816,9 +758,9 @@ export const allSlides = [
       "name": "White Quartz",
       "origin": "Brazil, India",
       "background": "black",
-      "Interesting_Facts": "Known as the \"master healer\"; amplifies energy and intention.",
-      "Popular_Uses": "Great for minimal designs, often used in healing jewelry.",
-      "Stock_Information": "Available in Rose, white, olive, whiskey, beer, cognac, lemon",
+      "Interesting_Facts": "Known As The \"Master Healer\"; Amplifies Energy And Intention.",
+      "Popular_Uses": "Great For Minimal Designs, Often Used In Healing Jewelry.",
+      "Stock_Information": "Available In Rose, White, Olive, Whiskey, Beer, Cognac, Lemon",
       "type": "semi-precious"
     }
   ],
@@ -826,32 +768,32 @@ export const allSlides = [
     {
       "src": "/image/glass.png",
       "name": "Glass",
-      "background": "black",
       "origin": "Worldwide (Manmade)",
-      "Interesting_Facts": "Can mimic gemstones in col/Users/jatinmehta/Downloads/image_copy_23-removebg-preview.pngor/texture; affordable and customizable.",
-      "Popular_Uses": "Ideal for fashion-forward, budget-friendly collections.",
-      "Stock_Information": "Available in all colors",
+      "background": "black",
+      "Interesting_Facts": "Can Mimic Gemstones In Color/Texture; Affordable And Customizable.",
+      "Popular_Uses": "Ideal For Fashion-Forward, Budget-Friendly Collections.",
+      "Stock_Information": "Available In All Colors",
       "type": "semi-precious"
     },
     {
       "src": "/image/glass.png",
       "name": "Glass",
-      "background": "black",
       "origin": "Worldwide (Manmade)",
-      "Interesting_Facts": "Can mimic gemstones in color/texture; affordable and customizable.",
-      "Popular_Uses": "Ideal for fashion-forward, budget-friendly collections.",
-      "Stock_Information": "Available in all colors",
+      "background": "black",
+      "Interesting_Facts": "Can Mimic Gemstones In Color/Texture; Affordable And Customizable.",
+      "Popular_Uses": "Ideal For Fashion-Forward, Budget-Friendly Collections.",
+      "Stock_Information": "Available In All Colors",
       "type": "semi-precious"
     }
   ],
-    [
+  [
     {
       "src": "/image/image copy 2.png",
       "name": "White Topaz",
       "origin": "India, Nigeria",
       "background": "black",
-      "Interesting_Facts": "Represents love and affection; affordable alternative to diamonds.",
-      "Popular_Uses": "Loved for engagement rings and dainty earrings.",
+      "Interesting_Facts": "Represents Love And Affection; Affordable Alternative To Diamonds.",
+      "Popular_Uses": "Loved For Engagement Rings And Dainty Earrings.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -860,8 +802,8 @@ export const allSlides = [
       "name": "White Topaz",
       "origin": "India, Nigeria",
       "background": "black",
-      "Interesting_Facts": "Represents love and affection; affordable alternative to diamonds.",
-      "Popular_Uses": "Loved for engagement rings and dainty earrings.",
+      "Interesting_Facts": "Represents Love And Affection; Affordable Alternative To Diamonds.",
+      "Popular_Uses": "Loved For Engagement Rings And Dainty Earrings.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -870,31 +812,32 @@ export const allSlides = [
     {
       "src": "/image/moonstone.png",
       "name": "Moonstone",
-      "origin": " India, Africa",
+      "origin": "India, Africa",
       "background": "black",
-      "Interesting_Facts": "Displays a magical glow; symbol of new beginnings.",
-      "Popular_Uses": "Loved in ethereal, boho, and moon-inspired collections.",
+      "Interesting_Facts": "Displays A Magical Glow; Symbol Of New Beginnings.",
+      "Popular_Uses": "Loved In Ethereal, Boho, And Moon-Inspired Collections.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
     {
       "src": "/image/image copy 24.png",
       "name": "Moonstone",
-      "origin": " India, Africa",
+      "origin": "India, Africa",
       "background": "black",
-      "Interesting_Facts": "Displays a magical glow; symbol of new beginnings.",
-      "Popular_Uses": "Loved in ethereal, boho, and moon-inspired collections.",
+      "Interesting_Facts": "Displays A Magical Glow; Symbol Of New Beginnings.",
+      "Popular_Uses": "Loved In Ethereal, Boho, And Moon-Inspired Collections.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
-  ],  [
+  ],
+  [
     {
       "src": "/image/rainbow.png",
       "name": "Rainbow Moonstone",
       "origin": "India, Sri Lanka",
       "background": "black",
-      "Interesting_Facts": "Displays a spectrum of colors under light; connected to feminine energy.",
-      "Popular_Uses": "Ethereal glow makes it a bestseller in boho and bridal sets.",
+      "Interesting_Facts": "Displays A Spectrum Of Colors Under Light; Connected To Feminine Energy.",
+      "Popular_Uses": "Ethereal Glow Makes It A Bestseller In Boho And Bridal Sets.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -902,11 +845,71 @@ export const allSlides = [
       "src": "/image/image copy 49.png",
       "name": "Rainbow Moonstone",
       "origin": "India, Sri Lanka",
-      "Interesting_Facts": "Displays a spectrum of colors under light; connected to feminine energy.",
-      "Popular_Uses": "Ethereal glow makes it a bestseller in boho and bridal sets.",
+      "background": "black",
+      "Interesting_Facts": "Displays A Spectrum Of Colors Under Light; Connected To Feminine Energy.",
+      "Popular_Uses": "Ethereal Glow Makes It A Bestseller In Boho And Bridal Sets.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
   ],
-  
-];
+  [
+    {
+      "src": "/image/image copy 12.png",
+      "name": "Ruby",
+      "origin": "Myanmar, Mozambique, India",
+      "Interesting_Facts": "Symbol Of Passion And Love; One Of The Most Precious Stones.",
+      "Popular_Uses": "Luxury Rings, Statement Pendants, And Bridal Sets.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    },
+    {
+      "src": "/image/image copy 13.png",
+      "name": "Ruby",
+      "origin": "Myanmar, Mozambique, India",
+      "Interesting_Facts": "Symbol Of Passion And Love; One Of The Most Precious Stones.",
+      "Popular_Uses": "Luxury Rings, Statement Pendants, And Bridal Sets.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    }
+  ],
+  [
+    {
+      "src": "/image/image copy 14.png",
+      "name": "Sapphire",
+      "origin": "Sri Lanka, Madagascar",
+      "Interesting_Facts": "Comes In Many Colors; Blue Is Most Iconic; Associated With Wisdom And Royalty.",
+      "Popular_Uses": "Popular In Premium Rings And Royal-Inspired Collections.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    },
+    {
+      "src": "/image/image copy 15.png",
+      "name": "Sapphire",
+      "origin": "Sri Lanka, Madagascar",
+      "Interesting_Facts": "Comes In Many Colors; Blue Is Most Iconic; Associated With Wisdom And Royalty.",
+      "Popular_Uses": "Popular In Premium Rings And Royal-Inspired Collections.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    }
+  ],
+  [
+    {
+      "src": "/image/image copy 62.png",
+      "name": "Emerald",
+      "origin": "Colombia, Zambia",
+      "Interesting_Facts": "Associated With Renewal And Growth; Favored By Royalty Throughout History.",
+      "Popular_Uses": "Loved In Traditional Indian And Antique-Style Jewelry.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    },
+    {
+      "src": "/image/image copy 63.png",
+      "name": "Emerald",
+      "origin": "Colombia, Zambia",
+      "Interesting_Facts": "Associated With Renewal And Growth; Favored By Royalty Throughout History.",
+      "Popular_Uses": "Loved In Traditional Indian And Antique-Style Jewelry.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    }
+  ]
+]
