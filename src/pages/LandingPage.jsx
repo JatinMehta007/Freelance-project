@@ -59,12 +59,13 @@ export const Landing = () => {
             <div>
               <img
                 src="./back1.png"
+                loading="lazy"
                 alt=""
                 className="rounded-full absolute w-72 top-[18%] right-[30%]"
               />
             </div>
             <div className="lg:w-[100%] ml-40   mt-[15%]  overflow-hidden">
-              <img src="./backs2.jpg" alt="" className="rounded-full w-full" />
+              <img src="./backs2.jpg" alt="" className="rounded-full w-full" loading="lazy" />
             </div>
           </div>
         </div>
