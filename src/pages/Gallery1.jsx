@@ -21,7 +21,6 @@ export const Gallery = () => {
     });
   };
 
-  // Filter slides by selected category
   const filteredSlides = allSlides.filter(
     (slides) =>
       selectedCategory === "all" ||
@@ -31,13 +30,13 @@ export const Gallery = () => {
   return (
     <div
       style={{ fontFamily: '"Times New Roman", Times, serif' }}
-      className="bg-black min-h-screen w-screen flex flex-col items-center justify-center text-[#B8B7C1]"
+      className="bg-neutral-900 min-h-screen w-screen flex flex-col items-center justify-center text-[#B8B7C1]"
     >
       <p className="text-8xl text-center p-10">Gallery</p>
 
       {/* Dropdown */}
       <div className="mb-8">
-        <label className="mr-4 text-xl font-semibold">Filter:</label>
+        <label className="mr-4 text-xl font-semibold">Stone Type:</label>
         <select
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value)}
@@ -62,7 +61,7 @@ export const Gallery = () => {
         {filteredSlides.map((slides, i) => (
           <div
             key={i}
-            className="relative w-[320px] h-[400px] overflow-hidden bg-white "
+            className="relative w-[320px] h-[400px] overflow-hidden bg-white"
           >
             <div
               className="flex transition-transform duration-700 ease-in-out"
@@ -74,33 +73,42 @@ export const Gallery = () => {
               {slides.map((item, j) => (
                 <div
                   key={j}
-                  className="w-[320px] h-[400px] shrink-0 flex flex-col items-center justify-center px-4 text-center text-black"
+                  className="w-[320px] h-[400px] shrink-0 flex flex-col items-center justify-start text-center text-black"
                 >
-                  <img
-                    src={item.src}
-                    alt={item.name}
-                    className="w-[85%] h-[160px] object-contain mb-4"
-                  />
+                  {/* Top Half (Image Section) */}
+                  <div
+                    className={`w-full h-[200px] mb-4 flex items-center justify-center ${
+                      item.background === "black" ? "bg-black" : "bg-white"
+                    }`}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.name}
+                      className="max-h-[160px] object-contain"
+                    />
+                  </div>
+
+                  {/* Bottom Text */}
                   <h3 className="text-xl font-bold mb-2">{item.name}</h3>
 
                   {j === 0 ? (
                     <>
-                      <p className="text-sm mb-2">
+                      <p className="text-sm mb-2 p-2">
                         <span className="font-semibold">Origin:</span>{" "}
                         {item.origin}
                       </p>
-                      <p className="text-sm">
+                      <p className="text-sm p-2">
                         <span className="font-semibold">Stock Info:</span>{" "}
                         {item.Stock_Information}
                       </p>
                     </>
                   ) : (
                     <>
-                      <p className="text-sm mb-2">
+                      <p className="text-sm mb-2 p-2">
                         <span className="font-semibold">Popular Use:</span>{" "}
                         {item.Popular_Uses}
                       </p>
-                      <p className="text-sm">
+                      <p className="text-sm p-2">
                         <span className="font-semibold">
                           Interesting Fact:
                         </span>{" "}
@@ -127,7 +135,7 @@ export const Gallery = () => {
             </button>
 
             {/* Dots */}
-            <div className="absolute bottom-3 w-full flex justify-center gap-2">
+            <div className="absolute bottom-6 w-full flex justify-center gap-2">
               {slides.map((_, dotIndex) => (
                 <div
                   key={dotIndex}
