@@ -44,7 +44,12 @@ export const TestimonialSlider = () => {
   return (
     <div
       className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center px-4"
-      style={{ backgroundImage: "url('/testimonial.jpeg')" }}
+      style={{
+    background: 'radial-gradient(circle, #645558 0%, #3a3030 50%, #35383b 100%)',
+    minHeight: '100vh',
+    width: '100%',
+  }}
+      
     >
       {/* Left Arrow */}
       <button
