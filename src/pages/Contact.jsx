@@ -1,141 +1,119 @@
-// import React, { useState } from "react";
-// import { useRouter } from "next/navigation";
-// import { Question } from "../lib/action/question";
+import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-// const defaultFormState = {
-//   name: {
-//     value: "",
-//     error: "",
-//   },
-//   email: {
-//     value: "",
-//     error: "",
-//   },
-//   message: {
-//     value: "",
-//     error: "",
-//   },
-// };
 
 export const Contact = () => {
-  //   const [formData, setFormData] = useState(defaultFormState);
-  //   const router = useRouter();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
 
-  //   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  //     e.preventDefault();
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
 
-  //     try {
-  //       // Call server action
-  //       const response = await Question({
-  //         name: formData.name.value,
-  //         email: formData.email.value,
-  //         message: formData.message.value,
-  //       });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    toast.success("Your message has been submitted!");
+    console.log("Submitted Data:", formData);
 
-  //       console.log(response);
-
-  //       // Show success notification
-  //       toast.success("Your question has been submitted successfully!");
-
-  //       // Navigate to home page after a delay
-  //       setTimeout(() => {
-  //         router.push("/");
-  //       }, 2000);
-  //     } catch (error) {
-  //       console.error("Error while adding question entry:", error);
-  //       toast.error("Something went wrong. Please try again.");
-  //     }
-  //   };
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+  };
 
   return (
     <div
-      className="p-10 grid grid-cols-[40%_60%] gap-10 text-white bg-gradient-to-r from-neutral-800 via-neutral-800 to-neutral-800"
+      className="relative w-screen h-screen grid grid-cols-1 md:grid-cols-2 text-white overflow-hidden"
       id="contact"
+      style={{
+        backgroundImage: "url('/testimonial.jpeg')", // ✅ Make sure this path is correct in your /public folder
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        fontFamily: '"Times New Roman", Times, serif' 
+      }}
     >
-      <div>
-        <p className="text-6xl font-semibold text-center  font-playfair">
-          Contact us
-        </p>
+      <Toaster />
 
-        <p className="text-center text-xl text-[#B8B7C1] font-normal  p-4 font-gentium">
-          Reach out to us over email or fill up this contact form. We will get
-          back to you ASAP - We promise.
+      {/* Black overlay for readability */}
+      <div className="absolute  bg-black/60 z-0" />
+
+      {/* Left Side: Contact Info */}
+      <div className="z-10 p-10 flex flex-col justify-center bg-[#5c5252]/60 ">
+        <h2 className="text-2xl tracking-widest uppercase mb-2 text-[#FFF7EF]">Get in touch</h2>
+        <h1 className="text-6xl font-bold text-[#F3D64C] mb-1">Convey Your</h1>
+        <h1 className="text-6xl font-bold text-[#EFEEFF] mb-4">Ideas to Us</h1>
+        <p className="text-2xl text-[#FFF7EF] leading-relaxed mb-6 w-[80%]">
+          Contact us for gemstones inquiry and collaboration opportunities by submitting the form or reach out directly!
         </p>
-        <div className="flex justify-center items-center ">
-          {/* Toaster for notifications */}
-          <Toaster />
-          <form className="form w-[100%]">
-            <div className="flex  flex-col md:flex-row  justify-between gap-5">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm  text-neutral-700 w-full"
-                // value={formData.name.value}
-                onChange={(e) => {
-                  setFormData({
-                    ...formData,
-                    name: {
-                      value: e.target.value,
-                      error: "",
-                    },
-                  });
-                }}
-              />
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
-                // value={formData.email.value}
-                onChange={(e) => {
-                  setFormData({
-                    ...formData,
-                    email: {
-                      value: e.target.value,
-                      error: "",
-                    },
-                  });
-                }}
-              />
-            </div>
-            <div>
-              <textarea
-                placeholder="Your Message"
-                rows={10}
-                className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 mt-4 py-2 rounded-md text-sm text-neutral-700 w-full"
-                // value={formData.message.value}
-                onChange={(e) => {
-                  setFormData({
-                    ...formData,
-                    message: {
-                      value: e.target.value,
-                      error: "",
-                    },
-                  });
-                }}
-              />
-            </div>
-            <button
-              className="w-full px-2 py-2 mt-4 bg-neutral-100 rounded-md font-bold text-neutral-500 hover:text-sky-500"
-              type="submit"
-            >
-              Submit
-            </button>
-          </form>
+        <div className="space-y-4 text-xl text-[#FFF7EF] ">
+          <div className="flex items-center gap-3">
+            <span className="bg-yellow-400 rounded-full p-2">📞</span>
+            <span>9929977744, 7426813744</span>
+          </div>
+          <div className="flex items-center gap-3 text-[#FFF7EF] ">
+            <span className="bg-yellow-400 rounded-full p-2">📧</span>
+            <span>hello@reallygreatsite.com</span>
+          </div>
+          <div className="flex items-center gap-3 text-[#FFF7EF] ">
+            <span className="bg-yellow-400 rounded-full p-2">📍</span>
+            <span>37/3 Muktanand nagar, Gopalpura, Jaipur</span>
+          </div>
         </div>
       </div>
-      <div>
-        <iframe
-          className=" w-[100%] rounded-lg h-[100%] "
-          // width="100%"
-          // height="300"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-          src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Graf123%20Education%20Lane,%20Cityville,%20State,%20ZIP%20Codeton%20Street,%20Dublin,%20Ireland+(Springdale%20Public%20School)&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        >
-          <a href="https://www.gps.ie/">gps trackers</a>
-        </iframe>
+
+      {/* Right Side: Contact Form */}
+      <div className="z-10 p-10 flex flex-col justify-center ">
+        <form onSubmit={handleSubmit} className="space-y-5">
+          <input
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Name"
+            className="w-full bg-white text-black border border-gray-300 p-3 rounded-md focus:outline-none"
+            required
+          />
+          <div className="flex gap-4">
+            <input
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Email"
+              className="w-full bg-white text-black border border-gray-300 p-3 rounded-md focus:outline-none"
+              required
+            />
+            <input
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="Phone"
+              className="w-full bg-white text-black border border-gray-300 p-3 rounded-md focus:outline-none"
+              required
+            />
+          </div>
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Message"
+            rows={6}
+            className="w-full bg-white text-black border border-gray-300 p-3 rounded-md focus:outline-none"
+            required
+          />
+          <button
+            type="submit"
+            className="bg-[#F3D64C] text-black font-semibold py-3 px-6 rounded-md hover:bg-yellow-500 transition-colors w-full"
+          >
+            Submit Now
+          </button>
+        </form>
       </div>
     </div>
   );
