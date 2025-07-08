@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { allSlides } from "../components/allSlides";
+import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
 
 export const Gallery = () => {
   const [indexes, setIndexes] = useState(Array(allSlides.length).fill(0));
@@ -28,11 +30,14 @@ export const Gallery = () => {
   );
 
   return (
+    <div>
+      <Navbar></Navbar>
     <div
-      style={{ fontFamily: '"Times New Roman", Times, serif' }}
+      style={{ fontFamily: '"Times New Roman", Times, serif' }} id="Gallery"
       className="bg-neutral-900 min-h-screen w-screen flex flex-col items-center justify-center text-[#B8B7C1]"
-    >
-      <p className="text-8xl text-center p-10">Gallery</p>
+      >
+
+      <p className="text-8xl text-center p-10 pt-20">Gallery</p>
 
       {/* Dropdown */}
       <div className="mb-8">
@@ -41,7 +46,7 @@ export const Gallery = () => {
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value)}
           className="p-2 text-white rounded bg-transparent border border-white"
-        >
+          >
           <option value="all">All</option>
           <option value="precious">Precious</option>
           <option value="semi-precious">Semi-Precious</option>
@@ -60,8 +65,8 @@ export const Gallery = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 pb-20">
         {filteredSlides.map((slides, i) => (
           <div
-            key={i}
-            className="relative w-[320px] h-[400px] overflow-hidden bg-white"
+          key={i}
+          className="relative w-[320px] h-[400px] overflow-hidden bg-white"
           >
             <div
               className="flex transition-transform duration-700 ease-in-out"
@@ -69,23 +74,23 @@ export const Gallery = () => {
                 transform: `translateX(-${indexes[i] * 320}px)`,
                 width: `${slides.length * 320}px`,
               }}
-            >
+              >
               {slides.map((item, j) => (
                 <div
-                  key={j}
-                  className="w-[320px] h-[400px] shrink-0 flex flex-col items-center justify-start text-center text-black"
+                key={j}
+                className="w-[320px] h-[400px] shrink-0 flex flex-col items-center justify-start text-center text-black"
                 >
                   {/* Top Half (Image Section) */}
                   <div
                     className={`w-full h-[200px] mb-4 flex items-center justify-center ${
                       item.background === "black" ? "bg-black" : "bg-white"
                     }`}
-                  >
+                    >
                     <img
                       src={item.src}
                       alt={item.name}
                       className="max-h-[160px] object-contain"
-                    />
+                      />
                   </div>
 
                   {/* Bottom Text */}
@@ -124,13 +129,13 @@ export const Gallery = () => {
             <button
               onClick={() => prevSlide(i)}
               className="absolute top-1/2 left-2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 hover:text-black z-10"
-            >
+              >
               {"<"}
             </button>
             <button
               onClick={() => nextSlide(i)}
               className="absolute top-1/2 right-2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 hover:text-black z-10"
-            >
+              >
               {">"}
             </button>
 
@@ -138,10 +143,10 @@ export const Gallery = () => {
             <div className="absolute bottom-6 w-full flex justify-center gap-2">
               {slides.map((_, dotIndex) => (
                 <div
-                  key={dotIndex}
-                  className={`w-[8px] h-[8px] rounded-full transition-colors duration-300 ${
-                    dotIndex === indexes[i] ? "bg-gray-800" : "bg-gray-300"
-                  }`}
+                key={dotIndex}
+                className={`w-[8px] h-[8px] rounded-full transition-colors duration-300 ${
+                  dotIndex === indexes[i] ? "bg-gray-800" : "bg-gray-300"
+                }`}
                 />
               ))}
             </div>
@@ -149,5 +154,7 @@ export const Gallery = () => {
         ))}
       </div>
     </div>
+    <Footer></Footer>
+        </div>
   );
 };
