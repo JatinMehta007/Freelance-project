@@ -19,7 +19,7 @@ export const Gallery = () => {
     setIndexes((prev) => {
       const updated = [...prev];
       updated[i] = (updated[i] - 1 + allSlides[i].length) % allSlides[i].length;
-      return updated;
+      return updated; 
     });
   };
 
@@ -41,18 +41,18 @@ export const Gallery = () => {
 
       {/* Dropdown */}
       <div className="mb-8">
-        <label className="mr-4 text-xl font-semibold">Stone Type:</label>
-        <select
-          value={selectedCategory}
-          onChange={(e) => setSelectedCategory(e.target.value)}
-          className="p-2 text-white rounded bg-transparent border border-white"
-          >
-          <option value="all">All</option>
-          <option value="precious">Precious</option>
-          <option value="semi-precious">Semi-Precious</option>
-          <option value="lab-grown">Lab-grown</option>
-        </select>
-      </div>
+  <label className="mr-4 text-xl font-semibold">Stone Type:</label>
+  <select
+    value={selectedCategory}
+    onChange={(e) => setSelectedCategory(e.target.value)}
+    className="p-2 text-white rounded bg-transparent border-[1px] focus:outline-none"
+  >
+    <option value="all">All</option>
+    <option value="precious">Precious</option>
+    <option value="semi-precious">Semi-Precious</option>
+    <option value="lab-grown">Lab-grown</option>
+  </select>
+</div>
 
       <div className="border border-[#B8B7C1] w-[70%] mx-auto mb-10"></div>
 
