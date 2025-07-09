@@ -109,11 +109,11 @@ export const Gallery = () => {
                     </>
                   ) : (
                     <>
-                      <p className="text-sm mb-2 p-2">
+                      <p className="text-sm  px-4 py-2">
                         <span className="font-semibold">Popular Use:</span>{" "}
                         {item.Popular_Uses}
                       </p>
-                      <p className="text-sm p-2">
+                      <p className="text-sm px-4">
                         <span className="font-semibold">
                           Interesting Fact:
                         </span>{" "}
@@ -140,7 +140,7 @@ export const Gallery = () => {
             </button>
 
             {/* Dots */}
-            <div className="absolute bottom-6 w-full flex justify-center gap-2">
+            <div className="absolute bottom-5 w-full flex justify-center gap-2">
               {slides.map((_, dotIndex) => (
                 <div
                 key={dotIndex}
