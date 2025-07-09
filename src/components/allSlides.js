@@ -1,6 +1,4 @@
 export const allSlides = [
-  
-  
   [
     {
       "src": "/blackonyxs.jpg",
@@ -291,7 +289,7 @@ export const allSlides = [
       "type": "semi-precious"
     },
     {
-      "src": "/image/image copy 30.png",
+      "src": "/image/image_copy_30.png",
       "name": "Malachite",
       "origin": "Congo, Russia",
       "Interesting_Facts": "Deep Green With Concentric Patterns; Absorbs Negativity.",
@@ -391,7 +389,7 @@ export const allSlides = [
       "type": "semi-precious"
     },
     {
-      "src": "/image/image copy 34.png",
+      "src": "/image/image copy 36.png",
       "name": "Blue Sheelite",
       "origin": "Turkey, USA",
       "Interesting_Facts": "Glows Under UV Light; Calming Blue And White Patterns; Often Paired With Calcite.",
@@ -471,7 +469,7 @@ export const allSlides = [
       "type": "semi-precious"
     },
     {
-      "src": "/image/image copy 44.png",
+      "src": "/image/image_copy_44.png",
       "name": "Rhodonite",
       "origin": "Russia, Madagascar",
       "Interesting_Facts": "Pink With Black Veining; Promotes Emotional Healing And Compassion.",
@@ -491,7 +489,7 @@ export const allSlides = [
       "type": "semi-precious"
     },
     {
-      "src": "/image/image copy .png",
+      "src": "/image/image copy 67.png",
       "name": "Peridot",
       "origin": "Pakistan, USA, Myanmar",
       "Interesting_Facts": "Formed Deep In The Earth’s Mantle And Found In Meteorites; August Birthstone.",
@@ -842,7 +840,7 @@ export const allSlides = [
       "type": "semi-precious"
     },
     {
-      "src": "/image/image copy 49.png",
+      "src": "/image/image_copy_49.png",
       "name": "Rainbow Moonstone",
       "origin": "India, Sri Lanka",
       "background": "black",
@@ -883,7 +881,7 @@ export const allSlides = [
       "type": "precious"
     },
     {
-      "src": "/image/image copy 15.png",
+      "src": "/image/image copy 61.png",
       "name": "Sapphire",
       "origin": "Sri Lanka, Madagascar",
       "Interesting_Facts": "Comes In Many Colors; Blue Is Most Iconic; Associated With Wisdom And Royalty.",
