@@ -360,21 +360,21 @@ export const allSlides = [
   ],
   [
     {
-      "src": "/image/image copy 3.png",
-      "name": "K2 Jasper",
-      "origin": "Pakistan (Karakoram Range)",
-      "Interesting_Facts": "Unique Granite With Bright Blue Azurite Orbs; Only Found Near K2 Mountain.",
-      "Popular_Uses": "Rare And Striking; Popular In Conversation-Starter Jewelry.",
-      "Stock_Information": "Available",
+      "src": "",
+      "name": "Morganite",
+      "origin": "Brazil, Madagascar",
+      "Interesting_Facts": "Peach-pink member of the beryl family symbol of divine love.",
+      "Popular_Uses": "Bridal favorite; soft romantic tone suits minimal aesthetics.",
+      "Stock_Information": "Available in peach, pink",
       "type": "semi-precious"
     },
     {
       "src": "/image/image copy 3.png",
-      "name": "K2 Jasper",
-      "origin": "Pakistan (Karakoram Range)",
-      "Interesting_Facts": "Unique Granite With Bright Blue Azurite Orbs; Only Found Near K2 Mountain.",
-      "Popular_Uses": "Rare And Striking; Popular In Conversation-Starter Jewelry.",
-      "Stock_Information": "Available",
+      "name": "Morganite",
+      "origin": "Brazil, Madagascar",
+      "Interesting_Facts": "Peach-pink member of the beryl family symbol of divine love.",
+      "Popular_Uses": "Bridal favorite; soft romantic tone suits minimal aesthetics.",
+      "Stock_Information": "Available in peach, pink",
       "type": "semi-precious"
     }
   ],
