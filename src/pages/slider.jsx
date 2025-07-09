@@ -2,18 +2,18 @@ import { useState, useEffect, useRef } from "react";
 
 export const Button = () => {
   const slides = [
-    "/lapis.jpg",
-    "/oyster.jpeg",
-    "/tigers.jpg",
-    "/rhodonite.jpg",
-    "/swissbt.jpg",
-    "/back1.png",
-    "/back.jpeg",
     "/blackonyxs.jpg",
+    "/image/tiger.png",
+    "/image/image copy 3.png",
     "/peridot1.jpg",
-    "/amethyst.jpg",
-    "/citrine.jpg",
     "/slide.jpeg",
+    "/luminous.png",
+    "/lacejpg.png",
+    "/oyster.jpeg",
+    "/sapphire.png",
+    "/green.png",
+    "/ruby2.jpg.png",
+    "/back-.jpeg",
   ];
 
   const visibleCount = 4;
@@ -65,7 +65,9 @@ export const Button = () => {
       <div className="w-full overflow-hidden flex justify-center">
         <div
           ref={sliderRef}
-          className={`flex ${isTransitioning ? "transition-transform duration-700 ease-in-out" : ""}`}
+          className={`flex ${
+            isTransitioning ? "transition-transform duration-700 ease-in-out" : ""
+          }`}
           style={{
             transform: `translateX(-${currentGroup * 100}%)`,
             width: `${extendedGroups.length * 100}%`,
@@ -79,9 +81,14 @@ export const Button = () => {
               {group.map((img, index) => (
                 <div
                   key={index}
-                  className="w-[22%] h-[270px] rounded-xl bg-center bg-cover"
-                  style={{ backgroundImage: `url(${img})` }}
-                />
+                  className="w-[22%] h-[270px] rounded-xl overflow-hidden flex justify-center items-center bg-white"
+                >
+                  <img
+                    src={img}
+                    alt=""
+                    className="h-full object-contain"
+                  />
+                </div>
               ))}
             </div>
           ))}
