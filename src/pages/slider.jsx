@@ -6,9 +6,9 @@ export const Button = () => {
     "/image/tiger.png",
     "/image/image copy 3.png",
     "/peridot1.jpg",
-    "/slide.jpeg",
+    "/slide.jpg",
     "/luminous.png",
-    "/lacejpg.png",
+    "/image/luminouss.png",
     "/oyster.jpeg",
     "/sapphire.png",
     "/green.png",
@@ -81,12 +81,12 @@ export const Button = () => {
               {group.map((img, index) => (
                 <div
                   key={index}
-                  className="w-[22%] h-[270px] rounded-xl overflow-hidden flex justify-center items-center bg-white"
+                  className="w-[22%] h-[262px] rounded-xl overflow-hidden flex justify-center items-center bg-white"
                 >
                   <img
                     src={img}
                     alt=""
-                    className="h-full w-full "
+                    className="h-full object-contain"
                   />
                 </div>
               ))}
