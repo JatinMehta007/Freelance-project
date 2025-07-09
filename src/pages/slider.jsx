@@ -6,7 +6,7 @@ export const Button = () => {
     "/image/tiger.png",
     "/image/image copy 3.png",
     "/peridot1.jpg",
-    "/slide.jpg",
+    "/slide (1).jpg",
     "/luminous.png",
     "/image/luminouss.png",
     "/oyster.jpeg",
