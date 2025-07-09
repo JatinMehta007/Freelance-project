@@ -1,5 +1,63 @@
 export const allSlides = [
+    [
+    {
+      "src": "/image/image copy 14.png",
+      "name": "Sapphire",
+      "origin": "Sri Lanka, Madagascar",
+      "Interesting_Facts": "Comes In Many Colors; Blue Is Most Iconic; Associated With Wisdom And Royalty.",
+      "Popular_Uses": "Popular In Premium Rings And Royal-Inspired Collections.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    },
+    {
+      "src": "/image/image copy 61.png",
+      "name": "Sapphire",
+      "origin": "Sri Lanka, Madagascar",
+      "Interesting_Facts": "Comes In Many Colors; Blue Is Most Iconic; Associated With Wisdom And Royalty.",
+      "Popular_Uses": "Popular In Premium Rings And Royal-Inspired Collections.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    }
+  ],[
+    {
+      "src": "/image/image copy 12.png",
+      "name": "Ruby",
+      "origin": "Myanmar, Mozambique, India",
+      "Interesting_Facts": "Symbol Of Passion And Love; One Of The Most Precious Stones.",
+      "Popular_Uses": "Luxury Rings, Statement Pendants, And Bridal Sets.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    },
+    {
+      "src": "/image/image copy 13.png",
+      "name": "Ruby",
+      "origin": "Myanmar, Mozambique, India",
+      "Interesting_Facts": "Symbol Of Passion And Love; One Of The Most Precious Stones.",
+      "Popular_Uses": "Luxury Rings, Statement Pendants, And Bridal Sets.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    }
+  ],
   [
+    {
+      "src": "/image/image copy 62.png",
+      "name": "Emerald",
+      "origin": "Colombia, Zambia",
+      "Interesting_Facts": "Associated With Renewal And Growth; Favored By Royalty Throughout History.",
+      "Popular_Uses": "Loved In Traditional Indian And Antique-Style Jewelry.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    },
+    {
+      "src": "/image/image copy 63.png",
+      "name": "Emerald",
+      "origin": "Colombia, Zambia",
+      "Interesting_Facts": "Associated With Renewal And Growth; Favored By Royalty Throughout History.",
+      "Popular_Uses": "Loved In Traditional Indian And Antique-Style Jewelry.",
+      "Stock_Information": "Available",
+      "type": "precious"
+    }
+  ],[
     {
       "src": "/blackonyxs.jpg",
       "name": "Onyx",
@@ -57,66 +115,6 @@ export const allSlides = [
       "Popular_Uses": "Popular In Bracelets And Talismans For Good Luck.",
       "Stock_Information": "Available",
       "type": "semi-precious"
-    }
-  ],
-  [
-    {
-      "src": "/image/ruby-.png",
-      "name": "Ruby Corundum",
-      "origin": "India",
-      "Interesting_Facts": "",
-      "Popular_Uses": "",
-      "Stock_Information": "Available",
-      "type": "lab-grown"
-    },
-    {
-      "src": "/image/ruby1.png",
-      "name": "Ruby Corundum",
-      "origin": "India",
-      "Interesting_Facts": "",
-      "Popular_Uses": "",
-      "Stock_Information": "Available",
-      "type": "lab-grown"
-    }
-  ],
-  [
-    {
-      "src": "/image/sapphire.png",
-      "name": "Sapphire Corundum",
-      "origin": "India",
-      "Interesting_Facts": "",
-      "Popular_Uses": "",
-      "Stock_Information": "Available",
-      "type": "lab-grown"
-    },
-    {
-      "src": "/image/saphire1.png",
-      "name": "Sapphire Corundum",
-      "origin": "India",
-      "Interesting_Facts": "",
-      "Popular_Uses": "",
-      "Stock_Information": "Available",
-      "type": "lab-grown"
-    }
-  ],
-  [
-    {
-      "src": "/image/image copy 15.png",
-      "name": "Emerald Hydro",
-      "origin": "India",
-      "Interesting_Facts": "",
-      "Popular_Uses": "",
-      "Stock_Information": "Available",
-      "type": "lab-grown"
-    },
-    {
-      "src": "/image/image copy 16.png",
-      "name": "Emerald Hydro",
-      "origin": "India",
-      "Interesting_Facts": "",
-      "Popular_Uses": "",
-      "Stock_Information": "Available",
-      "type": "lab-grown"
     }
   ],
   [
@@ -246,7 +244,7 @@ export const allSlides = [
       "Interesting_Facts": "Reflects Light In A “Cat’S Eye” Line; Usually Found In Chrysoberyl Form.",
       "Popular_Uses": "Mystical Appeal; Used In Rings And Amulets For Protection.",
       "Stock_Information": "Available",
-      "type": "precious"
+      "type": "semi-precious"
     },
     {
       "src": "/image/image copy 65.png",
@@ -255,7 +253,7 @@ export const allSlides = [
       "Interesting_Facts": "Reflects Light In A “Cat’S Eye” Line; Usually Found In Chrysoberyl Form.",
       "Popular_Uses": "Mystical Appeal; Used In Rings And Amulets For Protection.",
       "Stock_Information": "Available",
-      "type": "precious"
+      "type": "semi-precious"
     }
   ],
   [
@@ -849,65 +847,66 @@ export const allSlides = [
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
-  ],
-  [
+  ],[
     {
-      "src": "/image/image copy 12.png",
-      "name": "Ruby",
-      "origin": "Myanmar, Mozambique, India",
-      "Interesting_Facts": "Symbol Of Passion And Love; One Of The Most Precious Stones.",
-      "Popular_Uses": "Luxury Rings, Statement Pendants, And Bridal Sets.",
+      "src": "/image/ruby-.png",
+      "name": "Ruby Corundum",
+      "origin": "India",
+      "Interesting_Facts": "",
+      "Popular_Uses": "",
       "Stock_Information": "Available",
-      "type": "precious"
+      "type": "lab-grown"
     },
     {
-      "src": "/image/image copy 13.png",
-      "name": "Ruby",
-      "origin": "Myanmar, Mozambique, India",
-      "Interesting_Facts": "Symbol Of Passion And Love; One Of The Most Precious Stones.",
-      "Popular_Uses": "Luxury Rings, Statement Pendants, And Bridal Sets.",
+      "src": "/image/ruby1.png",
+      "name": "Ruby Corundum",
+      "origin": "India",
+      "Interesting_Facts": "",
+      "Popular_Uses": "",
       "Stock_Information": "Available",
-      "type": "precious"
+      "type": "lab-grown"
     }
   ],
   [
     {
-      "src": "/image/image copy 14.png",
-      "name": "Sapphire",
-      "origin": "Sri Lanka, Madagascar",
-      "Interesting_Facts": "Comes In Many Colors; Blue Is Most Iconic; Associated With Wisdom And Royalty.",
-      "Popular_Uses": "Popular In Premium Rings And Royal-Inspired Collections.",
+      "src": "/image/sapphire.png",
+      "name": "Sapphire Corundum",
+      "origin": "India",
+      "Interesting_Facts": "",
+      "Popular_Uses": "",
       "Stock_Information": "Available",
-      "type": "precious"
+      "type": "lab-grown"
     },
     {
-      "src": "/image/image copy 61.png",
-      "name": "Sapphire",
-      "origin": "Sri Lanka, Madagascar",
-      "Interesting_Facts": "Comes In Many Colors; Blue Is Most Iconic; Associated With Wisdom And Royalty.",
-      "Popular_Uses": "Popular In Premium Rings And Royal-Inspired Collections.",
+      "src": "/image/saphire1.png",
+      "name": "Sapphire Corundum",
+      "origin": "India",
+      "Interesting_Facts": "",
+      "Popular_Uses": "",
       "Stock_Information": "Available",
-      "type": "precious"
+      "type": "lab-grown"
     }
   ],
   [
     {
-      "src": "/image/image copy 62.png",
-      "name": "Emerald",
-      "origin": "Colombia, Zambia",
-      "Interesting_Facts": "Associated With Renewal And Growth; Favored By Royalty Throughout History.",
-      "Popular_Uses": "Loved In Traditional Indian And Antique-Style Jewelry.",
+      "src": "/image/image copy 15.png",
+      "name": "Emerald Hydro",
+      "origin": "India",
+      "Interesting_Facts": "",
+      "Popular_Uses": "",
       "Stock_Information": "Available",
-      "type": "precious"
+      "type": "lab-grown"
     },
     {
-      "src": "/image/image copy 63.png",
-      "name": "Emerald",
-      "origin": "Colombia, Zambia",
-      "Interesting_Facts": "Associated With Renewal And Growth; Favored By Royalty Throughout History.",
-      "Popular_Uses": "Loved In Traditional Indian And Antique-Style Jewelry.",
+      "src": "/image/image copy 16.png",
+      "name": "Emerald Hydro",
+      "origin": "India",
+      "Interesting_Facts": "",
+      "Popular_Uses": "",
       "Stock_Information": "Available",
-      "type": "precious"
+      "type": "lab-grown"
     }
-  ]
+  ],
+  
+
 ]
