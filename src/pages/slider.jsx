@@ -13,7 +13,7 @@ export const Button = () => {
     "/sapphire.png",
     "/green.png",
     "/ruby2.jpg.png",
-    "/back-.jpeg",
+    "/back-.png",
   ];
 
   const visibleCount = 4;
