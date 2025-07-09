@@ -179,7 +179,7 @@ export const allSlides = [
   ],
   [
     {
-      "src": "/image/image copy .png",
+      "src": "/image/greenadventure.jpg.png",
       "name": "Green Aventurine",
       "origin": "India, Brazil",
       "Interesting_Facts": "Brings Luck And Optimism; Known As The \"Stone Of Opportunity.\"",
@@ -188,7 +188,7 @@ export const allSlides = [
       "type": "semi-precious"
     },
     {
-      "src": "/image/image copy .png",
+      "src": "/image/greenadventre12.png",
       "name": "Green Aventurine",
       "origin": "India, Brazil",
       "Interesting_Facts": "Brings Luck And Optimism; Known As The \"Stone Of Opportunity.\"",
@@ -356,26 +356,7 @@ export const allSlides = [
       "type": "semi-precious"
     }
   ],
-  [
-    {
-      "src": "",
-      "name": "Morganite",
-      "origin": "Brazil, Madagascar",
-      "Interesting_Facts": "Peach-pink member of the beryl family symbol of divine love.",
-      "Popular_Uses": "Bridal favorite; soft romantic tone suits minimal aesthetics.",
-      "Stock_Information": "Available in peach, pink",
-      "type": "semi-precious"
-    },
-    {
-      "src": "/image/image copy 3.png",
-      "name": "Morganite",
-      "origin": "Brazil, Madagascar",
-      "Interesting_Facts": "Peach-pink member of the beryl family symbol of divine love.",
-      "Popular_Uses": "Bridal favorite; soft romantic tone suits minimal aesthetics.",
-      "Stock_Information": "Available in peach, pink",
-      "type": "semi-precious"
-    }
-  ],
+  
   [
     {
       "src": "/image/image copy 35.png",
