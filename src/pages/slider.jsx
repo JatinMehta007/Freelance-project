@@ -86,7 +86,7 @@ export const Button = () => {
                   <img
                     src={img}
                     alt=""
-                    className="h-full object-contain"
+                    className="h-full w-full "
                   />
                 </div>
               ))}
