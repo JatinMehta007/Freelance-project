@@ -31,46 +31,69 @@ export const Contact = () => {
 
   return (
     <div
-      className="relative w-screen h-screen grid grid-cols-1 md:grid-cols-2 text-white overflow-hidden"
+      className="relative w-screen min-h-screen flex flex-col md:grid md:grid-cols-2 text-white overflow-hidden"
       id="contact"
       style={{
-        backgroundImage: "url('/testimonial.jpeg')", // ✅ Make sure this path is correct in your /public folder
+        backgroundImage: "url('/testimonial.jpeg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        fontFamily: '"Times New Roman", Times, serif' 
+        fontFamily: '"Times New Roman", Times, serif',
       }}
     >
       <Toaster />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60 z-0" />
 
-      {/* Black overlay for readability */}
-      <div className="absolute  bg-black/60 z-0" />
-
-      {/* Left Side: Contact Info */}
-      <div className="z-10 pl-24 flex flex-col justify-center bg-[#5c5252]/60 ">
-        <h2 className="text-2xl tracking-widest uppercase mb-2 text-[#FFF7EF]">Get in touch</h2>
-        <h1 className="text-6xl font-bold text-[#F3D64C] mb-1">Convey Your</h1>
-        <h1 className="text-6xl font-bold text-[#EFEEFF] mb-4">Ideas to Us</h1>
-        <p className="text-2xl text-[#FFF7EF] leading-relaxed mb-6 w-[80%]">
-          Contact us for gemstones inquiry and collaboration opportunities by submitting the form or reach out directly!
+      {/* Left Side */}
+      <div className="z-10 px-6 py-12 sm:px-10 md:px-16 lg:px-24 flex flex-col justify-center bg-[#5c5252]/60">
+        <h2 className="text-lg sm:text-xl tracking-widest uppercase mb-2 text-[#FFF7EF]">
+          Get in touch
+        </h2>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#F3D64C] mb-1">
+          Convey Your
+        </h1>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#EFEEFF] mb-4">
+          Ideas to Us
+        </h1>
+        <p className="text-lg sm:text-xl text-[#FFF7EF] leading-relaxed mb-6 w-full md:w-[80%]">
+          Contact us for gemstones inquiry and collaboration opportunities by
+          submitting the form or reach out directly!
         </p>
-        <div className="space-y-4 text-xl text-[#FFF7EF] ">
+        <div className="space-y-4 text-base sm:text-lg text-[#FFF7EF]">
           <div className="flex items-center gap-3">
             <span className="bg-yellow-400 rounded-full p-2">📞</span>
-            <span>9929977744, 7426813744</span>
+            <span className="hover:cursor-pointer">
+              <a href="https://wa.me/919929977744" target="_blank" rel="noopener noreferrer">
+                9929977744,
+                </a>
+                <a href="https://wa.me/917426813744" target="_blank" rel="noopener noreferrer">
+               7426813744
+                </a>
+              </span>
           </div>
-          <div className="flex items-center gap-3 text-[#FFF7EF] ">
+          <div className="flex items-center gap-3">
             <span className="bg-yellow-400 rounded-full p-2">📧</span>
-            <span>hello@reallygreatsite.com</span>
+            <span className="hover:cursor-pointer">
+              <a href="mailto:gemstonesboutique7@gmail.com" >
+                gemstonesboutique7@gmail.com
+                </a>
+              </span>
           </div>
-          <div className="flex items-center gap-3 text-[#FFF7EF] ">
+          <div className="flex items-center gap-3">
+             <a href="https://maps.app.goo.gl/fcFohyUKb1v5zrXu8?g_st=ipc" target="_blank" rel="noopener noreferrer">
             <span className="bg-yellow-400 rounded-full p-2">📍</span>
-            <span>37/3 Muktanand nagar, Gopalpura, Jaipur</span>
+             </a>
+            <span>
+            <a href="https://maps.app.goo.gl/fcFohyUKb1v5zrXu8?g_st=ipc" target="_blank" rel="noopener noreferrer">
+              37/3 Muktanand nagar, Gopalpura, Jaipur
+              </a>      
+              </span>
           </div>
         </div>
       </div>
 
-      {/* Right Side: Contact Form */}
-      <div className="z-10 p-10 flex flex-col justify-center ">
+      {/* Right Side */}
+      <div className="z-10 px-6 py-12 sm:px-10 md:px-16 lg:px-24 flex flex-col justify-center">
         <form onSubmit={handleSubmit} className="space-y-5">
           <input
             name="name"
@@ -80,7 +103,7 @@ export const Contact = () => {
             className="w-full bg-white text-black border border-gray-300 p-3 rounded-md focus:outline-none"
             required
           />
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <input
               name="email"
               value={formData.email}
