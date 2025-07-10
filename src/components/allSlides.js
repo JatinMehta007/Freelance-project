@@ -679,7 +679,7 @@ export const allSlides = [
   ],
   [
     {
-      "src": "/gems/gem42.jpg",
+      "src": "/morganite1.webp.png",
       "name": "Morganite",
       "origin": "Brazil, Madagascar",
       "Interesting_Facts": "Peach-Pink Member Of The Beryl Family; Symbol Of Divine Love.",
@@ -688,7 +688,7 @@ export const allSlides = [
       "type": "semi-precious"
     },
     {
-      "src": "/gems/gem42.jpg",
+      "src": "/morganite2.jpg.png",
       "name": "Morganite",
       "origin": "Brazil, Madagascar",
       "Interesting_Facts": "Peach-Pink Member Of The Beryl Family; Symbol Of Divine Love.",
