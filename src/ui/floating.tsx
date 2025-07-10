@@ -1,8 +1,4 @@
-/**
- * Note: Use position fixed according to your needs
- * Desktop navbar is better positioned at the bottom
- * Mobile navbar is better positioned at bottom right.
- **/
+
 
 import { cn } from "../lib/utils"; 
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
@@ -70,6 +66,8 @@ const FloatingDockMobile = ({
                 <a
                   href={item.href}
                   key={item.title}
+                   target="_blank"
+                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-900"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
