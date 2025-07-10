@@ -47,28 +47,38 @@ export const Navbar = () => {
   }, [location]);
 
   const handleNavClick = (section, route) => {
-    if (route) {
-      navigate(route);
-      setIsMenuOpen(false);
-    } else {
-      if (location.pathname !== "/") {
-        navigate("/");
-        setTimeout(() => {
-          const el = document.getElementById(section);
-          if (el) {
-            el.scrollIntoView({ behavior: "smooth", block: "start" });
-          }
-        }, 100);
-      } else {
+  if (route) {
+    navigate(route);
+    setIsMenuOpen(false);
+
+    if (section === "Home") {
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 100);
+    }
+  } else {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
         const el = document.getElementById(section);
         if (el) {
           el.scrollIntoView({ behavior: "smooth", block: "start" });
-          setIsMenuOpen(false);
+        } else if (section === "Home") {
+          window.scrollTo({ top: 0, behavior: "smooth" });
         }
+      }, 100);
+    } else {
+      const el = document.getElementById(section);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        setIsMenuOpen(false);
+      } else if (section === "Home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setIsMenuOpen(false);
       }
     }
-  };
-
+  }
+};
   const linkClass = (section) =>
     `cursor-pointer transition duration-300 hover:text-blue-300 ${
       activeSection === section
@@ -86,13 +96,13 @@ export const Navbar = () => {
   return (
     <div
       style={{ fontFamily: '"Times New Roman", Times, serif' }}
-      className="fixed top-0 left-0 right-0 z-50 bg-neutral-800 text-[#EAEFF3] px-6 md:px-10 h-16 flex items-center justify-between font-mono tracking-wide font-medium"
+     className="fixed top-0 left-0 right-0 z-50 w-full bg-neutral-800 text-[#EAEFF3] px-4 sm:px-6 md:px-10 h-16 flex items-center justify-between font-mono tracking-wide font-medium overflow-x-hidden"
     >
-      <div className="text-2xl tracking-wider font-bold mx-14">
+      <div className="text-xl sm:text-2xl tracking-wider font-bold ml-2 sm:ml-6 md:ml-14 whitespace-nowrap">
         Gemstones Boutique
       </div>
 
-      <div className="hidden md:flex gap-16 mr-20 text-lg">
+      <div className="hidden md:flex gap-6 lg:gap-16 mr-4 sm:mr-10 md:mr-20 text-sm sm:text-base md:text-lg">
         {navItems.map(({ id, label, route }) => (
           <span
             key={id}
@@ -104,19 +114,19 @@ export const Navbar = () => {
         ))}
       </div>
 
-      <div className="md:hidden z-50">
+      <div className="md:hidden mr-4 sm:mr-6 z-50 ">
         <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {isMenuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-neutral-900 text-white flex flex-col gap-6 px-6 py-6 md:hidden">
+        <div className="absolute top-16 left-0 w-full bg-neutral-900 text-white flex flex-col gap-4 px-4 py-4 sm:px-6 sm:py-6 md:hidden">
           {navItems.map(({ id, label, route }) => (
             <span
               key={id}
               onClick={() => handleNavClick(id, route)}
-              className={`text-lg ${linkClass(id)}`}
+              className={`text-base sm:text-lg ${linkClass(id)}`}
             >
               {label}
             </span>
