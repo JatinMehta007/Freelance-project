@@ -60,13 +60,15 @@ export const Button = () => {
   }, [currentGroup]);
 
   return (
-    <div className="hidden md:block pt-14 bg-neutral-700 overflow-hidden">
+    <div className="lg:pt-14 pt-5 bg-neutral-700 px-2 lg:px-0 overflow-hidden">
       {/* Slider */}
       <div className="w-full overflow-hidden flex justify-center">
         <div
           ref={sliderRef}
           className={`flex ${
-            isTransitioning ? "transition-transform duration-700 ease-in-out" : ""
+            isTransitioning
+              ? "transition-transform duration-700 ease-in-out"
+              : ""
           }`}
           style={{
             transform: `translateX(-${currentGroup * 100}%)`,
@@ -76,20 +78,20 @@ export const Button = () => {
           {extendedGroups.map((group, groupIndex) => (
             <div
               key={groupIndex}
-              className="flex gap-10 justify-center w-full shrink-0"
+              className="flex gap-4 sm:gap-6 lg:gap-10 justify-center w-full shrink-0"
             >
               {group.map((img, index) => (
                 <div
                   key={index}
-                  className="w-[22%] h-[262px] rounded-xl overflow-hidden flex justify-center items-center bg-white"
+                  className="w-[40%] sm:w-[30%] md:w-[24%] lg:w-[22%] h-[100px] sm:h-[200px] md:h-[240px] lg:h-[262px] rounded-xl overflow-hidden flex justify-center items-center bg-white"
                 >
                   <img
-  src={img}
-  alt=""
-  className={`h-full w-full ${
-    img === "/slide.jpeg" ? "object-cover" : "object-contain"
-  }`}
-/>
+                    src={img}
+                    alt=""
+                    className={`h-full w-full ${
+                      img === "/slide.jpeg" ? "object-cover" : "object-contain"
+                    }`}
+                  />
                 </div>
               ))}
             </div>
@@ -98,11 +100,11 @@ export const Button = () => {
       </div>
 
       {/* Indicators */}
-      <div className="flex justify-center items-center space-x-4 py-7">
+      <div className="flex justify-center items-center space-x-3 sm:space-x-4 py-3 sm:py-7">
         {Array.from({ length: groupCount }).map((_, i) => (
           <div
             key={i}
-            className={`h-[4px] w-10 rounded-full transition-all duration-300 ${
+            className={`h-[4px] w-6 sm:w-8 md:w-10 rounded-full transition-all duration-300 ${
               i + 1 === currentGroup ? "bg-yellow-400" : "bg-white/30"
             }`}
           />
