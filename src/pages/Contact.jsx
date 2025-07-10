@@ -46,7 +46,7 @@ export const Contact = () => {
       <div className="absolute  bg-black/60 z-0" />
 
       {/* Left Side: Contact Info */}
-      <div className="z-10 p-10 flex flex-col justify-center bg-[#5c5252]/60 ">
+      <div className="z-10 pl-24 flex flex-col justify-center bg-[#5c5252]/60 ">
         <h2 className="text-2xl tracking-widest uppercase mb-2 text-[#FFF7EF]">Get in touch</h2>
         <h1 className="text-6xl font-bold text-[#F3D64C] mb-1">Convey Your</h1>
         <h1 className="text-6xl font-bold text-[#EFEEFF] mb-4">Ideas to Us</h1>
