@@ -38,17 +38,17 @@ export const Home = () => {
     {
       title: "mail",
       icon: <img src="/gmail.png" alt="gmail" className="w-full h-full" />,
-      href: "#gallery",
+      href: "mailto:gemstonesboutique7@gmail.com",
     },
     {
       title: "Contact us",
       icon: <img src="/whatsapp.png" alt="whatsapp" className="w-full h-full" />,
-      href: "#contact",
+      href: "https://wa.me/919929977744"
     },
     {
       title: "Instagram",
       icon: <img src="/instagrams.png" alt="instagram" className="w-full h-full" />,
-      href: "#",
+      href: "https://www.instagram.com/gemboutique_jaipur?igsh=MTR2dDdtcmJkMm9qcw%3D%3D&utm_source=qr",
     },
   ];
 
