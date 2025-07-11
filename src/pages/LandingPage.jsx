@@ -48,7 +48,7 @@ export const Landing = () => {
               </div>
               <div></div>
               <div>
-                <div className="w-[80%] lg:w-[750px] absolute py-2 px-2 lg:px-8 lg:py-6 grid-cols-2 grid mt-12 bg-white rounded-xl mx-auto md:mx-0">
+                <div className="w-[90%] lg:w-[750px] absolute py-2 px-2 lg:px-8 lg:py-6 grid-cols-2 grid mt-12 bg-white rounded-xl mx-auto md:mx-0">
                   <div className="flex justify-center">
                     <img
                       src="./diploma.png"
