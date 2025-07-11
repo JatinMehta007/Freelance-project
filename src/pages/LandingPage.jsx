@@ -70,7 +70,7 @@ export const Landing = () => {
                       className="lg:w-12 lg:h-12 w-8 h-8"
                     />
                     <div className="text-xs w-[78%] text-[#2B391F] ml-2 lg:ml-3">
-                      <p className="text-sm font-bold">Authentic Sourcing</p>
+                      <p className="text-xs lg:text-sm font-bold">Authentic Sourcing</p>
                       <p className="font-normal lg:tracking-wider">
                         We procure gemstones directly from mines and real
                         sources, ensuring unmatched traceability.

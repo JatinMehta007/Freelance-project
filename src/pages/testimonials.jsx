@@ -106,7 +106,7 @@ export const TestimonialSlider = () => {
 
       {/* --- Mobile / Tablet View --- */}
       <div className="lg:hidden w-full flex justify-center">
-        <div className="w-[88%] sm:w-[80%] h-[400px] text-white bg-black backdrop-blur-md rounded-md ">
+        <div className="w-[70%] sm:w-[80%] h-[400px] text-white bg-black backdrop-blur-md rounded-md ">
           <div className="bg-[#DCD3CB] h-16 py-3 mb-4 flex justify-center items-center">
             <div className="flex justify-center  text-xl sm:text-2xl gap-1 text-[#AF9D81]">
               {Array(5)
