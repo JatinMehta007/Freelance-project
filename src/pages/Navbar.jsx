@@ -47,10 +47,22 @@ export const Navbar = () => {
   }, [location]);
 
   const handleNavClick = (section, route) => {
+    const scrollToSection = () => {
+      const el = document.getElementById(section);
+      if (el) {
+        const yOffset = -70; // Offset for fixed navbar (h-16 = 64px)
+        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+        setIsMenuOpen(false);
+      } else if (section === "Home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setIsMenuOpen(false);
+      }
+    };
+
     if (route) {
       navigate(route);
       setIsMenuOpen(false);
-
       if (section === "Home") {
         setTimeout(() => {
           window.scrollTo({ top: 0, behavior: "smooth" });
@@ -59,32 +71,19 @@ export const Navbar = () => {
     } else {
       if (location.pathname !== "/") {
         navigate("/");
-        setTimeout(() => {
-          const el = document.getElementById(section);
-          if (el) {
-            el.scrollIntoView({ behavior: "smooth", block: "start" });
-          } else if (section === "Home") {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }
-        }, 100);
+        setTimeout(scrollToSection, 100);
       } else {
-        const el = document.getElementById(section);
-        if (el) {
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
-          setIsMenuOpen(false);
-        } else if (section === "Home") {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-          setIsMenuOpen(false);
-        }
+        scrollToSection();
       }
     }
   };
-const linkClass = (section) =>
-  `inline-block w-fit cursor-pointer transition duration-300 hover:text-blue-300 ${
-    activeSection === section
-      ? "border-b-2 border-white"
-      : "border-b-2 border-transparent"
-  }`;
+
+  const linkClass = (section) =>
+    `inline-block w-fit cursor-pointer transition duration-300 hover:text-blue-300 ${
+      activeSection === section
+        ? "border-b-2 border-white"
+        : "border-b-2 border-transparent"
+    }`;
 
   const navItems = [
     { id: "Home", label: "Home", route: "/" },
@@ -100,7 +99,7 @@ const linkClass = (section) =>
         style={{ fontFamily: '"Times New Roman", Times, serif' }}
         className="fixed top-0 left-0 right-0 z-50 w-full bg-neutral-800 text-[#EAEFF3] px-4 sm:px-6 lg:px-10 h-16 flex items-center justify-between font-mono tracking-wide font-medium"
       >
-        <div className="text-xl sm:text-2xl tracking-wider font-bold  sm:ml-4 lg:ml-14 whitespace-nowrap">
+        <div className="text-xl sm:text-2xl tracking-wider font-bold sm:ml-4 lg:ml-14 whitespace-nowrap">
           Gemstones Boutique
         </div>
 
@@ -132,7 +131,7 @@ const linkClass = (section) =>
             <span
               key={id}
               onClick={() => handleNavClick(id, route)}
-              className={`w-fit inline-block text-base sm:text-lg ${linkClass(id)}`}
+              className={`inline-block w-fit text-base sm:text-lg ${linkClass(id)}`}
             >
               {label}
             </span>

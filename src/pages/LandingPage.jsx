@@ -14,13 +14,13 @@ export const Landing = () => {
         {/* Overlayed Text */}
         <div className="xl:grid xl:grid-cols-[40%_60%] ">
           <div className="">
-            <div className=" relative  w-[100%]  left-5 sm:left-10 lg:left-20 xl:left-24  z-30 top-24 md:top-32 text-[40px] md:text-7xl">
-              <p className=" font-normal  text-[#CBBBB9] pr-2 md:pr-0  ">
+            <div className=" relative  w-[100%]  left-5 sm:left-10 lg:left-20 xl:left-24  z-30 top-20 md:top-32 text-[40px] md:text-7xl">
+              <p className=" font-normal   text-[#CBBBB9]  md:pr-0  ">
                 Find The Perfect{" "}
               </p>
               {/* <ColourfulText text="Gemstone Boutique" /> */}
-              <p className=" md:mt-4 font-normal text-[#CBBBB9]">Gemstone </p>
-              <p className="text-base md:text-lg   w-[83%] lg:w-[70%] xl:w-[83%] md:mt-5 font-normal text-[#B8B7C1] ">
+              <p className=" md:mt-4 font-normal text-[#CBBBB9] leading-10 sm:leading-16  ">Gemstone </p>
+              <p className="text-base md:text-lg   w-[83%] lg:w-[70%] xl:w-[83%] mt-3 md:mt-5 font-normal text-[#B8B7C1] ">
                 With 25 years of expertise in the gemstone industry, we can help
                 you find the perfect stone tailored to your needs. Trust our
                 legacy to guide your choice with precision and care. 100%
@@ -87,7 +87,7 @@ export const Landing = () => {
                 src="./back1.png"
                 loading="lazy"
                 alt=""
-                className="rounded-full hidden xl:block absolute w-72 top-[18%] right-[30%]"
+                className="rounded-full w-20 sm:hidden xl:block absolute xl:w-72 top-[17%] right-2 xl:top-[18%] xl:right-[30%]"
               />
             </div>
             <div className="xl:w-[100%] ml-40   mt-[15%]  overflow-hidden">

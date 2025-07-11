@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom"; // 👈 NEW
 import { allSlides } from "../components/allSlides";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
@@ -6,6 +7,22 @@ import { Footer } from "./Footer";
 export const Gallery = () => {
   const [indexes, setIndexes] = useState(Array(allSlides.length).fill(0));
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const location = useLocation(); // 👈 NEW
+
+  useEffect(() => {
+    const scrollToSection = () => {
+      if (location.state?.scrollTo) {
+        const el = document.getElementById(location.state.scrollTo);
+        if (el) {
+          const yOffset = -70;
+          const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }
+    };
+
+    setTimeout(scrollToSection, 100); // Wait for DOM
+  }, [location]);
 
   const nextSlide = (i) => {
     setIndexes((prev) => {
@@ -31,7 +48,7 @@ export const Gallery = () => {
 
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar />
       <div
         style={{ fontFamily: '"Times New Roman", Times, serif' }}
         id="Gallery"
@@ -47,18 +64,10 @@ export const Gallery = () => {
             onChange={(e) => setSelectedCategory(e.target.value)}
             className="p-2 text-white rounded bg-neutral-800 border border-white focus:outline-none "
           >
-            <option className="text-black" value="all">
-              All
-            </option>
-            <option className="text-black" value="precious">
-              Precious
-            </option>
-            <option className="text-black" value="semi-precious">
-              Semi-Precious
-            </option>
-            <option className="text-black" value="lab-grown">
-              Lab-grown
-            </option>
+            <option className="text-black" value="all">All</option>
+            <option className="text-black" value="precious">Precious</option>
+            <option className="text-black" value="semi-precious">Semi-Precious</option>
+            <option className="text-black" value="lab-grown">Lab-grown</option>
           </select>
         </div>
 
@@ -87,7 +96,7 @@ export const Gallery = () => {
                     key={j}
                     className="w-[320px] h-[400px] shrink-0 flex flex-col items-center justify-start text-center text-black"
                   >
-                    {/* Top Half (Image Section) */}
+                    {/* Top Half */}
                     <div
                       className={`w-full h-[200px] mb-4 flex items-center justify-center ${
                         item.background === "black" ? "bg-black" : "bg-white"
@@ -105,26 +114,20 @@ export const Gallery = () => {
 
                     {j === 0 ? (
                       <>
-                        <p className="text-sm  px-4 py-2">
-                          <span className="font-semibold">Origin:</span>{" "}
-                          {item.origin}
+                        <p className="text-sm px-4 py-2">
+                          <span className="font-semibold">Origin:</span> {item.origin}
                         </p>
                         <p className="text-sm px-4">
-                          <span className="font-semibold">Stock Info:</span>{" "}
-                          {item.Stock_Information}
+                          <span className="font-semibold">Stock Info:</span> {item.Stock_Information}
                         </p>
                       </>
                     ) : (
                       <>
-                        <p className="text-sm  px-4 py-2">
-                          <span className="font-semibold">Popular Use:</span>{" "}
-                          {item.Popular_Uses}
+                        <p className="text-sm px-4 py-2">
+                          <span className="font-semibold">Popular Use:</span> {item.Popular_Uses}
                         </p>
                         <p className="text-sm px-4">
-                          <span className="font-semibold">
-                            Interesting Fact:
-                          </span>{" "}
-                          {item.Interesting_Facts}
+                          <span className="font-semibold">Interesting Fact:</span> {item.Interesting_Facts}
                         </p>
                       </>
                     )}
@@ -161,7 +164,7 @@ export const Gallery = () => {
           ))}
         </div>
       </div>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 };
