@@ -6,12 +6,16 @@ export const Landing = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div id="Home"  style={{ fontFamily: '"Times New Roman", Times, serif' }}   className="lg:h-screen h-[730px] w-screen overflow-hidden flex-col  items-center  bg-gradient-to-r  from-neutral-800 via-neutral-800 to-neutral-800">
+      <div
+        id="Home"
+        style={{ fontFamily: '"Times New Roman", Times, serif' }}
+        className="lg:h-screen h-[730px] w-screen overflow-hidden flex-col  items-center  bg-gradient-to-r  from-neutral-800 via-neutral-800 to-neutral-800"
+      >
         {/* Overlayed Text */}
         <div className="lg:grid lg:grid-cols-[40%_60%] ">
           <div className="">
-            <div className=" relative  w-[100%]  left-5 lg:left-24  z-30 top-24 md:top-32 text-5xl md:text-7xl">
-              <p  className=" font-normal  text-[#CBBBB9] pr-2 md:pr-0  ">
+            <div className=" relative  w-[100%]  left-5 lg:left-24  z-30 top-24 md:top-32 text-4xl md:text-7xl">
+              <p className=" font-normal  text-[#CBBBB9] pr-2 md:pr-0  ">
                 Find The Perfect{" "}
               </p>
               {/* <ColourfulText text="Gemstone Boutique" /> */}
@@ -24,45 +28,57 @@ export const Landing = () => {
               </p>
               <div className="flex gap-5 lg:gap-10 mt-12 ">
                 <MovingButton>
-                <button onClick={()=>{
-                    navigate("/gallery")
-                }} className=" cursor-pointer text-black bg-[#EFEDE8]  font-normal uppercase border  px-7 lg:px-10 py-2  text-lg">
-                  Explore
-                </button>
+                  <button
+                    onClick={() => {
+                      navigate("/gallery");
+                    }}
+                    className=" cursor-pointer text-black bg-[#EFEDE8]  font-normal uppercase border  px-7 lg:px-10 py-2  text-lg"
+                  >
+                    Explore
+                  </button>
                 </MovingButton>
                 <MovingButton>
-                <a href="#contact" className="flex text-white px-4 lg:px-10 py-2 font-normal uppercase border    text-lg">
-                  Consultation
-                </a>
+                  <a
+                    href="#contact"
+                    className="flex text-white px-4 lg:px-10 py-2 font-normal uppercase border    text-lg"
+                  >
+                    Consultation
+                  </a>
                 </MovingButton>
               </div>
+              <div></div>
               <div>
-
+                <div className="w-[350px] lg:w-[750px] absolute py-2 px-2 lg:px-8 lg:py-6 grid-cols-2 grid mt-12 bg-white rounded-xl mx-auto md:mx-0">
+                  <div className="flex justify-center">
+                    <img
+                      src="./diploma.png"
+                      alt=""
+                      className="lg:w-14 lg:h-14 w-8 h-8"
+                    />
+                    <div className="text-xs w-[78%] lg:w-[70%] text-[#2B391F] ml-2 lg:ml-3">
+                      <p className="lg:text-sm font-bold">Certified</p>
+                      <p className="font-normal lg:tracking-wider">
+                        Our brand has legally certified by the authorities. No
+                        need to worry because all our product are assured.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex">
+                    <img
+                      src="./account.png"
+                      alt=""
+                      className="lg:w-12 lg:h-12 w-8 h-8"
+                    />
+                    <div className="text-xs w-[70%] text-[#2B391F] ml-2 lg:ml-3">
+                      <p className="text-sm font-bold">Authentic Sourcing</p>
+                      <p className="font-normal lg:tracking-wider">
+                        We procure gemstones directly from mines and real
+                        sources, ensuring unmatched traceability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-             <div>
-  <div className="w-[350px] lg:w-[750px] absolute py-2 px-2 lg:px-8 lg:py-6 grid-cols-2 grid mt-12 bg-white rounded-xl mx-auto md:mx-0">
-    <div className="flex justify-center">
-      <img src="./diploma.png" alt="" className="lg:w-14 lg:h-14 w-8 h-8" />
-      <div className="text-xs w-[78%] lg:w-[70%] text-[#2B391F] ml-2 lg:ml-3">
-        <p className="lg:text-sm font-bold">Certified</p>
-        <p className="font-normal lg:tracking-wider">
-          Our brand has legally certified by the authorities. No need to worry
-          because all our product are assured.
-        </p>
-      </div>
-    </div>
-    <div className="flex">
-      <img src="./account.png" alt="" className="lg:w-12 lg:h-12 w-8 h-8" />
-      <div className="text-xs w-[70%] text-[#2B391F] ml-2 lg:ml-3">
-        <p className="text-sm font-bold">Authentic Sourcing</p>
-        <p className="font-normal lg:tracking-wider">
-          We procure gemstones directly from mines and real sources, ensuring
-          unmatched traceability.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
             </div>
           </div>
           <div className="">
@@ -75,7 +91,12 @@ export const Landing = () => {
               />
             </div>
             <div className="lg:w-[100%] ml-40   mt-[15%]  overflow-hidden">
-              <img src="./backs2.jpg" alt="" className="rounded-full hidden md:block w-full" loading="lazy" />
+              <img
+                src="./backs2.jpg"
+                alt=""
+                className="rounded-full hidden md:block w-full"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
