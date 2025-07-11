@@ -32,7 +32,7 @@ export const Landing = () => {
                     onClick={() => {
                       navigate("/gallery");
                     }}
-                    className=" cursor-pointer text-black bg-[#EFEDE8]  font-normal uppercase border  px-7 lg:px-10 py-2  text-lg"
+                    className=" cursor-pointer text-black bg-[#EFEDE8]  font-normal uppercase border  px-7 lg:px-10 py-2  text-base md:text-lg"
                   >
                     Explore
                   </button>
@@ -40,7 +40,7 @@ export const Landing = () => {
                 <MovingButton>
                   <a
                     href="#contact"
-                    className="flex text-white px-4 lg:px-10 py-2 font-normal uppercase border    text-lg"
+                    className="flex text-white px-4 lg:px-10 py-2 font-normal uppercase border   text-base md:text-lg"
                   >
                     Consultation
                   </a>
