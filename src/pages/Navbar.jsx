@@ -59,16 +59,16 @@ export const Navbar = () => {
         setIsMenuOpen(false);
       }
     };
+if (route) {
+  navigate(route, { state: { scrollTo: section } });
+  setIsMenuOpen(false);
 
-    if (route) {
-      navigate(route);
-      setIsMenuOpen(false);
-      if (section === "Home") {
-        setTimeout(() => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }, 100);
-      }
-    } else {
+  if (section === "Home") {
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 100);
+  }
+} else {
       if (location.pathname !== "/") {
         navigate("/");
         setTimeout(scrollToSection, 100);

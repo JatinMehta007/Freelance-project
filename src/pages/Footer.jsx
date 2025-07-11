@@ -12,7 +12,7 @@ export const Footer = forwardRef((props, ref) => {
   <p className="text-base ">
     Owned by Parashnath Gems
   </p>
-  <p className="text-sm text-gray-400 tracking-tight">
+  <p className="text-xs text-gray-400 tracking-tight">
     Designed & Developed by{" "}
     <a
       href="https://your-portfolio-link.com"

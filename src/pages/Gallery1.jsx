@@ -15,15 +15,15 @@ export const Gallery = () => {
         const el = document.getElementById(location.state.scrollTo);
         if (el) {
           const yOffset = -70;
-          const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          const y =
+            el.getBoundingClientRect().top + window.pageYOffset + yOffset;
           window.scrollTo({ top: y, behavior: "smooth" });
         }
       }
     };
 
-    setTimeout(scrollToSection, 100); // Wait for DOM
+    setTimeout(scrollToSection, 100);
   }, [location]);
-
   const nextSlide = (i) => {
     setIndexes((prev) => {
       const updated = [...prev];
@@ -58,16 +58,26 @@ export const Gallery = () => {
 
         {/* Dropdown */}
         <div className="mb-8">
-          <label className="mr-4 text-lg md:text-xl font-semibold">Stone Type:</label>
+          <label className="mr-4 text-lg md:text-xl font-semibold">
+            Stone Type:
+          </label>
           <select
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
             className="p-2 text-white rounded bg-neutral-800 border border-white focus:outline-none "
           >
-            <option className="text-black" value="all">All</option>
-            <option className="text-black" value="precious">Precious</option>
-            <option className="text-black" value="semi-precious">Semi-Precious</option>
-            <option className="text-black" value="lab-grown">Lab-grown</option>
+            <option className="text-black" value="all">
+              All
+            </option>
+            <option className="text-black" value="precious">
+              Precious
+            </option>
+            <option className="text-black" value="semi-precious">
+              Semi-Precious
+            </option>
+            <option className="text-black" value="lab-grown">
+              Lab-grown
+            </option>
           </select>
         </div>
 
@@ -115,19 +125,25 @@ export const Gallery = () => {
                     {j === 0 ? (
                       <>
                         <p className="text-sm px-4 py-2">
-                          <span className="font-semibold">Origin:</span> {item.origin}
+                          <span className="font-semibold">Origin:</span>{" "}
+                          {item.origin}
                         </p>
                         <p className="text-sm px-4">
-                          <span className="font-semibold">Stock Info:</span> {item.Stock_Information}
+                          <span className="font-semibold">Stock Info:</span>{" "}
+                          {item.Stock_Information}
                         </p>
                       </>
                     ) : (
                       <>
                         <p className="text-sm px-4 py-2">
-                          <span className="font-semibold">Popular Use:</span> {item.Popular_Uses}
+                          <span className="font-semibold">Popular Use:</span>{" "}
+                          {item.Popular_Uses}
                         </p>
                         <p className="text-sm px-4">
-                          <span className="font-semibold">Interesting Fact:</span> {item.Interesting_Facts}
+                          <span className="font-semibold">
+                            Interesting Fact:
+                          </span>{" "}
+                          {item.Interesting_Facts}
                         </p>
                       </>
                     )}
@@ -164,6 +180,14 @@ export const Gallery = () => {
           ))}
         </div>
       </div>
+      {/* Back to Top Arrow (Mobile only) */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="fixed left-4 bottom-4 z-50 bg-yellow-400 text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg md:hidden"
+        aria-label="Scroll to top"
+      >
+        ↑
+      </button>
       <Footer />
     </div>
   );

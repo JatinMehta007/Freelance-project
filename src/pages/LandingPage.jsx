@@ -19,7 +19,7 @@ export const Landing = () => {
                 Find The Perfect{" "}
               </p>
               {/* <ColourfulText text="Gemstone Boutique" /> */}
-              <p className=" md:mt-4 font-normal text-[#CBBBB9] leading-10 sm:leading-16  ">Gemstone </p>
+              <p className=" md:mt-4 font-normal text-[#CBBBB9] leading-6 sm:leading-16  ">Gemstone </p>
               <p className="text-base md:text-lg   w-[83%] lg:w-[70%] xl:w-[83%] mt-3 md:mt-5 font-normal text-[#B8B7C1] ">
                 With 25 years of expertise in the gemstone industry, we can help
                 you find the perfect stone tailored to your needs. Trust our

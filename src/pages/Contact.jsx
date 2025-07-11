@@ -61,33 +61,56 @@ export const Contact = () => {
         </p>
         <div className="space-y-4 text-base sm:text-lg text-[#FFF7EF]">
           <div className="flex items-center gap-3">
-            <span className="bg-yellow-400 rounded-full p-2">📞</span>
-            <span className="hover:cursor-pointer">
-              <a href="https://wa.me/919929977744" target="_blank" rel="noopener noreferrer">
-                9929977744,
-                </a>
-                <a href="https://wa.me/917426813744" target="_blank" rel="noopener noreferrer">
-               7426813744
-                </a>
-              </span>
+            <span className="bg-yellow-400 w-10 h-10 flex items-center justify-center rounded-full text-xl">
+              📞
+            </span>
+            <span className="hover:cursor-pointer flex flex-row">
+              <a
+                href="https://wa.me/919929977744"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                9929977744
+              </a>
+              <a
+                href="https://wa.me/917426813744"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+               , 7426813744
+              </a>
+            </span>
           </div>
-          <div className="flex items-center gap-3">
-            <span className="bg-yellow-400 rounded-full p-2">📧</span>
+
+          <div className="flex items-center gap-3 mt-4">
+            <span className="bg-yellow-400 w-10 h-10 flex items-center justify-center rounded-full text-xl">
+              📧
+            </span>
             <span className="hover:cursor-pointer">
-              <a href="mailto:gemstonesboutique7@gmail.com" >
+              <a href="mailto:gemstonesboutique7@gmail.com">
                 gemstonesboutique7@gmail.com
-                </a>
-              </span>
+              </a>
+            </span>
           </div>
           <div className="flex items-center gap-3">
-             <a href="https://maps.app.goo.gl/fcFohyUKb1v5zrXu8?g_st=ipc" target="_blank" rel="noopener noreferrer">
-            <span className="bg-yellow-400 rounded-full p-2">📍</span>
-             </a>
-            <span>
-            <a href="https://maps.app.goo.gl/fcFohyUKb1v5zrXu8?g_st=ipc" target="_blank" rel="noopener noreferrer">
-              37/3 Muktanand nagar, Gopalpura, Jaipur
-              </a>      
+            <a
+              href="https://maps.app.goo.gl/fcFohyUKb1v5zrXu8?g_st=ipc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="bg-yellow-400 rounded-full p-2 w-10 h-10 flex justify-center items-center">
+                📍
               </span>
+            </a>
+            <span>
+              <a
+                href="https://maps.app.goo.gl/fcFohyUKb1v5zrXu8?g_st=ipc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                37/3 Muktanand nagar, Gopalpura, Jaipur
+              </a>
+            </span>
           </div>
         </div>
       </div>
