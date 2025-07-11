@@ -37,11 +37,11 @@ export const Gallery = () => {
         id="Gallery"
         className="bg-neutral-900 min-h-screen w-screen flex flex-col items-center justify-center text-[#B8B7C1]"
       >
-        <p className="text-8xl text-center p-10 pt-20">Gallery</p>
+        <p className="text-5xl md:text-8xl text-center p-10 pt-20">Gallery</p>
 
         {/* Dropdown */}
         <div className="mb-8">
-          <label className="mr-4 text-xl font-semibold">Stone Type:</label>
+          <label className="mr-4 text-lg md:text-xl font-semibold">Stone Type:</label>
           <select
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
@@ -64,7 +64,7 @@ export const Gallery = () => {
 
         <div className="border border-[#B8B7C1] w-[70%] mx-auto mb-10"></div>
 
-        <p className="font-normal pb-10 text-2xl text-center">
+        <p className="font-normal pb-10 px-2 md:px-0 text-xl md:text-2xl text-center">
           Explore our popular and best selling gemstones
         </p>
 
