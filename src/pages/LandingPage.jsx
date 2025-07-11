@@ -6,17 +6,17 @@ export const Landing = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div id="Home"  style={{ fontFamily: '"Times New Roman", Times, serif' }}   className="lg:h-screen h-[700px] w-screen overflow-hidden    bg-gradient-to-r  from-neutral-800 via-neutral-800 to-neutral-800">
+      <div id="Home"  style={{ fontFamily: '"Times New Roman", Times, serif' }}   className="lg:h-screen h-[730px] w-screen overflow-hidden flex-col  items-center  bg-gradient-to-r  from-neutral-800 via-neutral-800 to-neutral-800">
         {/* Overlayed Text */}
         <div className="lg:grid lg:grid-cols-[40%_60%] ">
           <div className="">
-            <div className=" relative  w-[100%]  left-6 lg:left-24  z-30 top-32 text-5xl md:text-7xl">
-              <p  className=" font-normal  text-[#CBBBB9]  ">
+            <div className=" relative  w-[100%]  left-5 lg:left-24  z-30 top-24 md:top-32 text-5xl md:text-7xl">
+              <p  className=" font-normal  text-[#CBBBB9] pr-2 md:pr-0  ">
                 Find The Perfect{" "}
               </p>
               {/* <ColourfulText text="Gemstone Boutique" /> */}
               <p className="  mt-4 font-normal text-[#CBBBB9]">Gemstone </p>
-              <p className="text-lg  w-[83%] mt-5 font-normal text-[#B8B7C1] ">
+              <p className="text-base md:text-lg   w-[83%] mt-5 font-normal text-[#B8B7C1] ">
                 With 25 years of expertise in the gemstone industry, we can help
                 you find the perfect stone tailored to your needs. Trust our
                 legacy to guide your choice with precision and care. 100%
@@ -39,24 +39,30 @@ export const Landing = () => {
               <div>
 
               </div>
-              <div className="w-[380px] lg:w-[750px] absolute py-2 px-2 lg:px-8 lg:py-6 grid-cols-2  grid mt-12 bg-white rounded-xl">
-                <div className="flex justify-center ">
-                <img src="./diploma.png" alt="" className="lg:w-14 lg:h-14 w-8 h-8  "/>
-                <div className="text-xs  w-[78%] lg:w-[70%] text-[#2B391F] ml-2 lg:ml-3">
-                <p className=" lg:text-sm font-bold">Certified</p>
-                <p className="font-normal lg:tracking-wider">Our brand has legally certified by the authorities. No need to worry because all our product are assured.</p>
-                </div>
-                </div>
-                <div className="flex ">
-                <img src="./account.png" alt="" className="lg:w-12 lg:h-12 w-8 h-8 "/>
-                <div className="text-xs w-[70%] text-[#2B391F] ml-2 lg:ml-3">
-                <p className="text-sm font-bold">Authentic Sourcing</p>
-                <p className="font-normal lg:tracking-wider">We procure gemstones directly from
-                    mines and real sources, ensuring
-                    unmatched traceability.</p>
-                </div>
-                </div>
-              </div>
+             <div>
+  <div className="w-[350px] lg:w-[750px] absolute py-2 px-2 lg:px-8 lg:py-6 grid-cols-2 grid mt-12 bg-white rounded-xl mx-auto md:mx-0">
+    <div className="flex justify-center">
+      <img src="./diploma.png" alt="" className="lg:w-14 lg:h-14 w-8 h-8" />
+      <div className="text-xs w-[78%] lg:w-[70%] text-[#2B391F] ml-2 lg:ml-3">
+        <p className="lg:text-sm font-bold">Certified</p>
+        <p className="font-normal lg:tracking-wider">
+          Our brand has legally certified by the authorities. No need to worry
+          because all our product are assured.
+        </p>
+      </div>
+    </div>
+    <div className="flex">
+      <img src="./account.png" alt="" className="lg:w-12 lg:h-12 w-8 h-8" />
+      <div className="text-xs w-[70%] text-[#2B391F] ml-2 lg:ml-3">
+        <p className="text-sm font-bold">Authentic Sourcing</p>
+        <p className="font-normal lg:tracking-wider">
+          We procure gemstones directly from mines and real sources, ensuring
+          unmatched traceability.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
             </div>
           </div>
           <div className="">
