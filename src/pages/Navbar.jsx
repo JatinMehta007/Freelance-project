@@ -101,7 +101,7 @@ export const Navbar = () => {
         style={{ fontFamily: '"Times New Roman", Times, serif' }}
         className="fixed top-0 left-0 right-0 z-50 w-full bg-neutral-800 text-[#EAEFF3] px-4 sm:px-6 md:px-10 h-16 flex items-center justify-between font-mono tracking-wide font-medium"
       >
-        <div className="text-xl sm:text-2xl tracking-wider font-bold ml-2 sm:ml-6 md:ml-14 whitespace-nowrap">
+        <div className="text-xl sm:text-2xl tracking-wider font-bold  sm:ml-6 md:ml-14 whitespace-nowrap">
           Gemstones Boutique
         </div>
 
