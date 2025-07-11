@@ -79,13 +79,12 @@ export const Navbar = () => {
       }
     }
   };
-
-  const linkClass = (section) =>
-    `cursor-pointer transition duration-300 hover:text-blue-300 ${
-      activeSection === section
-        ? "border-b-2 border-white"
-        : "border-b-2 border-transparent"
-    }`;
+const linkClass = (section) =>
+  `inline-block w-fit cursor-pointer transition duration-300 hover:text-blue-300 ${
+    activeSection === section
+      ? "border-b-2 border-white"
+      : "border-b-2 border-transparent"
+  }`;
 
   const navItems = [
     { id: "Home", label: "Home", route: "/" },
@@ -133,7 +132,7 @@ export const Navbar = () => {
             <span
               key={id}
               onClick={() => handleNavClick(id, route)}
-              className={`text-base sm:text-lg ${linkClass(id)}`}
+              className={`w-fit inline-block text-base sm:text-lg ${linkClass(id)}`}
             >
               {label}
             </span>

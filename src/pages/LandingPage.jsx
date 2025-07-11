@@ -9,7 +9,7 @@ export const Landing = () => {
       <div
         id="Home"
         style={{ fontFamily: '"Times New Roman", Times, serif' }}
-        className="xl:h-screen md:h-[700px] lg:h-[750px] h-[670px] w-screen overflow-hidden flex-col  items-center  bg-gradient-to-r  from-neutral-800 via-neutral-800 to-neutral-800"
+        className="xl:h-screen md:h-[700px] lg:h-[750px] h-[700px] w-screen overflow-hidden flex-col  items-center  bg-gradient-to-r  from-neutral-800 via-neutral-800 to-neutral-800"
       >
         {/* Overlayed Text */}
         <div className="xl:grid xl:grid-cols-[40%_60%] ">
