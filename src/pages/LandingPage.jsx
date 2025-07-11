@@ -14,13 +14,13 @@ export const Landing = () => {
         {/* Overlayed Text */}
         <div className="lg:grid lg:grid-cols-[40%_60%] ">
           <div className="">
-            <div className=" relative  w-[100%]  left-5 lg:left-24  z-30 top-24 md:top-32 text-[40px] md:text-7xl">
+            <div className=" relative  w-[100%]  left-5 lg:left-24  z-30 top-24 md:top-32 text-[44px] md:text-7xl">
               <p className=" font-normal  text-[#CBBBB9] pr-2 md:pr-0  ">
                 Find The Perfect{" "}
               </p>
               {/* <ColourfulText text="Gemstone Boutique" /> */}
-              <p className="  mt-4 font-normal text-[#CBBBB9]">Gemstone </p>
-              <p className="text-base md:text-lg   w-[83%] mt-5 font-normal text-[#B8B7C1] ">
+              <p className=" md:mt-4 font-normal text-[#CBBBB9]">Gemstone </p>
+              <p className="text-base md:text-lg   w-[83%] md:mt-5 font-normal text-[#B8B7C1] ">
                 With 25 years of expertise in the gemstone industry, we can help
                 you find the perfect stone tailored to your needs. Trust our
                 legacy to guide your choice with precision and care. 100%
