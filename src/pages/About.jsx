@@ -8,7 +8,7 @@ export const About = () => {
       >
         <div className="lg:pt-20 pt-10">
           <div className="max-w-[100%] mx-auto">
-            <h2 className="text-[#CBBBB9] ml-6 sm:ml-12 md:ml-24 text-[33px] sm:text-5xl md:text-6xl font-medium mb-10">
+            <h2 className="text-[#CBBBB9] ml-6 sm:ml-12 md:ml-24 text-3xl sm:text-5xl md:text-6xl font-medium mb-10">
               Know More About Us
             </h2>
 
