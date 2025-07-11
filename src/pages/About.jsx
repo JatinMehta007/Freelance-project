@@ -39,7 +39,7 @@ export const About = () => {
         <img
           src="/about2.png"
           alt=""
-          className="w-[150px] sm:w-[180px] md:w-[200px]  mt-[380px] md:mt-[400px] h-[150px] sm:h-[180px] md:h-[200px]"
+          className="w-[150px] sm:w-[180px] md:w-[200px]  mt-[400px] md:mt-[400px] h-[150px] sm:h-[180px] md:h-[200px]"
           />
           </div>
               <div className="w-full flex justify-center items-end z-0 mt-10 md:mt-0">
