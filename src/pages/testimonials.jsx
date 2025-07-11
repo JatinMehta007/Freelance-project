@@ -94,7 +94,7 @@ export const TestimonialSlider = () => {
                 </p>
                 <p
                   style={{ fontFamily: '"Times New Roman", Times, serif' }}
-                  className="text-2xl font-semibold text-center font-playfair"
+                  className="text-2xl  font-semibold text-center font-playfair"
                 >
                   - {item.author}
                 </p>
@@ -124,7 +124,7 @@ export const TestimonialSlider = () => {
           </p>
           <p
             style={{ fontFamily: '"Times New Roman", Times, serif' }}
-            className="text-xl font-semibold text-center font-playfair"
+            className="text-xl font-semibold px-5 text-center font-playfair"
           >
             - {testimonials[currentIndex].author}
           </p>
