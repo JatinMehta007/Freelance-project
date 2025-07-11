@@ -4,13 +4,8 @@ export const About = () => {
       <div
         style={{ fontFamily: '"Times New Roman", Times, serif' }}
         id="About"
-        className="overflow-hidden bg-black h-screen"
+        className="overflow-hidden bg-black"
       >
-        <img
-          src="/about2.png"
-          alt=""
-          className="w-[150px] sm:w-[180px] md:w-[200px] absolute mt-[580px] md:mt-[570px] h-[150px] sm:h-[180px] md:h-[200px]"
-        />
         <div className="lg:pt-20 pt-10">
           <div className="max-w-[100%] mx-auto">
             <h2 className="text-[#CBBBB9] ml-6 sm:ml-12 md:ml-24 text-[33px] sm:text-5xl md:text-6xl font-medium mb-10">
@@ -40,6 +35,13 @@ export const About = () => {
                   transparent processes, and unmatched quality.
                 </p>
               </div>
+        <div className="absolute">
+        <img
+          src="/about2.png"
+          alt=""
+          className="w-[150px] sm:w-[180px] md:w-[200px]  mt-[380px] md:mt-[400px] h-[150px] sm:h-[180px] md:h-[200px]"
+          />
+          </div>
               <div className="w-full flex justify-center items-end z-0 mt-10 md:mt-0">
                 <img
                   src="/about1.png"
