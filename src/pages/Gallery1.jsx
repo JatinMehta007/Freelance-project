@@ -183,7 +183,7 @@ export const Gallery = () => {
       {/* Back to Top Arrow (Mobile only) */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed left-4 bottom-4 z-50 bg-yellow-400 text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg md:hidden"
+        className="fixed left-4 bottom-4 font-semibold z-50 bg-yellow-400 text-xl text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg md:hidden"
         aria-label="Scroll to top"
       >
         ↑
