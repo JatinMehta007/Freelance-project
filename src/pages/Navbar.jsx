@@ -99,14 +99,14 @@ export const Navbar = () => {
       {/* Main Navbar */}
       <div
         style={{ fontFamily: '"Times New Roman", Times, serif' }}
-        className="fixed top-0 left-0 right-0 z-50 w-full bg-neutral-800 text-[#EAEFF3] px-4 sm:px-6 md:px-10 h-16 flex items-center justify-between font-mono tracking-wide font-medium"
+        className="fixed top-0 left-0 right-0 z-50 w-full bg-neutral-800 text-[#EAEFF3] px-4 sm:px-6 lg:px-10 h-16 flex items-center justify-between font-mono tracking-wide font-medium"
       >
-        <div className="text-xl sm:text-2xl tracking-wider font-bold  sm:ml-6 md:ml-14 whitespace-nowrap">
+        <div className="text-xl sm:text-2xl tracking-wider font-bold  sm:ml-4 lg:ml-14 whitespace-nowrap">
           Gemstones Boutique
         </div>
 
         {/* Desktop Nav Links */}
-        <div className="hidden md:flex gap-6 lg:gap-16 mr-4 sm:mr-10 md:mr-20 text-sm sm:text-base md:text-lg">
+        <div className="hidden lg:flex gap-6 lg:gap-16 mr-4 sm:mr-10 md:mr-20 text-sm sm:text-base md:text-lg">
           {navItems.map(({ id, label, route }) => (
             <span
               key={id}
@@ -119,7 +119,7 @@ export const Navbar = () => {
         </div>
 
         {/* Mobile Hamburger */}
-        <div className="md:hidden mr-4 sm:mr-6 z-50">
+        <div className="lg:hidden mr-4 sm:mr-6 z-50">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -128,7 +128,7 @@ export const Navbar = () => {
 
       {/* Mobile Menu (Dropdown) */}
       {isMenuOpen && (
-        <div className="fixed top-16 left-0 right-0 bg-neutral-900 text-white flex flex-col gap-4 px-4 py-4 sm:px-6 sm:py-6 md:hidden z-40">
+        <div className="fixed top-16 left-0 right-0 bg-neutral-900 text-white flex flex-col gap-4 px-4 py-4 sm:px-6 sm:py-6 lg:hidden z-40">
           {navItems.map(({ id, label, route }) => (
             <span
               key={id}

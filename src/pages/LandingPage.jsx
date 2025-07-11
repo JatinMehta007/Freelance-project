@@ -9,18 +9,18 @@ export const Landing = () => {
       <div
         id="Home"
         style={{ fontFamily: '"Times New Roman", Times, serif' }}
-        className="lg:h-screen h-[730px] w-screen overflow-hidden flex-col  items-center  bg-gradient-to-r  from-neutral-800 via-neutral-800 to-neutral-800"
+        className="xl:h-screen md:h-[700px] lg:h-[750px] h-[670px] w-screen overflow-hidden flex-col  items-center  bg-gradient-to-r  from-neutral-800 via-neutral-800 to-neutral-800"
       >
         {/* Overlayed Text */}
-        <div className="lg:grid lg:grid-cols-[40%_60%] ">
+        <div className="xl:grid xl:grid-cols-[40%_60%] ">
           <div className="">
-            <div className=" relative  w-[100%]  left-5 lg:left-24  z-30 top-24 md:top-32 text-[40px] md:text-7xl">
+            <div className=" relative  w-[100%]  left-5 sm:left-10 lg:left-20 xl:left-24  z-30 top-24 md:top-32 text-[40px] md:text-7xl">
               <p className=" font-normal  text-[#CBBBB9] pr-2 md:pr-0  ">
                 Find The Perfect{" "}
               </p>
               {/* <ColourfulText text="Gemstone Boutique" /> */}
               <p className=" md:mt-4 font-normal text-[#CBBBB9]">Gemstone </p>
-              <p className="text-base md:text-lg   w-[83%] md:mt-5 font-normal text-[#B8B7C1] ">
+              <p className="text-base md:text-lg   w-[83%] lg:w-[70%] xl:w-[83%] md:mt-5 font-normal text-[#B8B7C1] ">
                 With 25 years of expertise in the gemstone industry, we can help
                 you find the perfect stone tailored to your needs. Trust our
                 legacy to guide your choice with precision and care. 100%
@@ -69,7 +69,7 @@ export const Landing = () => {
                       alt=""
                       className="lg:w-12 lg:h-12 w-8 h-8"
                     />
-                    <div className="text-xs w-[70%] text-[#2B391F] ml-2 lg:ml-3">
+                    <div className="text-xs w-[78%] text-[#2B391F] ml-2 lg:ml-3">
                       <p className="text-sm font-bold">Authentic Sourcing</p>
                       <p className="font-normal lg:tracking-wider">
                         We procure gemstones directly from mines and real
@@ -87,14 +87,14 @@ export const Landing = () => {
                 src="./back1.png"
                 loading="lazy"
                 alt=""
-                className="rounded-full hidden md:block absolute w-72 top-[18%] right-[30%]"
+                className="rounded-full hidden xl:block absolute w-72 top-[18%] right-[30%]"
               />
             </div>
-            <div className="lg:w-[100%] ml-40   mt-[15%]  overflow-hidden">
+            <div className="xl:w-[100%] ml-40   mt-[15%]  overflow-hidden">
               <img
                 src="./backs2.jpg"
                 alt=""
-                className="rounded-full hidden md:block w-full"
+                className="rounded-full hidden xl:block w-full"
                 loading="lazy"
               />
             </div>

@@ -60,7 +60,7 @@ export const Button = () => {
   }, [currentGroup]);
 
   return (
-    <div className="lg:pt-14 pt-5 bg-neutral-700 px-2 lg:px-0 overflow-hidden">
+    <div className="lg:pt-14 pt-5 bg-neutral-700 px-2 lg:px-5 xl:px-0 overflow-hidden">
       {/* Slider */}
       <div className="w-full overflow-hidden flex justify-center">
         <div

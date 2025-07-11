@@ -31,7 +31,7 @@ export const Contact = () => {
 
   return (
     <div
-      className="relative w-screen min-h-screen flex flex-col md:grid md:grid-cols-2 text-white overflow-hidden"
+      className="relative w-screen xl:min-h-screen flex flex-col md:grid md:grid-cols-2 text-white overflow-hidden"
       id="contact"
       style={{
         backgroundImage: "url('/testimonial.jpeg')",

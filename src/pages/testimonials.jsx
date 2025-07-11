@@ -4,26 +4,28 @@ import { FaStar } from "react-icons/fa";
 
 const testimonials = [
   {
-    text: "In love with the accuracy and quality! Thanks for the amazing support.  ",
-    author: "CK (Exporter)",
+    text: "They brought my vision to life with flawless precision. The intricate carvings and unique shape were executed beyond expectation. It’s rare to find such mastery in both design execution and finish.",
+    author: "Jewellery Designer (Global)",
   },
   {
-    text: "Truly impressed by the commitment to quality and service. ",
+    text: "Consistent quality and timely deliveries make them our go-to gemstone partner in Jaipur. Their craftsmanship truly elevates our exports. The team is responsive, reliable, and always open to feedback.  ",
+    author: "Gemstones Exporter (Mumbai)",
+  },
+  {
+    text: "In love with the accuracy and quality! Thanks for the amazing support.Truly impressed by the commitment to quality and service. ",
     author: "AK (Retailer)",
   },
   {
-    text: "Exceptional experience working with your team. ",
+    text: "Exceptional experience working with your team. Product quality is top-notch. We'll definitely order again.",
     author: "PK (Buyer)",
   },
   {
-    text: "Product quality is top-notch. We'll definitely order again. ",
-    author: "MK (Retail Buyer)",
-  },
-  {
-    text: "Loved the transparency and timely updates.",
-    author: "TK (Wholesaler)",
-  },
+    text:"Truly a dependable partner for any custom, high-end design. Working with them has simplified our sourcing process tremendously.",
+    author:"CK (Exporter)"
+  }
 ];
+
+
 
 export const TestimonialSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,7 +45,7 @@ export const TestimonialSlider = () => {
 
   return (
   <div
-    className="relative w-full lg:min-h-screen flex items-center justify-center bg-cover bg-center px-4"
+    className="relative w-full  xl:min-h-screen py-10 xl:py-0  flex items-center justify-center bg-cover bg-center px-4"
     style={{
       background: 'radial-gradient(circle, #645558 0%, #3a3030 50%, #35383b 100%)',
     }}
@@ -57,7 +59,7 @@ export const TestimonialSlider = () => {
     </button>
 
     {/* Container */}
-    <div className="flex relative w-full max-w-7xl min-h-[500px] justify-center items-center overflow-hidden">
+    <div className="flex relative md:w-[60%] lg:w-[100%] lg:max-w-7xl lg:min-h-[500px] justify-center items-center overflow-hidden">
       {/* --- Desktop View --- */}
       <div className="hidden lg:flex w-full justify-center items-center relative h-full">
         {[getIndex(1), getIndex(0), getIndex(-1)].map((i, idx) => {
