@@ -9,7 +9,7 @@ export const About = () => {
         <img
           src="/about2.png"
           alt=""
-          className="w-[150px] sm:w-[180px] md:w-[200px] absolute mt-[520px] md:mt-[570px] h-[150px] sm:h-[180px] md:h-[200px]"
+          className="w-[150px] sm:w-[180px] md:w-[200px] absolute mt-[720px] md:mt-[570px] h-[150px] sm:h-[180px] md:h-[200px]"
         />
         <div className="lg:pt-20 pt-10">
           <div className="max-w-[100%] mx-auto">
