@@ -53,7 +53,7 @@ export const TestimonialSlider = () => {
     {/* Left Arrow */}
     <button
       onClick={prev}
-      className="absolute left-4 md:left-8 bg-white text-black rounded-full p-3 shadow-md hover:bg-black hover:text-white transition z-10"
+      className="absolute left-4 sm:left-16 md:left-8 bg-white text-black rounded-full p-3 shadow-md hover:bg-black hover:text-white transition z-10"
     >
       <ChevronLeft size={24} />
     </button>
@@ -106,7 +106,7 @@ export const TestimonialSlider = () => {
 
       {/* --- Mobile / Tablet View --- */}
       <div className="lg:hidden w-full flex justify-center">
-        <div className="w-[70%] sm:w-[80%] h-[400px] text-white bg-black backdrop-blur-md rounded-md ">
+        <div className="w-[70%] sm:w-[60%] md:w-[80%] h-[400px] text-white bg-black backdrop-blur-md rounded-md ">
           <div className="bg-[#DCD3CB] h-16 py-3 mb-4 flex justify-center items-center">
             <div className="flex justify-center  text-xl sm:text-2xl gap-1 text-[#AF9D81]">
               {Array(5)
@@ -135,7 +135,7 @@ export const TestimonialSlider = () => {
     {/* Right Arrow */}
     <button
       onClick={next}
-      className="absolute right-4 md:right-8 bg-white text-black rounded-full p-3 shadow-md hover:bg-black hover:text-white transition z-10"
+      className="absolute right-4 sm:right-16 md:right-8 bg-white text-black rounded-full p-3 shadow-md hover:bg-black hover:text-white transition z-10"
     >
       <ChevronRight size={24} />
     </button>
