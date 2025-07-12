@@ -9,12 +9,12 @@ export const Landing = () => {
       <div
         id="Home"
         style={{ fontFamily: '"Times New Roman", Times, serif' }}
-        className="xl:h-screen md:h-[700px] lg:h-[750px] h-[700px] w-screen overflow-hidden flex-col  items-center  bg-gradient-to-r  from-neutral-800 via-neutral-800 to-neutral-800"
+        className="xl:h-screen sm:h-[600px] md:h-[700px] lg:h-[750px] pb-10 md:pb-0 h-full w-screen overflow-hidden flex-col  items-center  bg-gradient-to-r  from-neutral-800 via-neutral-800 to-neutral-800"
       >
         {/* Overlayed Text */}
         <div className="xl:grid xl:grid-cols-[40%_60%] ">
           <div className="">
-            <div className=" relative  w-[100%]  left-5 sm:left-10 lg:left-20 xl:left-24  z-30 top-20 md:top-32 text-[40px] md:text-7xl">
+            <div className=" relative  w-[100%]  left-5 sm:left-10 lg:left-20 xl:left-24  z-30 top-20 md:top-32 text-[40px] sm:text-6xl md:text-7xl">
               <p className=" font-normal   text-[#CBBBB9]  md:pr-0  ">
                 Find The Perfect{" "}
               </p>
@@ -32,7 +32,7 @@ export const Landing = () => {
                     onClick={() => {
                       navigate("/gallery");
                     }}
-                    className=" cursor-pointer text-black bg-[#EFEDE8]  font-normal uppercase border  px-7 lg:px-10 py-2  text-base md:text-lg"
+                    className=" cursor-pointer text-black bg-[#EFEDE8]  font-normal uppercase border  px-7 sm:px-10 py-2  text-base md:text-lg"
                   >
                     Explore
                   </button>
@@ -40,7 +40,7 @@ export const Landing = () => {
                 <MovingButton>
                   <a
                     href="#contact"
-                    className="flex text-white px-4 lg:px-10 py-2 font-normal uppercase border   text-base md:text-lg"
+                    className="flex text-white px-4 sm:px-10 py-2 font-normal uppercase border   text-base md:text-lg"
                   >
                     Consultation
                   </a>
@@ -48,7 +48,7 @@ export const Landing = () => {
               </div>
               <div></div>
               <div>
-                <div className="w-[90%] lg:w-[750px] absolute py-2 px-2 lg:px-8 lg:py-6 grid-cols-2 grid mt-12 bg-white rounded-xl mx-auto md:mx-0">
+                <div className="w-[90%] lg:w-[750px]  lg:absolute py-2 px-2  md:px-4 md:py-4 lg:px-8 lg:py-6 grid-cols-2 grid mt-12 bg-white rounded-xl  md:mx-0">
                   <div className="flex justify-center">
                     <img
                       src="./diploma.png"
