@@ -7,13 +7,13 @@ export const About = () => {
         className="overflow-hidden bg-black"
       >
         <div className="lg:pt-20 pt-10">
-          <div className="max-w-[100%] mx-auto">
+          <div className="w-[100%] mx-auto">
             <h2 className="text-[#CBBBB9] ml-6 sm:ml-12 lg:ml-24 text-3xl sm:text-5xl md:text-6xl font-medium mb-10">
               Know More About Us
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
-              <div className="text-[#B8B7C1] font-normal text-base sm:text-lg md:text-xl space-y-6 w-[90%] ml-6 sm:ml-12 lg:ml-24 tracking-wider z-10">
+              <div className="text-[#B8B7C1] font-normal text-base sm:text-lg md:text-xl space-y-6 w-[90%] ml-6 sm:ml-12 lg:ml-24 tracking-wider z-10 pb-10">
                 <p>
                   Welcome to the heart of Gemstones Boutique. We have been
                   dedicated to the art and science of bringing the earth's most
@@ -39,7 +39,7 @@ export const About = () => {
                 <img
                   src="/about2.png"
                   alt=""
-                  className="w-[150px] sm:w-[180px] lg:w-[200px] sm:mt-[280px] mt-[400px] lg:mt-[400px] h-[150px] sm:h-[180px] md:h-[200px]"
+                  className="w-[150px] sm:w-[180px] lg:w-[200px] sm:mt-[350px] md:mt-[300px] mt-[400px] lg:mt-[420px] h-[150px] sm:h-[180px] md:h-[200px]"
                 />
               </div>
               <div className="w-full flex justify-center items-end z-0 mt-10 md:mt-0">
@@ -57,10 +57,10 @@ export const About = () => {
       {/* about us  */}
       <div
         style={{ fontFamily: '"Times New Roman", Times, serif' }}
-        className="grid grid-cols-1 lg:grid-cols-[50%_50%] gap-10 bg-neutral-800 md:h-full xl:h-screen h-[800px] items-center"
+        className="grid grid-cols-1 lg:grid-cols-[50%_50%] gap-10 bg-neutral-800 sm:h-full xl:h-screen h-[800px] items-center"
       >
-        <div className="text-left text-[#FFF7EF] m-6 sm:m-12 xl:m-24 mt-32 md:mt-44  xl:mt-0">
-          <p className="text-6xl  md:text-8xl mb-4">Why it all</p>
+        <div className="text-left text-[#FFF7EF] m-6 sm:m-12 xl:m-24 mt-32  sm:mt-40 md:mt-52  xl:mt-0">
+          <p className="text-6xl sm:text-7xl md:text-8xl mb-4">Why it all</p>
           <p className="text-5xl sm:text-6xl md:text-8xl italic mt-5 sm:ml-[24%]">
             Began
           </p>
@@ -69,7 +69,7 @@ export const About = () => {
             alt=""
             className="text-white absolute w-10 sm:w-14"
           />
-          <p className="text-base sm:text-lg md:text-xl text-[#B8B7C1] font-normal w-[90%] md:w-[75%] lg:w-[90%] xl:w-[80%] mt-16 sm:mt-24  sm:ml-[24%]">
+          <p className="text-base sm:text-lg md:text-xl text-[#B8B7C1] font-normal w-[90%] sm:w-[75%] md:w-[75%] lg:w-[90%] xl:w-[80%] mt-16 sm:mt-24  sm:ml-[24%]">
             Hi, I am Inder. For me it all began when I joined the industry at
             the age of 16. With this venture I wish to create precise gemstones
             and deliver customer vision. Let’s manufacture gemstones together!
@@ -80,7 +80,7 @@ export const About = () => {
           <img
             src="/about6.png"
             alt="Vision Visual"
-            className="object-cover w-[75%] md:w-[55%] lg:w-[65%] relative bottom-9 lg:bottom-0"
+            className="object-cover w-[75%] sm:w-[53%] md:w-[50%] lg:w-[65%] relative bottom-9 lg:bottom-0"
           />
         </div>
       </div>
