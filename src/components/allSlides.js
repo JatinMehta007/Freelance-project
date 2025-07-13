@@ -323,7 +323,7 @@ export const allSlides = [
       "origin": "Brazil",
       "Interesting_Facts": "Warm Smoky-Golden Tone; Grounding Energy.",
       "Popular_Uses": "Great For Autumnal Jewelry, Loved In Men's Accessories.",
-      "Stock_Information": "Honey, Beer ",
+      "Stock_Information": "Honey, Beer, lemon, cognac ",
       "type": "semi-precious"
     },
     {
@@ -332,7 +332,7 @@ export const allSlides = [
       "origin": "Brazil",
       "Interesting_Facts": "Warm Smoky-Golden Tone; Grounding Energy.",
       "Popular_Uses": "Great For Autumnal Jewelry, Loved In Men's Accessories.",
-      "Stock_Information": "Honey, Beer ",
+      "Stock_Information": "Honey, Beer, lemon, cognac  ",
       "type": "semi-precious"
     }
   ],
@@ -641,7 +641,7 @@ export const allSlides = [
     {
       "src": "/image/image copy 6.png",
       "name": "Tourmaline",
-      "origin": "Brazil, Afghanistan",
+      "origin": "Africa",
       "Interesting_Facts": "Known For Its Wide Color Variety; Protects Against Negative Energy.",
       "Popular_Uses": "Highly Versatile — Perfect For Multicolor And Custom Designs.",
       "Stock_Information": "Available In Green, Pink, Yellow, Blue, Peach",
@@ -650,7 +650,7 @@ export const allSlides = [
     {
       "src": "/image/image copy 6.png",
       "name": "Tourmaline",
-      "origin": "Brazil, Afghanistan",
+      "origin": "Africa",
       "Interesting_Facts": "Known For Its Wide Color Variety; Protects Against Negative Energy.",
       "Popular_Uses": "Highly Versatile — Perfect For Multicolor And Custom Designs.",
       "Stock_Information": "Available In Green, Pink, Yellow, Blue, Peach",
@@ -894,7 +894,7 @@ export const allSlides = [
     {
       "src": "/image/rainbow.png",
       "name": "Rainbow Moonstone",
-      "origin": "India, Sri Lanka",
+      "origin": "India, Africa",
       "background": "black",
       "Interesting_Facts": "Displays A Spectrum Of Colors Under Light; Connected To Feminine Energy.",
       "Popular_Uses": "Ethereal Glow Makes It A Bestseller In Boho And Bridal Sets.",
@@ -904,7 +904,7 @@ export const allSlides = [
     {
       "src": "/image/image_copy_49.png",
       "name": "Rainbow Moonstone",
-      "origin": "India, Sri Lanka",
+      "origin": "India, Africa",
       "background": "black",
       "Interesting_Facts": "Displays A Spectrum Of Colors Under Light; Connected To Feminine Energy.",
       "Popular_Uses": "Ethereal Glow Makes It A Bestseller In Boho And Bridal Sets.",
@@ -915,7 +915,7 @@ export const allSlides = [
     {
       "src": "/image/ruby-.png",
       "name": "Ruby Corundum",
-      "origin": "India",
+      "origin": "Russia",
       "Interesting_Facts": "",
       "Popular_Uses": "",
       "Stock_Information": "Available",
@@ -924,7 +924,7 @@ export const allSlides = [
     {
       "src": "/image/ruby1.png",
       "name": "Ruby Corundum",
-      "origin": "India",
+      "origin": "Russia",
       "Interesting_Facts": "",
       "Popular_Uses": "",
       "Stock_Information": "Available",
@@ -935,7 +935,7 @@ export const allSlides = [
     {
       "src": "/image/sapphire.png",
       "name": "Sapphire Corundum",
-      "origin": "India",
+      "origin": "Russia",
       "Interesting_Facts": "",
       "Popular_Uses": "",
       "Stock_Information": "Available",
@@ -944,7 +944,7 @@ export const allSlides = [
     {
       "src": "/image/saphire1.png",
       "name": "Sapphire Corundum",
-      "origin": "India",
+      "origin": "Russia",
       "Interesting_Facts": "",
       "Popular_Uses": "",
       "Stock_Information": "Available",
@@ -955,7 +955,7 @@ export const allSlides = [
     {
       "src": "/image/image copy 15.png",
       "name": "Emerald Hydro",
-      "origin": "India",
+      "origin": "Russia",
       "Interesting_Facts": "",
       "Popular_Uses": "",
       "Stock_Information": "Available",
@@ -964,7 +964,7 @@ export const allSlides = [
     {
       "src": "/image/image copy 16.png",
       "name": "Emerald Hydro",
-      "origin": "India",
+      "origin": "Russia",
       "Interesting_Facts": "",
       "Popular_Uses": "",
       "Stock_Information": "Available",
