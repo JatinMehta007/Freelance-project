@@ -87,8 +87,8 @@ export const Contact = () => {
               📧
             </span>
             <span className="hover:cursor-pointer">
-              <a href="mailto:gemstonesboutique7@gmail.com">
-                gemstonesboutique7@gmail.com
+              <a href="mailto:Info@gemstonesboutique.in">
+                Info@gemstonesboutique.in
               </a>
             </span>
           </div>
