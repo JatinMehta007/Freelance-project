@@ -925,8 +925,8 @@ export const allSlides = [
       "src": "/image/ruby1.png",
       "name": "Ruby Corundum",
       "origin": "Russia",
-      "Interesting_Facts": "",
-      "Popular_Uses": "",
+      "Interesting_Facts": "Fine jewelry, like engagement rings.",
+      "Popular_Uses": "Fine jewelry, like engagement rings.",
       "Stock_Information": "Available",
       "type": "lab-grown"
     }
