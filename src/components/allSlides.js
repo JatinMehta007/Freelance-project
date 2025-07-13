@@ -263,7 +263,7 @@ export const allSlides = [
       "origin": "USA",
       "Interesting_Facts": "Ancient Protective Stone; Admired For Its Unique Blue-Green Hue.",
       "Popular_Uses": "Trending In Boho, Southwestern, And Tribal Jewelry.",
-      "Stock_Information": "Available In Pink",
+      "Stock_Information": "Also Available In Pink",
       "type": "precious"
     },
     {
@@ -272,7 +272,7 @@ export const allSlides = [
       "origin": "USA",
       "Interesting_Facts": "Ancient Protective Stone; Admired For Its Unique Blue-Green Hue.",
       "Popular_Uses": "Trending In Boho, Southwestern, And Tribal Jewelry.",
-      "Stock_Information": "Available In Pink",
+      "Stock_Information": "Also Available In Pink",
       "type": "precious"
     }
   ],
@@ -323,7 +323,7 @@ export const allSlides = [
       "origin": "Brazil",
       "Interesting_Facts": "Warm Smoky-Golden Tone; Grounding Energy.",
       "Popular_Uses": "Great For Autumnal Jewelry, Loved In Men's Accessories.",
-      "Stock_Information": "Honey, Beer, lemon, cognac ",
+      "Stock_Information": "Also Available In Honey, Beer, Lemon, Cognac ",
       "type": "semi-precious"
     },
     {
@@ -332,7 +332,7 @@ export const allSlides = [
       "origin": "Brazil",
       "Interesting_Facts": "Warm Smoky-Golden Tone; Grounding Energy.",
       "Popular_Uses": "Great For Autumnal Jewelry, Loved In Men's Accessories.",
-      "Stock_Information": "Honey, Beer, lemon, cognac  ",
+      "Stock_Information": "Also Available In Honey, Beer, Lemon, Cognac  ",
       "type": "semi-precious"
     }
   ],
@@ -343,7 +343,7 @@ export const allSlides = [
       "origin": "South Africa, India, Madagascar",
       "Interesting_Facts": "A Vibrant Light Blue Topaz; Represents Clarity And Calmness.",
       "Popular_Uses": "Trendy In Modern Silver Jewelry And Daily-Wear Rings.",
-      "Stock_Information": "Available In Sky And Londion Blue",
+      "Stock_Information": "Also Available In Sky And London Blue",
       "type": "semi-precious"
     },
     {
@@ -352,7 +352,7 @@ export const allSlides = [
       "origin": "South Africa, India, Madagascar",
       "Interesting_Facts": "A Vibrant Light Blue Topaz; Represents Clarity And Calmness.",
       "Popular_Uses": "Trendy In Modern Silver Jewelry And Daily-Wear Rings.",
-      "Stock_Information": "Available In Sky And Londion Blue",
+      "Stock_Information": "Also Available In Sky And Londion Blue",
       "type": "semi-precious"
     }
   ],
@@ -624,7 +624,7 @@ export const allSlides = [
       "origin": "Mexico, Russia",
       "Interesting_Facts": "Reddish Inclusions Give It A Soft Pink, Speckled Appearance.",
       "Popular_Uses": "Feminine And Dreamy — Great For Youthful Or Romantic Pieces.",
-      "Stock_Information": "Available In Green, Pink, Yellow, Blue",
+      "Stock_Information": "Also Available In Green, Pink, Yellow, Blue",
       "type": "semi-precious"
     },
     {
@@ -633,7 +633,7 @@ export const allSlides = [
       "origin": "Mexico, Russia",
       "Interesting_Facts": "Reddish Inclusions Give It A Soft Pink, Speckled Appearance.",
       "Popular_Uses": "Feminine And Dreamy — Great For Youthful Or Romantic Pieces.",
-      "Stock_Information": "Available In Green, Pink, Yellow, Blue",
+      "Stock_Information": "Also Available In Green, Pink, Yellow, Blue",
       "type": "semi-precious"
     }
   ],
@@ -752,7 +752,7 @@ export const allSlides = [
       "src": "/image/pietersite_rough.jpg.png",
       "name": "Pitersite",
       "origin": "Russia",
-      "Interesting_Facts": "Known as the “Tempest Stone”-shows swirls of blue, gold, and brown chatoyancy.",
+      "Interesting_Facts": "Tempest Stone - Shows swirling blue, gold, and brown chatoyancy.",
       "Popular_Uses": " Rare and dramatic-used in statement pendants and mystical-themed collections.",
       "Stock_Information": "Available",
       "type": "semi-precious"
@@ -876,7 +876,7 @@ export const allSlides = [
       "background": "black",
       "Interesting_Facts": "Displays A Magical Glow; Symbol Of New Beginnings.",
       "Popular_Uses": "Loved In Ethereal, Boho, And Moon-Inspired Collections.",
-      "Stock_Information": "Available in peach and white",
+      "Stock_Information": "Any Available in peach and white",
       "type": "semi-precious"
     },
     {
@@ -886,7 +886,7 @@ export const allSlides = [
       "background": "black",
       "Interesting_Facts": "Displays A Magical Glow; Symbol Of New Beginnings.",
       "Popular_Uses": "Loved In Ethereal, Boho, And Moon-Inspired Collections.",
-      "Stock_Information": "Available in peach and white",
+      "Stock_Information": "Any Available in peach and white",
       "type": "semi-precious"
     }
   ],
@@ -916,8 +916,8 @@ export const allSlides = [
       "src": "/image/ruby-.png",
       "name": "Ruby Corundum",
       "origin": "Russia",
-      "Interesting_Facts": "",
-      "Popular_Uses": "",
+      "Interesting_Facts": "Fine jewelry, like engagement rings.",
+      "Popular_Uses": "Fine jewelry, like engagement rings.",
       "Stock_Information": "Available",
       "type": "lab-grown"
     },
@@ -936,8 +936,8 @@ export const allSlides = [
       "src": "/image/sapphire.png",
       "name": "Sapphire Corundum",
       "origin": "Russia",
-      "Interesting_Facts": "",
-      "Popular_Uses": "",
+      "Interesting_Facts": "Jewelry and industrial parts (e.g., watches, phones).",
+      "Popular_Uses": "Jewelry and industrial parts (e.g., watches, phones).",
       "Stock_Information": "Available",
       "type": "lab-grown"
     },
@@ -945,8 +945,8 @@ export const allSlides = [
       "src": "/image/saphire1.png",
       "name": "Sapphire Corundum",
       "origin": "Russia",
-      "Interesting_Facts": "",
-      "Popular_Uses": "",
+      "Interesting_Facts": "Jewelry and industrial parts (e.g., watches, phones).",
+      "Popular_Uses": "Jewelry and industrial parts (e.g., watches, phones).",
       "Stock_Information": "Available",
       "type": "lab-grown"
     }
@@ -956,8 +956,8 @@ export const allSlides = [
       "src": "/image/image copy 15.png",
       "name": "Emerald Hydro",
       "origin": "Russia",
-      "Interesting_Facts": "",
-      "Popular_Uses": "",
+      "Interesting_Facts": "The first ones were created in the 1920s to mimic natural formation.",
+      "Popular_Uses": "High-end, intricate jewelry.",
       "Stock_Information": "Available",
       "type": "lab-grown"
     },
@@ -965,8 +965,8 @@ export const allSlides = [
       "src": "/image/image copy 16.png",
       "name": "Emerald Hydro",
       "origin": "Russia",
-      "Interesting_Facts": "",
-      "Popular_Uses": "",
+      "Interesting_Facts": "The first ones were created in the 1920s to mimic natural formation.",
+      "Popular_Uses": "High-end, intricate jewelry.",
       "Stock_Information": "Available",
       "type": "lab-grown"
     }
