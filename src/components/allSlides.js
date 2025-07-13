@@ -730,6 +730,7 @@ export const allSlides = [
     },
     {
       "src": "/image/larmiar_rough.jpg.png",
+      "name": "Larimar",
       "origin": "Dominican Republic",
       "Interesting_Facts": "Rare volcanic blue pectolite; resembles the Caribbean Sea — found only in one location.",
       "Popular_Uses": "Use/Positioning: Coastal, spiritual aesthetic — featured in boho-chic, healing, and resort-style jewelry.",
