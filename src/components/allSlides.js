@@ -323,7 +323,7 @@ export const allSlides = [
       "origin": "Brazil",
       "Interesting_Facts": "Warm Smoky-Golden Tone; Grounding Energy.",
       "Popular_Uses": "Great For Autumnal Jewelry, Loved In Men's Accessories.",
-      "Stock_Information": "Honey,Beer Quartz",
+      "Stock_Information": "Honey, Beer ",
       "type": "semi-precious"
     },
     {
@@ -332,7 +332,7 @@ export const allSlides = [
       "origin": "Brazil",
       "Interesting_Facts": "Warm Smoky-Golden Tone; Grounding Energy.",
       "Popular_Uses": "Great For Autumnal Jewelry, Loved In Men's Accessories.",
-      "Stock_Information": "Honey,Beer Quartz",
+      "Stock_Information": "Honey, Beer ",
       "type": "semi-precious"
     }
   ],
