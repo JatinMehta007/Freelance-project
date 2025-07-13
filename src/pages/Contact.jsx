@@ -22,15 +22,15 @@ export const Contact = () => {
 
   emailjs
     .send(
-      "service_f3vd8m4", // replace with your EmailJS service ID
-      "template_v7ls8uh", // replace with your EmailJS template ID
+      "service_f3vd8m4", 
+      "template_v7ls8uh", 
       {
         from_name: formData.name,
         from_email: formData.email,
         phone: formData.phone,
         message: formData.message,
       },
-      "3viO0JAEwr94WDwQW" // replace with your EmailJS public key
+      "3viO0JAEwr94WDwQW" 
     )
     .then(
       (result) => {
