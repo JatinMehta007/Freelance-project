@@ -41,7 +41,7 @@ export const Button = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       goToGroup(currentGroup + 1);
-    }, 5000);
+    }, 2000);
     return () => clearInterval(interval);
   }, [currentGroup]);
 

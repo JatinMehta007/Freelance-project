@@ -20,13 +20,13 @@ export const Landing = () => {
               </p>
               {/* <ColourfulText text="Gemstone Boutique" /> */}
               <p className=" md:mt-4 font-normal text-[#CBBBB9] leading-6 sm:leading-16  ">Gemstone </p>
-              <p className="text-base md:text-lg   w-[83%] lg:w-[70%] xl:w-[83%] mt-3 md:mt-5 font-normal text-[#B8B7C1] ">
+              <p className="text-base md:text-lg   w-[83%] lg:w-[70%] xl:w-[83%] mt-9 md:mt-5 font-normal text-[#B8B7C1] ">
                 With 25 years of expertise in the gemstone industry, we can help
                 you find the perfect stone tailored to your needs. Trust our
                 legacy to guide your choice with precision and care. 100%
                 Natural and lab certified gemstones
               </p>
-              <div className="flex gap-5 lg:gap-10 mt-12 ">
+              <div className="flex gap-5 lg:gap-10 mt-9 sm:mt-12 ">
                 <MovingButton>
                   <button
                     onClick={() => {

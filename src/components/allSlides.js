@@ -244,7 +244,7 @@ export const allSlides = [
       "Interesting_Facts": "Reflects Light In A “Cat’S Eye” Line; Usually Found In Chrysoberyl Form.",
       "Popular_Uses": "Mystical Appeal; Used In Rings And Amulets For Protection.",
       "Stock_Information": "Available",
-      "type": "semi-precious"
+      "type": "precious"
     },
     {
       "src": "/image/image copy 65.png",
@@ -253,7 +253,7 @@ export const allSlides = [
       "Interesting_Facts": "Reflects Light In A “Cat’S Eye” Line; Usually Found In Chrysoberyl Form.",
       "Popular_Uses": "Mystical Appeal; Used In Rings And Amulets For Protection.",
       "Stock_Information": "Available",
-      "type": "semi-precious"
+      "type": "precious"
     }
   ],
   [
@@ -264,7 +264,7 @@ export const allSlides = [
       "Interesting_Facts": "Ancient Protective Stone; Admired For Its Unique Blue-Green Hue.",
       "Popular_Uses": "Trending In Boho, Southwestern, And Tribal Jewelry.",
       "Stock_Information": "Available In Pink",
-      "type": "semi-precious"
+      "type": "precious"
     },
     {
       "src": "/image/image copy 28.png",
@@ -273,7 +273,7 @@ export const allSlides = [
       "Interesting_Facts": "Ancient Protective Stone; Admired For Its Unique Blue-Green Hue.",
       "Popular_Uses": "Trending In Boho, Southwestern, And Tribal Jewelry.",
       "Stock_Information": "Available In Pink",
-      "type": "semi-precious"
+      "type": "precious"
     }
   ],
   [
@@ -669,10 +669,10 @@ export const allSlides = [
     },
     {
       "src": "/image/image copy 8.png",
-      "name": "Tanzanite",
-      "origin": "Tanzania (Only Source)",
-      "Interesting_Facts": "Rare Gem With Vibrant Violet-Blue Hues; Discovered In 1967.",
-      "Popular_Uses": "Premium, One-Location Gem — Used In Luxury And Statement Sets.",
+     "name": "Aquamarine",
+      "origin": "Brazil, Nigeria",
+      "Interesting_Facts": "March Birthstone; Sea Blue Color Evokes Tranquility And Clarity.",
+      "Popular_Uses": "Elegant And Soothing — Often Used In Fine And Bridal Jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }

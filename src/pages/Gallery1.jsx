@@ -154,13 +154,13 @@ export const Gallery = () => {
               {/* Arrows */}
               <button
                 onClick={() => prevSlide(i)}
-                className="absolute top-1/2 left-2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 hover:text-black z-10"
+                className="absolute top-4/7 left-2 transform -translate-y-1/2 w-10 h-10 flex items-center justify-center text-black font-black z-10"
               >
                 {"<"}
               </button>
               <button
                 onClick={() => nextSlide(i)}
-                className="absolute top-1/2 right-2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 hover:text-black z-10"
+                className="absolute top-4/7 right-2 transform -translate-y-1/2 w-10 h-10 flex items-center justify-center text-black font-black z-10"
               >
                 {">"}
               </button>
@@ -183,7 +183,7 @@ export const Gallery = () => {
       {/* Back to Top Arrow (Mobile only) */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed left-4 bottom-4 font-semibold z-50 bg-yellow-400 text-xl text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg md:hidden"
+        className="fixed left-4  bottom-4 font-semibold z-50 bg-yellow-400 text-xl text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg md:hidden"
         aria-label="Scroll to top"
       >
         ↑
