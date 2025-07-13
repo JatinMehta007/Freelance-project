@@ -1,3 +1,4 @@
+import emailjs from "@emailjs/browser";
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -17,18 +18,39 @@ export const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    toast.success("Your message has been submitted!");
-    console.log("Submitted Data:", formData);
+  e.preventDefault();
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    });
-  };
+  emailjs
+    .send(
+      "service_f3vd8m4", // replace with your EmailJS service ID
+      "template_v7ls8uh", // replace with your EmailJS template ID
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+      },
+      "3viO0JAEwr94WDwQW" // replace with your EmailJS public key
+    )
+    .then(
+      (result) => {
+        toast.success("Your message has been sent!");
+        console.log("Success:", result.text);
 
+        // Clear the form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      },
+      (error) => {
+        toast.error("Something went wrong. Try again!");
+        console.error("Error:", error);
+      }
+    );
+};
   return (
     <div
       className="relative w-screen xl:min-h-screen flex flex-col md:grid md:grid-cols-2 text-white overflow-hidden"
