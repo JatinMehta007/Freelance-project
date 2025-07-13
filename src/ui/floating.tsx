@@ -31,7 +31,7 @@ const FloatingDockMobile = ({
   return (
     <div
       className={cn(
-        "fixed right-4 bottom-1/3 z-50 flex flex-col items-center gap-3 md:hidden",
+        "fixed right-4 bottom-1/6 z-50 flex flex-col items-center gap-3 md:hidden",
         className
       )}
     >
