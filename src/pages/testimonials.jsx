@@ -118,7 +118,7 @@ export const TestimonialSlider = () => {
           </div>
           <p
             style={{ fontFamily: '"Times New Roman", Times, serif' }}
-            className="text-base text-center sm:mb-4 p-6 "
+            className="text-base text-center sm:mb-4 p-4 sm:p-6 "
           >
             {testimonials[currentIndex].text}
           </p>
