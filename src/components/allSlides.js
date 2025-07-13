@@ -697,6 +697,89 @@ export const allSlides = [
       "type": "semi-precious"
     }
   ],
+
+  [
+    {
+      "src": "/image/K2 Jasper.webp.png",
+      "name": "K2 Jasper",
+      "origin": "Pakistan, Afghanistan",
+      "Interesting_Facts": "Unique granite with bright blue azurite orbs; only found near K2 mountain.",
+      "Popular_Uses": "Rare and striking; popular in conversation-starter jewelry.",
+      "Stock_Information": "Available",
+      "type": "semi-precious"
+    },
+    {
+      "src": "/image/asd.png",
+      "name": "K2 Jasper",
+      "origin": "Pakistan, Afghanistan",
+      "Interesting_Facts": "Unique granite with bright blue azurite orbs; only found near K2 mountain.",
+      "Popular_Uses": "Rare and striking; popular in conversation-starter jewelry.",
+      "Stock_Information": "Available",
+      "type": "semi-precious"
+    }
+  ],
+  [
+    {
+      "src": "/image/larimar.jpg.png",
+      "name": "Larimar",
+      "origin": "Dominican Republic",
+      "Interesting_Facts": "Rare volcanic blue pectolite; resembles the Caribbean Sea — found only in one location.",
+      "Popular_Uses": "Use/Positioning: Coastal, spiritual aesthetic — featured in boho-chic, healing, and resort-style jewelry.",
+      "Stock_Information": "Available",
+      "type": "semi-precious"
+    },
+    {
+      "src": "/image/larmiar_rough.jpg.png",
+      "name": "K2 Jasper",
+      "origin": "Pakistan, Afghanistan",
+      "Interesting_Facts": "Unique granite with bright blue azurite orbs; only found near K2 mountain.",
+      "Popular_Uses": "Rare and striking; popular in conversation-starter jewelry.",
+      "Stock_Information": "Available",
+      "type": "semi-precious"
+    }
+  ],
+   [
+    {
+      "src": "/image/pietersite.jpg.png",
+      "name": "Pitersite",
+      "origin": "Russia",
+      "Interesting_Facts": "Known as the “Tempest Stone” — shows swirls of blue, gold, and brown chatoyancy.",
+      "Popular_Uses": "Use/Positioning: Rare and dramatic — used in statement pendants and mystical-themed collections.",
+      "Stock_Information": "Available",
+      "type": "semi-precious"
+    },
+    {
+      "src": "/image/sfsad.png",
+      "name": "Pitersite",
+      "origin": "Russia",
+      "Interesting_Facts": "Known as the “Tempest Stone”-shows swirls of blue, gold, and brown chatoyancy.",
+      "Popular_Uses": "Use/Positioning: Rare and dramatic-used in statement pendants and mystical-themed collections.",
+      "Stock_Information": "Available",
+      "type": "semi-precious"
+    }
+  ],
+ 
+[
+    {
+      "src": "/image/red-jasper.jpg.png",
+      "name": "Red Jasper",
+      "origin": "India",
+      "Interesting_Facts": "Earthy red stone with iron inclusions; symbol of strength and endurance in ancient cultures.",
+      "Popular_Uses": "Bold and grounding — used in rustic, tribal, and spiritual designs.",
+      "Stock_Information": "Available",
+      "type": "semi-precious"
+    },
+    {
+      "src": "/image/red jasper rough.jpg.png",
+      "name": "Red Jasper",
+      "origin": "India",
+      "Interesting_Facts": "Earthy red stone with iron inclusions; symbol of strength and endurance in ancient cultures.",
+      "Popular_Uses": "Bold and grounding — used in rustic, tribal, and spiritual designs.",
+      "Stock_Information": "Available",
+      "type": "semi-precious"
+    }
+  ],
+
   [
     {
       "src": "/image/pearl.png",

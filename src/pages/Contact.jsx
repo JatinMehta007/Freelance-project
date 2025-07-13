@@ -160,7 +160,9 @@ export const Contact = () => {
             Submit Now
           </button>
         </form>
+        
       </div>
+
     </div>
   );
 };

@@ -188,6 +188,9 @@ export const Gallery = () => {
       >
         ↑
       </button>
+      <p style={{ fontFamily: '"Times New Roman", Times, serif' }} className="text-center bg-neutral-900 text-gray-300  pb-10 text-lg md:text-xl">
+      Contact us to view the full catalog. 
+        </p>
       <Footer />
     </div>
   );
