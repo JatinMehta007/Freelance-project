@@ -31,7 +31,7 @@ const FloatingDockMobile = ({
   return (
     <div
       className={cn(
-        "fixed right-4 bottom-1/6 z-50 flex flex-col items-center gap-3 md:hidden",
+        "fixed right-4 bottom-1/12 z-50 flex flex-col items-center gap-3 md:hidden",
         className
       )}
     >
@@ -41,7 +41,7 @@ const FloatingDockMobile = ({
           href={item.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-900 shadow-md"
+          className="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-900 shadow-md"
         >
           <div className="h-6 w-6">{item.icon}</div>
         </a>
