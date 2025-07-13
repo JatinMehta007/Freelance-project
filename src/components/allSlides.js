@@ -601,7 +601,7 @@ export const allSlides = [
     {
       "src": "/image/image copy 60.png",
       "name": "Vasonite (Vesuvianite)",
-      "origin": "Italy, Canada",
+      "origin": "India",
       "Interesting_Facts": "Named After Mount Vesuvius; Olive Green To Yellow-Green Colors.",
       "Popular_Uses": "Earthy Tone Suits Nature-Inspired And Organic Collections.",
       "Stock_Information": "Available",
@@ -610,7 +610,7 @@ export const allSlides = [
     {
       "src": "/image/image copy.png",
       "name": "Vasonite (Vesuvianite)",
-      "origin": "Italy, Canada",
+      "origin": "India",
       "Interesting_Facts": "Named After Mount Vesuvius; Olive Green To Yellow-Green Colors.",
       "Popular_Uses": "Earthy Tone Suits Nature-Inspired And Organic Collections.",
       "Stock_Information": "Available",
@@ -739,7 +739,7 @@ export const allSlides = [
   ],
    [
     {
-      "src": "/image/pietersite.jpg.png",
+      "src": "/image/pietersite img 1.jpg.png",
       "name": "Pitersite",
       "origin": "Russia",
       "Interesting_Facts": "Known as the “Tempest Stone” — shows swirls of blue, gold, and brown chatoyancy.",
@@ -748,7 +748,7 @@ export const allSlides = [
       "type": "semi-precious"
     },
     {
-      "src": "/image/sfsad.png",
+      "src": "/image/pietersite_rough.jpg.png",
       "name": "Pitersite",
       "origin": "Russia",
       "Interesting_Facts": "Known as the “Tempest Stone”-shows swirls of blue, gold, and brown chatoyancy.",
