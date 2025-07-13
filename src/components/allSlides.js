@@ -730,10 +730,9 @@ export const allSlides = [
     },
     {
       "src": "/image/larmiar_rough.jpg.png",
-      "name": "K2 Jasper",
-      "origin": "Pakistan, Afghanistan",
-      "Interesting_Facts": "Unique granite with bright blue azurite orbs; only found near K2 mountain.",
-      "Popular_Uses": "Rare and striking; popular in conversation-starter jewelry.",
+      "origin": "Dominican Republic",
+      "Interesting_Facts": "Rare volcanic blue pectolite; resembles the Caribbean Sea — found only in one location.",
+      "Popular_Uses": "Use/Positioning: Coastal, spiritual aesthetic — featured in boho-chic, healing, and resort-style jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
