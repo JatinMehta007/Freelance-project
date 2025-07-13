@@ -876,7 +876,7 @@ export const allSlides = [
       "background": "black",
       "Interesting_Facts": "Displays A Magical Glow; Symbol Of New Beginnings.",
       "Popular_Uses": "Loved In Ethereal, Boho, And Moon-Inspired Collections.",
-      "Stock_Information": "Any Available in peach and white",
+      "Stock_Information": "Also Available in peach and white",
       "type": "semi-precious"
     },
     {
@@ -886,7 +886,7 @@ export const allSlides = [
       "background": "black",
       "Interesting_Facts": "Displays A Magical Glow; Symbol Of New Beginnings.",
       "Popular_Uses": "Loved In Ethereal, Boho, And Moon-Inspired Collections.",
-      "Stock_Information": "Any Available in peach and white",
+      "Stock_Information": "Also Available in peach and white",
       "type": "semi-precious"
     }
   ],
