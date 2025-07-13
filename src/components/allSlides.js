@@ -723,8 +723,8 @@ export const allSlides = [
       "src": "/image/larimar.jpg.png",
       "name": "Larimar",
       "origin": "Dominican Republic",
-      "Interesting_Facts": "Rare volcanic blue pectolite; resembles the Caribbean Sea — found only in one location.",
-      "Popular_Uses": "Use/Positioning: Coastal, spiritual aesthetic — featured in boho-chic, healing, and resort-style jewelry.",
+      "Interesting_Facts": "Rare volcanic blue pectolite; resembles the Caribbean Sea.",
+      "Popular_Uses": " Coastal, spiritual aesthetic—featured in boho-chic, healing, and resort-style jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -732,8 +732,8 @@ export const allSlides = [
       "src": "/image/larmiar_rough.jpg.png",
       "name": "Larimar",
       "origin": "Dominican Republic",
-      "Interesting_Facts": "Rare volcanic blue pectolite; resembles the Caribbean Sea — found only in one location.",
-      "Popular_Uses": "Use/Positioning: Coastal, spiritual aesthetic — featured in boho-chic, healing, and resort-style jewelry.",
+      "Interesting_Facts": "Rare volcanic blue pectolite; resembles the Caribbean Sea.",
+      "Popular_Uses": " Coastal, spiritual aesthetic—featured in boho-chic, healing, and resort-style jewelry.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -744,7 +744,7 @@ export const allSlides = [
       "name": "Pitersite",
       "origin": "Russia",
       "Interesting_Facts": "Known as the “Tempest Stone” — shows swirls of blue, gold, and brown chatoyancy.",
-      "Popular_Uses": "Use/Positioning: Rare and dramatic — used in statement pendants and mystical-themed collections.",
+      "Popular_Uses": " Rare and dramatic — used in statement pendants and mystical-themed collections.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     },
@@ -753,7 +753,7 @@ export const allSlides = [
       "name": "Pitersite",
       "origin": "Russia",
       "Interesting_Facts": "Known as the “Tempest Stone”-shows swirls of blue, gold, and brown chatoyancy.",
-      "Popular_Uses": "Use/Positioning: Rare and dramatic-used in statement pendants and mystical-themed collections.",
+      "Popular_Uses": " Rare and dramatic-used in statement pendants and mystical-themed collections.",
       "Stock_Information": "Available",
       "type": "semi-precious"
     }
@@ -876,7 +876,7 @@ export const allSlides = [
       "background": "black",
       "Interesting_Facts": "Displays A Magical Glow; Symbol Of New Beginnings.",
       "Popular_Uses": "Loved In Ethereal, Boho, And Moon-Inspired Collections.",
-      "Stock_Information": "Available",
+      "Stock_Information": "Available in peach and white",
       "type": "semi-precious"
     },
     {
@@ -886,7 +886,7 @@ export const allSlides = [
       "background": "black",
       "Interesting_Facts": "Displays A Magical Glow; Symbol Of New Beginnings.",
       "Popular_Uses": "Loved In Ethereal, Boho, And Moon-Inspired Collections.",
-      "Stock_Information": "Available",
+      "Stock_Information": "Available in peach and white",
       "type": "semi-precious"
     }
   ],
