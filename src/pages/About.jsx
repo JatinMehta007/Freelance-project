@@ -35,11 +35,11 @@ export const About = () => {
                   transparent processes, and unmatched quality.
                 </p>
               </div>
-              <div className="absolute">
+              <div className="sm:absolute">
                 <img
                   src="/about2.png"
                   alt=""
-                  className="w-[150px] sm:w-[180px] lg:w-[200px] sm:mt-[350px] md:mt-[300px] mt-[400px] lg:mt-[420px] h-[150px] sm:h-[180px] md:h-[200px]"
+                  className="w-[150px] sm:w-[180px] lg:w-[200px] sm:mt-[350px] md:mt-[300px] lg:mt-[420px] h-[150px] sm:h-[180px] md:h-[200px]"
                 />
               </div>
               <div className="w-full flex justify-center items-end z-0 mt-10 md:mt-0">
