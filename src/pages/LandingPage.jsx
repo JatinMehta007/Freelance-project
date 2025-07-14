@@ -51,7 +51,7 @@ export const Landing = forwardRef((props, ref) => {
               </div>
               <div></div>
               <div>
-                <div className="w-[90%] md:w-[65%] lg:w-[750px]  lg:absolute py-2 px-2  md:px-4 md:py-4 lg:px-8 lg:py-6 grid-cols-2 grid mt-12 bg-white rounded-xl  md:mx-0">
+                <div className="w-[90%] md:w-[65%] lg:w-[750px]  lg:absolute mb-20 sm:mb-0 py-2 px-2  md:px-4 md:py-4 lg:px-8 lg:py-6 grid-cols-2 grid mt-12 bg-white rounded-xl  md:mx-0">
                   <div className="flex justify-center">
                     <img
                       src="./diploma.png"
@@ -72,7 +72,7 @@ export const Landing = forwardRef((props, ref) => {
                       alt=""
                       className="lg:w-12 lg:h-12 w-8 h-8"
                     />
-                    <div className="text-xs w-[78%] text-[#2B391F] ml-2 lg:ml-3">
+                    <div className="text-xs w-[68%] text-[#2B391F] ml-2 lg:ml-3">
                       <p className="text-xs lg:text-sm font-bold">
                         Authentic Sourcing
                       </p>
