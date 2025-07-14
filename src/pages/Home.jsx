@@ -9,28 +9,34 @@ import { TestimonialSlider } from "./testimonials";
 import { Navbar } from "./Navbar";
 
 export const Home = () => {
+  const buttonRef = useRef(null);
   const footerRef = useRef(null);
+
+  const [isButtonVisible, setIsButtonVisible] = useState(false);
   const [isFooterVisible, setIsFooterVisible] = useState(false);
 
+  // Observe footer and landing
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsFooterVisible(entry.isIntersecting);
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.target === buttonRef.current) {
+            setIsButtonVisible(entry.isIntersecting);
+          }
+          if (entry.target === footerRef.current) {
+            setIsFooterVisible(entry.isIntersecting);
+          }
+        });
       },
-      {
-        root: null,
-        threshold: 0.3, // Adjust as needed
-      }
+      { threshold: 0.1 }
     );
 
-    if (footerRef.current) {
-      observer.observe(footerRef.current);
-    }
+    if (buttonRef.current) observer.observe(buttonRef.current);
+    if (footerRef.current) observer.observe(footerRef.current);
 
     return () => {
-      if (footerRef.current) {
-        observer.unobserve(footerRef.current);
-      }
+      if (buttonRef.current) observer.unobserve(buttonRef.current);
+      if (footerRef.current) observer.unobserve(footerRef.current);
     };
   }, []);
 
@@ -42,18 +48,27 @@ export const Home = () => {
     },
     {
       title: "Contact us",
-      icon: <img src="/whatsapp.png" alt="whatsapp" className="w-full h-full" />,
-      href: "https://wa.me/919929977744"
+      icon: (
+        <img src="/whatsapp.png" alt="whatsapp" className="w-full h-full" />
+      ),
+      href: "https://wa.me/919929977744",
     },
     {
       title: "Instagram",
-      icon: <img src="/instagrams.png" alt="instagram" className="w-full h-full" />,
+      icon: (
+        <img src="/instagrams.png" alt="instagram" className="w-full h-full" />
+      ),
       href: "https://www.instagram.com/gemboutique_jaipur?igsh=MTR2dDdtcmJkMm9qcw%3D%3D&utm_source=qr",
     },
   ];
 
+  const shouldShowFloatingDock = isButtonVisible && !isFooterVisible;
+
   return (
-    <div id="Home" className="min-h-screen flex flex-col justify-between overflow-hidden">
+    <div
+      id="Home"
+      className="min-h-screen flex flex-col justify-between overflow-hidden"
+    >
       {/* Navbar */}
       <Navbar></Navbar>
 
@@ -61,18 +76,20 @@ export const Home = () => {
       {/* Landing page */}
       <Landing />
       {/* Slider */}
-      <Button />
+      <div ref={buttonRef}>
+        <Button />
+      </div>
       {/* About */}
       <About />
       {/* Testimonial */}
       <TestimonialSlider></TestimonialSlider>
       {/* Contact */}
       <Contact />
-      <hr  className="text-white"/>
+      <hr className="text-white" />
       <Footer ref={footerRef} />
 
       {/* Floating Dock */}
-      {!isFooterVisible && (
+      {shouldShowFloatingDock && (
         <div className="fixed bottom-0 p-4 flex justify-center w-screen shadow-md z-50">
           <FloatingDock mobileClassName="translate-y-0" items={links} />
         </div>

@@ -22,7 +22,7 @@ export const Landing = () => {
               <p className=" md:mt-4 font-normal text-[#CBBBB9] leading-6 sm:leading-16  ">
                 Gemstone{" "}
               </p>
-              <p className="text-base md:text-lg   w-[83%] lg:w-[500px] xl:w-[83%] mt-9 md:mt-5 font-normal text-[#B8B7C1] ">
+              <p className="text-base md:text-lg   w-[83%] lg:w-[500px] xl:w-[83%] mt-9 md:mt-5 font-normal text-[#B8B7C1] md:w-[500px] ">
                 With 25 years of expertise in the gemstone industry, we can help
                 you find the perfect stone tailored to your needs. Trust our
                 legacy to guide your choice with precision and care. 100%
@@ -50,7 +50,7 @@ export const Landing = () => {
               </div>
               <div></div>
               <div>
-                <div className="w-[90%] lg:w-[750px]  lg:absolute py-2 px-2  md:px-4 md:py-4 lg:px-8 lg:py-6 grid-cols-2 grid mt-12 bg-white rounded-xl  md:mx-0">
+                <div className="w-[90%] md:w-[65%] lg:w-[750px]  lg:absolute py-2 px-2  md:px-4 md:py-4 lg:px-8 lg:py-6 grid-cols-2 grid mt-12 bg-white rounded-xl  md:mx-0">
                   <div className="flex justify-center">
                     <img
                       src="./diploma.png"
@@ -91,15 +91,15 @@ export const Landing = () => {
                 src="./back1.png"
                 loading="lazy"
                 alt=""
-                className="rounded-full hidden lg:block absolute lg:w-44 xl:w-72  xl:top-[18%] lg:right-[25%] xl:right-[30%]"
+                className="rounded-full hidden md:block md:right-[23%]  absolute md:w-44 lg:w-44 xl:w-68  xl:top-[18%] lg:right-[25%] xl:right-[30%]"
               />
             </div>
             <div className="">
-              <div className="xl:w-[100%] lg:w-[65%] xl:ml-40 lg:ml-[600px] xl:mt-[15%] lg:-mt-44 overflow-hidden">
+              <div className="xl:w-[100%]  md:w-[70%] md:ml-[600px] md:-mt-72   lg:w-[65%] xl:ml-40 lg:ml-[600px] xl:mt-[15%] lg:-mt-44 overflow-hidden">
                 <img
                   src="./backs2.jpg"
                   alt=""
-                  className="rounded-full hidden lg:block w-full"
+                  className="rounded-full hidden md:block w-full"
                   loading="lazy"
                 />
               </div>
