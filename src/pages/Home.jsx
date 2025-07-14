@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from "react";
 import { FloatingDock } from "../ui/floating";
 import { Landing } from "./LandingPage";
@@ -9,13 +10,14 @@ import { TestimonialSlider } from "./testimonials";
 import { Navbar } from "./Navbar";
 
 export const Home = () => {
-  const landingRef = useRef(null);     // 👈 to track landing
-const footerRef = useRef(null);      // 👈 to track footer
+
+const landingRef = useRef(null);
+const footerRef = useRef(null);
 
 const [isLandingVisible, setIsLandingVisible] = useState(true);
 const [isFooterVisible, setIsFooterVisible] = useState(false);
 
-  useEffect(() => {
+useEffect(() => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -27,9 +29,7 @@ const [isFooterVisible, setIsFooterVisible] = useState(false);
         }
       });
     },
-    {
-      threshold: 0.1,
-    }
+    { threshold: 0.9 }
   );
 
   if (landingRef.current) observer.observe(landingRef.current);
@@ -59,7 +59,7 @@ const [isFooterVisible, setIsFooterVisible] = useState(false);
     },
   ];
 
-  const shouldShowDock = !isLandingVisible && !isFooterVisible;
+const shouldShowDock = !isLandingVisible && !isFooterVisible;
 
   return (
     <div id="Home" className="min-h-screen flex flex-col justify-between overflow-hidden">
@@ -68,7 +68,10 @@ const [isFooterVisible, setIsFooterVisible] = useState(false);
 
       {/* Sections */}
       {/* Landing page */}
-      <Landing ref={landingRef}/>
+      <div ref={landingRef}>
+  <Landing />
+</div>
+{/* <div ref={landingMarkerRef} className="h-[1px] w-full" /> */}
       {/* Slider */}
       <Button />
       {/* About */}
@@ -81,7 +84,7 @@ const [isFooterVisible, setIsFooterVisible] = useState(false);
       <Footer ref={footerRef} />
 
       {/* Floating Dock */}
-      {shouldShowDock && (
+     {shouldShowDock && (
   <div className="fixed bottom-0 p-4 flex justify-center w-screen shadow-md z-50">
     <FloatingDock mobileClassName="translate-y-0" items={links} />
   </div>
