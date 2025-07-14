@@ -1,13 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import { HoverBorderGradient } from "../ui/hover_border";
 import { MovingButton } from "../ui/moving_border";
+import { forwardRef } from "react";
 
-export const Landing = () => {
+export const Landing = forwardRef((props, ref) => {
   const navigate = useNavigate();
   return (
     <>
       <div
-        id="Home"
+        id="Home"  ref={ref}
         style={{ fontFamily: '"Times New Roman", Times, serif' }}
         className="xl:h-screen sm:h-[600px] md:h-[700px] lg:h-[750px] pb-10 md:pb-0 h-full w-screen overflow-hidden flex-col  items-center  bg-gradient-to-r  from-neutral-800 via-neutral-800 to-neutral-800"
       >
@@ -109,4 +110,4 @@ export const Landing = () => {
       </div>
     </>
   );
-};
+});

@@ -9,36 +9,37 @@ import { TestimonialSlider } from "./testimonials";
 import { Navbar } from "./Navbar";
 
 export const Home = () => {
-  const buttonRef = useRef(null);
-  const footerRef = useRef(null);
+  const landingRef = useRef(null);     // 👈 to track landing
+const footerRef = useRef(null);      // 👈 to track footer
 
-  const [isButtonVisible, setIsButtonVisible] = useState(false);
-  const [isFooterVisible, setIsFooterVisible] = useState(false);
+const [isLandingVisible, setIsLandingVisible] = useState(true);
+const [isFooterVisible, setIsFooterVisible] = useState(false);
 
-  // Observe footer and landing
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.target === buttonRef.current) {
-            setIsButtonVisible(entry.isIntersecting);
-          }
-          if (entry.target === footerRef.current) {
-            setIsFooterVisible(entry.isIntersecting);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.target === landingRef.current) {
+          setIsLandingVisible(entry.isIntersecting);
+        }
+        if (entry.target === footerRef.current) {
+          setIsFooterVisible(entry.isIntersecting);
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
 
-    if (buttonRef.current) observer.observe(buttonRef.current);
-    if (footerRef.current) observer.observe(footerRef.current);
+  if (landingRef.current) observer.observe(landingRef.current);
+  if (footerRef.current) observer.observe(footerRef.current);
 
-    return () => {
-      if (buttonRef.current) observer.unobserve(buttonRef.current);
-      if (footerRef.current) observer.unobserve(footerRef.current);
-    };
-  }, []);
+  return () => {
+    if (landingRef.current) observer.unobserve(landingRef.current);
+    if (footerRef.current) observer.unobserve(footerRef.current);
+  };
+}, []);
 
   const links = [
     {
@@ -48,52 +49,43 @@ export const Home = () => {
     },
     {
       title: "Contact us",
-      icon: (
-        <img src="/whatsapp.png" alt="whatsapp" className="w-full h-full" />
-      ),
-      href: "https://wa.me/919929977744",
+      icon: <img src="/whatsapp.png" alt="whatsapp" className="w-full h-full" />,
+      href: "https://wa.me/919929977744"
     },
     {
       title: "Instagram",
-      icon: (
-        <img src="/instagrams.png" alt="instagram" className="w-full h-full" />
-      ),
+      icon: <img src="/instagrams.png" alt="instagram" className="w-full h-full" />,
       href: "https://www.instagram.com/gemboutique_jaipur?igsh=MTR2dDdtcmJkMm9qcw%3D%3D&utm_source=qr",
     },
   ];
 
-  const shouldShowFloatingDock = isButtonVisible && !isFooterVisible;
+  const shouldShowDock = !isLandingVisible && !isFooterVisible;
 
   return (
-    <div
-      id="Home"
-      className="min-h-screen flex flex-col justify-between overflow-hidden"
-    >
+    <div id="Home" className="min-h-screen flex flex-col justify-between overflow-hidden">
       {/* Navbar */}
       <Navbar></Navbar>
 
       {/* Sections */}
       {/* Landing page */}
-      <Landing />
+      <Landing ref={landingRef}/>
       {/* Slider */}
-      <div ref={buttonRef}>
-        <Button />
-      </div>
+      <Button />
       {/* About */}
       <About />
       {/* Testimonial */}
       <TestimonialSlider></TestimonialSlider>
       {/* Contact */}
       <Contact />
-      <hr className="text-white" />
+      <hr  className="text-white"/>
       <Footer ref={footerRef} />
 
       {/* Floating Dock */}
-      {shouldShowFloatingDock && (
-        <div className="fixed bottom-0 p-4 flex justify-center w-screen shadow-md z-50">
-          <FloatingDock mobileClassName="translate-y-0" items={links} />
-        </div>
-      )}
+      {shouldShowDock && (
+  <div className="fixed bottom-0 p-4 flex justify-center w-screen shadow-md z-50">
+    <FloatingDock mobileClassName="translate-y-0" items={links} />
+  </div>
+)}
     </div>
   );
 };
