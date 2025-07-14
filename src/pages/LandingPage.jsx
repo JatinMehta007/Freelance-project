@@ -19,8 +19,10 @@ export const Landing = () => {
                 Find The Perfect{" "}
               </p>
               {/* <ColourfulText text="Gemstone Boutique" /> */}
-              <p className=" md:mt-4 font-normal text-[#CBBBB9] leading-6 sm:leading-16  ">Gemstone </p>
-              <p className="text-base md:text-lg   w-[83%] lg:w-[70%] xl:w-[83%] mt-9 md:mt-5 font-normal text-[#B8B7C1] ">
+              <p className=" md:mt-4 font-normal text-[#CBBBB9] leading-6 sm:leading-16  ">
+                Gemstone{" "}
+              </p>
+              <p className="text-base md:text-lg   w-[83%] lg:w-[500px] xl:w-[83%] mt-9 md:mt-5 font-normal text-[#B8B7C1] ">
                 With 25 years of expertise in the gemstone industry, we can help
                 you find the perfect stone tailored to your needs. Trust our
                 legacy to guide your choice with precision and care. 100%
@@ -70,7 +72,9 @@ export const Landing = () => {
                       className="lg:w-12 lg:h-12 w-8 h-8"
                     />
                     <div className="text-xs w-[78%] text-[#2B391F] ml-2 lg:ml-3">
-                      <p className="text-xs lg:text-sm font-bold">Authentic Sourcing</p>
+                      <p className="text-xs lg:text-sm font-bold">
+                        Authentic Sourcing
+                      </p>
                       <p className="font-normal lg:tracking-wider">
                         We procure gemstones directly from mines and real
                         sources, ensuring unmatched traceability.
@@ -87,16 +91,18 @@ export const Landing = () => {
                 src="./back1.png"
                 loading="lazy"
                 alt=""
-                className="rounded-full hidden xl:block absolute w-72 top-[18%] right-[30%]"
+                className="rounded-full hidden lg:block absolute lg:w-44 xl:w-72  xl:top-[18%] lg:right-[25%] xl:right-[30%]"
               />
             </div>
-            <div className="xl:w-[100%] ml-40   mt-[15%]  overflow-hidden">
-              <img
-                src="./backs2.jpg"
-                alt=""
-                className="rounded-full hidden xl:block w-full"
-                loading="lazy"
-              />
+            <div className="">
+              <div className="xl:w-[100%] lg:w-[65%] xl:ml-40 lg:ml-[600px] xl:mt-[15%] lg:-mt-44 overflow-hidden">
+                <img
+                  src="./backs2.jpg"
+                  alt=""
+                  className="rounded-full hidden lg:block w-full"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </div>
