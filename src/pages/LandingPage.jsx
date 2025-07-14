@@ -92,11 +92,11 @@ export const Landing = forwardRef((props, ref) => {
                 src="./back1.png"
                 loading="lazy"
                 alt=""
-                className="rounded-full hidden md:block md:right-[23%]  absolute md:w-44 lg:w-44 xl:w-68  xl:top-[18%] lg:right-[25%] xl:right-[30%]"
+                className="rounded-full hidden lg:block md:right-[23%]  absolute md:w-48 lg:w-44 xl:w-68  xl:top-[18%] lg:right-[25%] xl:right-[30%]"
               />
             </div>
             <div className="">
-              <div className="xl:w-[100%]  md:w-[70%] md:ml-[600px] md:-mt-72   lg:w-[65%] xl:ml-40 lg:ml-[600px] xl:mt-[15%] lg:-mt-44 overflow-hidden">
+              <div className="xl:w-[100%]  md:w-[80%] md:ml-[600px] md:-mt-96   lg:w-[65%] xl:ml-40 lg:ml-[600px] xl:mt-[15%] lg:-mt-44 overflow-hidden">
                 <img
                   src="./backs2.jpg"
                   alt=""
