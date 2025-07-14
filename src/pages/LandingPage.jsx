@@ -92,7 +92,7 @@ export const Landing = forwardRef((props, ref) => {
                 src="./back1.png"
                 loading="lazy"
                 alt=""
-                className="rounded-full hidden lg:block md:right-[23%]  absolute  lg:w-52 xl:w-68  xl:top-[18%] lg:right-[25%] xl:right-[30%]"
+                className="rounded-full hidden lg:block md:right-[23%]  absolute  lg:w-60 xl:w-68  xl:top-[18%] lg:right-[25%] xl:right-[30%]"
               />
             </div>
             <div className="">
