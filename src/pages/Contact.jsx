@@ -88,18 +88,18 @@ export const Contact = () => {
             </span>
             <span className="hover:cursor-pointer flex flex-row">
               <a
-                href="https://wa.me/919929977744"
+                href="https://wa.me/919929xxxxx"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                9929977744
+                992xxxxxx
               </a>
               <a
-                href="https://wa.me/917426813744"
+                href="https://wa.me/91742xxxxx"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-               , 7426813744
+               , 74268xxxxxx
               </a>
             </span>
           </div>
@@ -109,14 +109,14 @@ export const Contact = () => {
               📧
             </span>
             <span className="hover:cursor-pointer">
-              <a href="mailto:Info@gemstonesboutique.in">
-                Info@gemstonesboutique.in
+              <a href="mailto:Info12@gmail.com">
+                Info12@gmail.com
               </a>
             </span>
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="https://maps.app.goo.gl/fcFohyUKb1v5zrXu8?g_st=ipc"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -126,11 +126,11 @@ export const Contact = () => {
             </a>
             <span>
               <a
-                href="https://maps.app.goo.gl/fcFohyUKb1v5zrXu8?g_st=ipc"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                37/3 Muktanand nagar, Gopalpura, Jaipur
+                 Muktanand nagar, Gopalpura, Jaipur
               </a>
             </span>
           </div>
