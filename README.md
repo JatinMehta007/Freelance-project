@@ -1,12 +1,37 @@
-# React + Vite
+# 💎 Gemstones Boutique
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A visually rich and responsive gemstone showcase website that allows users to explore a curated collection of semi-precious, lab-grown, and precious gemstones. Built for a gemstone business to connect potential buyers with dealers through a clean and modern user interface.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [gemstone-demo.vercel.app]()  
+> _This is a personal demo version of a freelance project, built and deployed for showcase purposes only. The original production site is hosted privately._
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🪷 **Category-wise Display**: Explore gemstones under Semi-Precious, Lab-Grown, and Precious categories.
+- 📱 **Responsive Design**: Optimized for desktop, tablet, and mobile viewports.
+- 📸 **High-Quality Visuals**: Each product is displayed with detailed images and descriptions.
+- 📞 **Dealer Contact Section**: Users can connect directly with gemstone dealers for offline purchasing.
+
+---
+
+## 🔧 Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Other Tools**: Vercel (for deployment), Postman (for testing APIs)
+
+---
+
+## 📸 Screenshots
+
+<!-- Add screenshots to your repo and link them here -->
+![Homepage Preview](./screenshots/homepage.png)
+![Gemstone Listing](./screenshots/category.png)
+![Contact Page](./screenshots/contact.png)
+
+---
+
+## 📂 Folder Structure
