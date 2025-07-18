@@ -22,15 +22,15 @@ export const Contact = () => {
 
   emailjs
     .send(
-      "service_f3vd8m4", 
-      "template_v7ls8uh", 
+      "service", 
+      "template", 
       {
         from_name: formData.name,
         from_email: formData.email,
         phone: formData.phone,
         message: formData.message,
       },
-      "3viO0JAEwr94WDwQW" 
+      "api" 
     )
     .then(
       (result) => {
@@ -109,8 +109,8 @@ export const Contact = () => {
               📧
             </span>
             <span className="hover:cursor-pointer">
-              <a href="mailto:Info12@gmail.com">
-                Info12@gmail.com
+              <a href="mailto:Info12@gnail.com">
+                Info12@gnail.com
               </a>
             </span>
           </div>
