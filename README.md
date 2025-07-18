@@ -29,7 +29,6 @@ A visually rich and responsive gemstone showcase website that allows users to ex
 ## 📸 Screenshots
 
 <!-- Add screenshots to your repo and link them here -->
-![Homepage Preview](./readme/home.png)
-![Gemstone Listing](./readme/about.png)
-
+![Homepage Preview](./public/readme/home.png)
+![Gemstone Listing](./public/readme/about.png)
 ---
